@@ -23,8 +23,8 @@
             $rows[] = $row;
         }
 
-//         header('Content-type: application/json');
-//         echo json_encode($rows);
+
+        echo json_encode($rows);
 
     ?>
     <!-- Optional JavaScript; choose one of the two! -->
