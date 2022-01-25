@@ -11,7 +11,7 @@
     <title>Events Data</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Events Data</h1>
     <?php
         include("dbconnect.php");
 
