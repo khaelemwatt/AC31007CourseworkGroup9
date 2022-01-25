@@ -39,3 +39,9 @@ foreach ($rules as $action => $rule) {
 include(INCLUDE_DIR . '404.php');
 
 ?>
+
+<html>
+    <body>
+        <p>This is a test</p>
+    </body>
+</html>
