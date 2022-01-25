@@ -23,10 +23,10 @@
             $rows[] = $row;
         }
 
-        header('Content-type: application/json');
-        echo json_encode($rows);
+//         header('Content-type: application/json');
+//         echo json_encode($rows);
 
-    php?>
+    ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
