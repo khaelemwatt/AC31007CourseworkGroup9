@@ -14,3 +14,9 @@ while ($row = $result->fetch_array()) {
 
 
 php?>
+
+<html>
+    <body>
+        <p>This is a test</p>
+    </body>
+</html>
