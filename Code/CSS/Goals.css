@@ -1,6 +1,9 @@
 .HowToHelp{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
+    margin-left:1.75rem;
+    padding:10px;
+    margin-bottom: 2rem;
+    align-items:right;
 }
 .mr-3{
     width: 5rem;
@@ -13,7 +16,7 @@
 }
 .GoalTitle{
     margin:1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     align-items:center;
 }
 .MoreInfo{
@@ -31,6 +34,6 @@
 }
 
 .Logo{
-    width:60%;
-    height:10%;
+    width:30%;
+    height:5%;
 }
