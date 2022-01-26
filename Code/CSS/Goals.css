@@ -2,6 +2,10 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+img{
+    width: 5rem;
+    height:5rem;
+}
 .EID{
     padding:1rem;
     margin:1rem;
@@ -11,4 +15,42 @@
     margin:1rem;
     margin-bottom: 2rem;
     align-items:center;
+}
+.MoreInfo{
+    outline: 1px solid #049A9B;
+    color:#049A9B;
+}
+.MoreInfo:hover{
+    background-color:#049A9B;
+    color:#93C718;   
+}
+.GoalItem{
+    padding:1rem;
+    margin:1rem;
+    min-width :200px;
+}
+.contains{
+    position:relative;
+    
+}
+.contains:hover{
+    opacity:1;
+    
+}
+.pic{
+    opacity:1;
+    z-index: 10;
+}
+.pic:hover{
+    opacity:0;
+}
+.insidepic{
+    position:absolute;
+    top:8px;left:8px;
+    z-index:9;
+    
+}
+.insidepic:hover{
+    z-index: 11;
+    opacity: 1;
 }
