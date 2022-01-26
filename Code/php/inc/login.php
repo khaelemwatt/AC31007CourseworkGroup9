@@ -62,7 +62,6 @@
 
         form.onsubmit = (e)=>{
             console.log("Check");
-            e.preventDefault();
             var user = <?php echo checkDetails($db);?>;
             console.log(user[0][0], user[0][1], user[0][2]);
         }
