@@ -15,7 +15,7 @@
     <div class="page-header header container">
         <div class="d-flex justify-content-center">
             <div class="mb-3">
-                <form action="https://group9agilewebapp.azurewebsites.net/api/allEvents" id="login" method="POST">
+                <form action="/loginCheck.php" id="login" method="POST">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
