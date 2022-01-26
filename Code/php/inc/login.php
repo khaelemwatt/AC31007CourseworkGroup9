@@ -82,6 +82,10 @@
             console($sql);
             console($row['password']);
 
+            //
+            //NEED TO DO OUR OWN HASHING (SHA256) FIRST BEFORE CHECKING PASSWORDS
+            //
+
             //Check if the password providedd matches the one in the database
             if($password == $row['password']){
                 //If it matches we need to check what user we are dealing with
