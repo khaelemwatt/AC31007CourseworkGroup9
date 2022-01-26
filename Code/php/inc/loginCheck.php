@@ -1,6 +1,7 @@
 <?php
+    include("dbconnect.php");
 
-echo '<script> console.log("Page Loaded")</script>';
+    echo '<script> console.log("Page Loaded")</script>';
 
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -10,8 +11,11 @@ echo '<script> console.log("Page Loaded")</script>';
 
     $stmt = $db->prepare($sql);
     $stmt->execute();
-    $result = $stmt->fetchAll();
+    $result = $db->query($stmt);
     $JSONresult = json_encode($result);
+
+    console("Hello this is a test");
+    console($JSONresult);
 
     echo '<script> console.log("Check")</script>';
     echo '<script> console.log('.$JSONresult.')</script>';

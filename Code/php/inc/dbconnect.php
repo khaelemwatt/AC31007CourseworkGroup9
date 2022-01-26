@@ -32,3 +32,7 @@ if (!$db) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
+
+function console($data){    
+    echo "<script>console.log('Debug: ".$data."');</script>";
+}
