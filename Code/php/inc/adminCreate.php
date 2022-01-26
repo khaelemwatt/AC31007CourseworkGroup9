@@ -61,26 +61,10 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
 
-            $sql = "SELECT `password`, `level` FROM `user` WHERE";
-            $sql = sprintf("%s `username`='%s';", $sql, $username);
+            $sql = "INSERT INTO `user` (`username`, `password`, `level`) VALUES (";
+            $sql = sprintf("%s %s, %s, 0);", $sql, $username, $password);
 
-            $result = $db->query($sql);
-            $row = $result->fetch_array();
-            
-            console($sql);
-            console($row['password']);
-
-            if($password == $row['password']){
-                if($row['level'] == 0){
-                    include(dirname('__FILE__') . "/api/allEvents");
-                }else{
-                    //other page
-                }
-                
-            }else{
-                console("Rejected");
-                echo '<script>reject();</script>';
-            }            
+            $db->query($sql);           
         }        
 
     ?>

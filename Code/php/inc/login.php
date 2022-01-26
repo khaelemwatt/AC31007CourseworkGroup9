@@ -72,7 +72,7 @@
 
             if($password == $row['password']){
                 if($row['level'] == 0){
-                    include(dirname(__FILE__) . "../createAdmin.php");
+                    echo '<script> window.location.href = "createAdmin.php" </script>';
                 }else{
                     include(dirname(__FILE__) . "../apiShowEvents.php");
                 }
