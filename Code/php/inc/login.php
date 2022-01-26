@@ -15,7 +15,7 @@
     <div class="page-header header container">
         <div class="d-flex justify-content-center">
             <div class="mb-3">
-                <form action="#" id="login" method="POST">
+                <form action="#" id="login">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
@@ -33,7 +33,7 @@
         include("dbconnect.php");
         function checkDetails($db){
             $sql = "SELECT * USER WHERE ";
-            $sql = sprintf("%s username = '%s'", $sql, "admin");
+            $sql = sprintf("%s username = '%s'", $sql, $_COOKIE['username']);
                         
             $stmt = $db->prepare($sql);
             $stmt->execute();
@@ -51,18 +51,20 @@
         usernameInput = document.getElementById("username");
         passwordInput = document.getElementById("password");
 
-        button.addEventListener("animationend", function(){
-            button.classList.remove("animate__headShake");
-            button.classList.remove("btn-danger");
-        });
+        // button.addEventListener("animationend", function(){
+        //     button.classList.remove("animate__headShake");
+        //     button.classList.remove("btn-danger");
+        // });
 
-        function reject(){
-            button.classList.add("animate__headShake");
-            button.classList.add("btn-danger");
-        }
+        // function reject(){
+        //     button.classList.add("animate__headShake");
+        //     button.classList.add("btn-danger");
+        // }
 
         form.onsubmit = (e)=>{
             console.log("Check");
+            document.cookie = "username=" + usernameInput.value;
+            console.log(usernameInput.value);
             var user = <?php echo checkDetails($db);?>;
             console.log(user[0][0], user[0][1], user[0][2]);
         }
