@@ -39,11 +39,6 @@
             button.classList.remove("btn-danger");
         });
 
-        //To be removed
-        function accept(){
-            console.log("Accept function");
-        }
-
         //If rejected, animate the button
         function reject(){
             console.log("Reject function");
