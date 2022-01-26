@@ -22,7 +22,7 @@
                     <div class="mb-3">
                         <input type="password" class="form-text" id="password" placeholder="Password" name="password">
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                    <button type="submit" class="btn btn-primary animate__animated" id="submitButton">Submit</button>
                 </form>
             </div>
         </div>
@@ -39,10 +39,11 @@
         });
 
         function accept(){
-            //do something
+            console.log("Accept function");
         }
 
         function reject(){
+            console.log("Reject function");
             button.classList.add("animate__headShake");
             button.classList.add("btn-danger");
         }
