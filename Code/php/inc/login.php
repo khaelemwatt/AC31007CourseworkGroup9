@@ -12,7 +12,7 @@
     <h1>Hello, world!</h1>
     <div class="container">
         <div class="row">
-            <div class="col align-self-center">
+            <div class="col-4 justify-content-center">
                 This is a test
             </div>
         </div>
