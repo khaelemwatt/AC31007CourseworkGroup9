@@ -13,8 +13,8 @@ echo '<script> console.log("Page Loaded")>/script>';
     $result = $stmt->fetchAll();
     $JSONresult = json_encode($result);
 
-    echo '<script> console.log("Check")>/script>';
-    echo '<script> console.log('.$result.')</script>';
+    echo '<script> console.log("Check")</script>';
+    echo '<script> console.log('.$JSONresult.')</script>';
 
     // if($password == $result)
 
