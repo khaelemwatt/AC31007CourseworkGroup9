@@ -65,17 +65,17 @@
 
             $result = $db->query($sql);
             $row = $result->fetch_array();
-            console($row['password']);
-            $JSONresult = json_encode($row);
-
-            // if($password == $JSONresult[0;]){
-            //     echo '<script>accept();</script>';
-            // }else{
-            //     echo '<script>reject();</script>';
-            // }
-
+            
             console($sql);
-            console($JSONresult);
+            console($row['password']);
+
+            if($password == $row['password']){
+                console("Accepted");
+                echo '<script>accept();</script>';
+            }else{
+                console("Rejected");
+                echo '<script>reject();</script>';
+            }            
         }        
 
     ?>
