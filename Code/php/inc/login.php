@@ -72,9 +72,9 @@
 
             if($password == $row['password']){
                 if($row['level'] == 0){
-                    include(dirname('__FILE__') . "/createAdmin");
+                    include(dirname(__FILE__) . "/createAdmin");
                 }else{
-                    include(dirname('__FILE__') . "/api/allEvents");
+                    include(dirname(__FILE__) . "/api/allEvents");
                 }
                 
             }else{
