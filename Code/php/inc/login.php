@@ -11,7 +11,7 @@
   </head>
   <?php session_start() ?>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Admin Login</h1>
     <div class="page-header header container">
         <div class="d-flex justify-content-center">
             <div class="mb-3">
