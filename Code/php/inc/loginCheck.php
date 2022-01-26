@@ -1,6 +1,6 @@
 <?php
 
-echo '<script> console.log("Page Loaded")>/script>';
+echo '<script> console.log("Page Loaded")</script>';
 
     $username = $_POST['username'];
     $password = $_POST['password'];
