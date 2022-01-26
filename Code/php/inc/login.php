@@ -13,14 +13,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form>
+                <form class="form-inline">
                     <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="username" class="form-text" id="username">
+                        <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-text" id="password">
+                        <input type="password" class="form-text" id="password" placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
