@@ -32,7 +32,7 @@
         button = document.getElementById("submitButton");
         usernameInput = document.getElementById("username");
         passwordInput = document.getElementById("password");
-        
+
         button.addEventListener("animationend", function(){
             button.classList.remove("animate__headShake");
             button.classList.remove("btn-danger");
@@ -67,16 +67,14 @@
             $row = $result->fetch_array();
             $JSONresult = json_encode($row);
 
-            $JSONresult = json_decode($JSONresult, true);
-
-            if($password == $JSONresult['password']){
-                echo '<script>accept();</script>';
-            }else{
-                echo '<script>reject();</script>';
-            }
+            // if($password == $JSONresult[0;]){
+            //     echo '<script>accept();</script>';
+            // }else{
+            //     echo '<script>reject();</script>';
+            // }
 
             console($sql);
-            console($JSONresult[['password']]);
+            console($JSONresult[0]);
         }        
 
     ?>
