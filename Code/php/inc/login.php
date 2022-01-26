@@ -28,7 +28,7 @@
 
     <?php
 
-        
+
 
     ?>
 
@@ -51,6 +51,8 @@
         form.onsubmit = (e)=>{
             console.log("Check");
             e.preventDefault();
+            var username = <?php echo $POST['username'];?>;
+            console.log(username);
             if(passwordInput.value == ""){
 
             }
