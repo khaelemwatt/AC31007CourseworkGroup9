@@ -61,7 +61,7 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
 
-            $sql = "SELECT `password` FROM `user` WHERE";
+            $sql = "SELECT `password`, `level` FROM `user` WHERE";
             $sql = sprintf("%s `username`='%s';", $sql, $username);
 
             $result = $db->query($sql);
@@ -71,7 +71,12 @@
             console($row['password']);
 
             if($password == $row['password']){
-                include(dirname('__FILE__') . "/api/allEvents");
+                if($row['level'] == 0){
+                    include(dirname('__FILE__') . "/api/allEvents");
+                }else{
+                    //other page
+                }
+                
             }else{
                 console("Rejected");
                 echo '<script>reject();</script>';
