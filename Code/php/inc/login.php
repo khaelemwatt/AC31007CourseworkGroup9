@@ -48,7 +48,6 @@
             $JSONresult = json_encode($result);
 
             console($sql);
-            console($result);
             console($JSONresult);
         }        
 
