@@ -10,7 +10,6 @@
     $sql = sprintf("%s username = '".$username.'"');
 
     $stmt = $db->prepare($sql);
-    $stmt->execute();
     $result = $db->query($stmt);
     $JSONresult = json_encode($result);
 
