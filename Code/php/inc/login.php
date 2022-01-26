@@ -65,7 +65,7 @@
         //     console.log("Check");
         //     document.cookie = "username=" + usernameInput.value;
         //     console.log(usernameInput.value);
-        //     var user = <?php echo checkDetails($db);?>;
+        //     var user = <?php //echo checkDetails($db);?>;
         //     console.log(user[0][0], user[0][1], user[0][2]);
         // }
     </script>
