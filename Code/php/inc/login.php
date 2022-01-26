@@ -17,10 +17,10 @@
             <div class="mb-3">
                 <form action="/loginCheck.php" id="login" method="POST">
                     <div class="form-group">
-                        <input type="username" class="form-text" id="username" placeholder="Username">
+                        <input type="username" class="form-text" id="username" placeholder="Username" name="username">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-text" id="password" placeholder="Password">
+                        <input type="password" class="form-text" id="password" placeholder="Password" name="password">
                     </div>
                     <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
                 </form>
