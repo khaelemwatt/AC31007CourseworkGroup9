@@ -62,7 +62,7 @@
             $password = $_POST['password'];
 
             $sql = "INSERT INTO `user` (`username`, `password`, `level`) VALUES (";
-            $sql = sprintf("%s %s, %s, 0);", $sql, $username, $password);
+            $sql = sprintf('%s "%s", "%s", 0);', $sql, $username, $password);
 
             $db->query($sql);     
             
