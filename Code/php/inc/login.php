@@ -28,10 +28,15 @@
         </div>
     </div>
     <script>
-        // button.addEventListener("animationend", function(){
-        //     button.classList.remove("animate__headShake");
-        //     button.classList.remove("btn-danger");
-        // });
+        const form = document.getElementById("login");
+        button = document.getElementById("submitButton");
+        usernameInput = document.getElementById("username");
+        passwordInput = document.getElementById("password");
+        
+        button.addEventListener("animationend", function(){
+            button.classList.remove("animate__headShake");
+            button.classList.remove("btn-danger");
+        });
 
         function accept(){
             //do something
@@ -77,10 +82,7 @@
     ?>
 
     <script>
-        const form = document.getElementById("login");
-        button = document.getElementById("submitButton");
-        usernameInput = document.getElementById("username");
-        passwordInput = document.getElementById("password");
+        
 
         // button.addEventListener("animationend", function(){
         //     button.classList.remove("animate__headShake");
