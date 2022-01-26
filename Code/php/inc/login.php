@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form class="form-inline">
+                <form class="form-inline" onsubmit="submit(event)" id="login">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
@@ -25,6 +25,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        
+    function submit(e){
+        e.preventDefault();
+        console.log("Hello Test");
+        Document.getElementById("login").submit();
+    }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
