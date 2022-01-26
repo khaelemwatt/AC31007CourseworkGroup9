@@ -34,5 +34,5 @@ if (!$db) {
 }
 
 function console($data){    
-    echo "<script>console.log('Debug: ".$data."');</script>";
+    echo '<script>console.log("Debug: '.$data.'");</script>';
 }
