@@ -45,11 +45,9 @@
             $result = $db->query($sql);
             $JSONresult = json_encode($result);
 
+            console($sql);
             console("Hello this is a test");
             console($JSONresult);
-
-            echo '<script> console.log("Check")</script>';
-            echo '<script> console.log('.$JSONresult.')</script>';
         }        
 
     ?>
