@@ -11,7 +11,7 @@
   <body>
     <h1>Hello, world!</h1>
     <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-self-center">
             <div class="col">
                 <h1>Hello</h1>
             </div>
