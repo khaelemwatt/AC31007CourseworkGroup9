@@ -33,6 +33,7 @@ if (!$db) {
     exit;
 }
 
+//Function to enable easier debugging statements to be used in php
 function console($data){    
     echo '<script>console.log("Debug: '.$data.'");</script>';
 }
