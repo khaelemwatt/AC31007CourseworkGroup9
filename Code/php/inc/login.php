@@ -28,8 +28,19 @@
         </div>
     </div>
 
-    <?php
+    <?php 
+        include("dbconnect.php");
+        function checkDetails($db){
+            $sql = "SELECT * USER WHERE ";
+            $sql = sprintf("%s username = '%s'", $sql, $_POST['username']);
+                        
+            $stmt = $db->prepare($sql);
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+            $JSONresult = json_encode($result);
 
+            return $JSONresult;
+        }
 
     ?>
 
@@ -52,8 +63,8 @@
         form.onsubmit = (e)=>{
             console.log("Check");
             e.preventDefault();
-            var username = <?php if(isset($_POST['username'])){echo 1; $_SESSION['username'] = $_POST['username'];}else{echo 0;}?>;
-            console.log(username);
+            var user = <?php echo checkDetails($db);?>;
+            console.log(user[0][0], user[0][1], user[0][2]);
         }
     </script>
 
