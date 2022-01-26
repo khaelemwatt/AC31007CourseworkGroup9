@@ -45,7 +45,8 @@
             $sql = sprintf("%s `username`='%s';", $sql, $username);
 
             $result = $db->query($sql);
-            $JSONresult = json_encode($result);
+            $row = $result->fetch_array();
+            $JSONresult = json_encode($row);
 
             console($sql);
             console($JSONresult);
