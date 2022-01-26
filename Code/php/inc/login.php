@@ -74,7 +74,7 @@
                 if($row['level'] == 0){
                     echo '<script> window.location.href = "/createAdmin" </script>';
                 }else{
-                    echo '<script> window.location.href = "/api/showAllDogs" </script>';
+                    echo '<script> window.location.href = "/api/allEvents" </script>';
                 }
                 
             }else{
