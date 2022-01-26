@@ -29,6 +29,7 @@
     </div>
 
     <?php 
+        error_reporting(E_ALL);
         include("dbconnect.php");
         function checkDetails($db){
             $sql = "SELECT * USER WHERE ";
