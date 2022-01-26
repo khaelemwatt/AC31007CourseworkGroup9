@@ -72,9 +72,9 @@
 
             if($password == $row['password']){
                 if($row['level'] == 0){
-                    echo '<script> window.location.href = "/Code/php/inc/createAdmin.php" </script>';
+                    echo '<script> window.location.href = "/createAdmin" </script>';
                 }else{
-                    echo '<script> window.location.href = "/Code/php/inc/allEvents.php" </script>';
+                    echo '<script> window.location.href = "/api/showAllDogs" </script>';
                 }
                 
             }else{
