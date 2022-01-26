@@ -65,6 +65,7 @@
 
             $result = $db->query($sql);
             $row = $result->fetch_array();
+            console($row['password']);
             $JSONresult = json_encode($row);
 
             // if($password == $JSONresult[0;]){
