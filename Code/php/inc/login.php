@@ -74,7 +74,7 @@
             // }
 
             console($sql);
-            console($JSONresult[0]);
+            console($JSONresult);
         }        
 
     ?>
