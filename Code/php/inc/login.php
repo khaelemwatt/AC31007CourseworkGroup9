@@ -49,7 +49,7 @@
             $JSONresult = json_encode($row);
 
             console($sql);
-            console($JSONresult);
+            console($JSONresult[0][0]);
         }        
 
     ?>
