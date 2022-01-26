@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col align-self-center">
                 <h1>Hello</h1>
