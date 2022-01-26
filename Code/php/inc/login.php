@@ -81,28 +81,6 @@
 
     ?>
 
-    <script>
-        
-
-        // button.addEventListener("animationend", function(){
-        //     button.classList.remove("animate__headShake");
-        //     button.classList.remove("btn-danger");
-        // });
-
-        // function reject(){
-        //     button.classList.add("animate__headShake");
-        //     button.classList.add("btn-danger");
-        // }
-
-        // form.onsubmit = (e)=>{
-        //     console.log("Check");
-        //     document.cookie = "username=" + usernameInput.value;
-        //     console.log(usernameInput.value);
-        //     var user = <?php //echo checkDetails($db);?>;
-        //     console.log(user[0][0], user[0][1], user[0][2]);
-        // }
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
