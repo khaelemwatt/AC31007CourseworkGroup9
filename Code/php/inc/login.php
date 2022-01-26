@@ -74,7 +74,7 @@
                 if($row['level'] == 0){
                     echo '<script> window.location.href = "/Code/php/inc/createAdmin.php" </script>';
                 }else{
-                    include(dirname(__FILE__) . "../apiShowEvents.php");
+                    echo '<script> window.location.href = "/Code/php/inc/allEvents.php" </script>';
                 }
                 
             }else{
