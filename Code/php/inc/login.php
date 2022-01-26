@@ -28,6 +28,7 @@
         </div>
     </div>
     <script>
+        //Get references to html elements
         const form = document.getElementById("login");
         button = document.getElementById("submitButton");
         usernameInput = document.getElementById("username");
