@@ -64,7 +64,9 @@
             $sql = "INSERT INTO `user` (`username`, `password`, `level`) VALUES (";
             $sql = sprintf("%s %s, %s, 0);", $sql, $username, $password);
 
-            $db->query($sql);           
+            $db->query($sql);     
+            
+            console($sql);
         }        
 
     ?>
