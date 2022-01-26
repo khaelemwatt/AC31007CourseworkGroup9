@@ -13,6 +13,7 @@ $rules = array(
     //Admin Pages
     //
     'login' => "/login",
+    'createAdmin' => "/createAdmin",
     'create_article' => "/createarticle",
     'logout' => "/logout",
     //
