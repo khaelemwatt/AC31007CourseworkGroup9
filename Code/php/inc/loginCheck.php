@@ -1,5 +1,7 @@
 <?php
 
+echo '<script> console.log("Page Loaded")>/script>';
+
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -11,7 +13,8 @@
     $result = $stmt->fetchAll();
     $JSONresult = json_encode($result);
 
-    echo '<script> console.log('.$result.')';
+    echo '<script> console.log("Check")>/script>';
+    echo '<script> console.log('.$result.')</script>';
 
     // if($password == $result)
 
