@@ -48,8 +48,14 @@
             $row = $result->fetch_array();
             $JSONresult = json_encode($row);
 
+            if($password == $JSONresult[0][0]){
+                //approved
+            }else{
+                //rejected
+            }
+
             console($sql);
-            console($JSONresult[0][0]);
+            console($JSONresult[0]);
         }        
 
     ?>
