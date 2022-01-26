@@ -20,7 +20,7 @@
                     <div class="mb-3">
                         <input type="password" class="form-text" id="password" placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
                 </form>
             </div>
         </div>
