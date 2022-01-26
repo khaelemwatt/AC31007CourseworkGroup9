@@ -42,8 +42,7 @@
             $sql = "SELECT password FROM user WHERE";
             $sql = sprintf("%s username = '".$username.'"');
 
-            $stmt = $db->prepare($sql);
-            $result = $db->query($stmt);
+            $result = $db->query($sql);
             $JSONresult = json_encode($result);
 
             console("Hello this is a test");
