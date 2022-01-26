@@ -17,7 +17,7 @@
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group py-1">
                         <input type="password" class="form-text" id="password" placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
