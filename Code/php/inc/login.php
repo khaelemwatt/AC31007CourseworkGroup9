@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Hello, world!</title>
   </head>
+  <?php session_start() ?>
   <body>
     <h1>Hello, world!</h1>
     <div class="page-header header container">
@@ -27,7 +29,6 @@
     </div>
 
     <?php
-
 
 
     ?>
@@ -51,11 +52,8 @@
         form.onsubmit = (e)=>{
             console.log("Check");
             e.preventDefault();
-            var username = <?php echo $POST['username'];?>;
+            var username = <?php if(isset($_POST['username'])){echo 1; $_SESSION['username'] = $_POST['username'];}else{echo 0;}?>;
             console.log(username);
-            if(passwordInput.value == ""){
-
-            }
         }
     </script>
 
