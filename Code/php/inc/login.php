@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form class="form-inline" onsubmit="submit(event)" id="login">
+                <form class="form-inline" onsubmit="return submit(event)" id="login">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
@@ -32,6 +32,7 @@
         e.preventDefault();
         console.log("Hello Test");
         Document.getElementById("login").submit();
+        return false;
     }
 
     </script>
