@@ -27,7 +27,21 @@
             </div>
         </div>
     </div>
+    <script>
+        // button.addEventListener("animationend", function(){
+        //     button.classList.remove("animate__headShake");
+        //     button.classList.remove("btn-danger");
+        // });
 
+        function accept(){
+
+        }
+
+        function reject(){
+            button.classList.add("animate__headShake");
+            button.classList.add("btn-danger");
+        }
+    </script>
     <?php 
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
@@ -48,14 +62,16 @@
             $row = $result->fetch_array();
             $JSONresult = json_encode($row);
 
-            if($password == $JSONresult[0][0]){
-                //approved
+            $JSONresult = json_decode($JSONresult, true);
+
+            if($password == $JSONresult['password']){
+                echo '<script>accept();</script>';
             }else{
-                //rejected
+                echo '<script>reject();</script>';
             }
 
             console($sql);
-            console($JSONresult[0]);
+            console($JSONresult[['password']]);
         }        
 
     ?>
