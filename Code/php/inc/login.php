@@ -15,7 +15,7 @@
     <div class="page-header header container">
         <div class="d-flex justify-content-center">
             <div class="mb-3">
-                <form action="#" onsubmit="return submit(event)" id="login" method="POST">
+                <form action="#" id="login" method="POST">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username">
                     </div>
