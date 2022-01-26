@@ -33,14 +33,13 @@
         function checkDetails($db){
             $sql = "SELECT * USER WHERE ";
             $sql = sprintf("%s username = '%s'", $sql, "admin");
-            echo '<script>console.log("Query'.$sql.'");</script>';
                         
             $stmt = $db->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetchAll();
             $JSONresult = json_encode($result);
 
-            return $JSONresult;
+            echo $JSONresult;
         }
 
     ?>
