@@ -39,8 +39,8 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
 
-            $sql = "SELECT password FROM user WHERE";
-            $sql = sprintf("%s username = '".$username.'"');
+            $sql = "SELECT `password` FROM `user` WHERE";
+            $sql = sprintf("%s `username` = '".$username."';");
 
             $result = $db->query($sql);
             $JSONresult = json_encode($result);
