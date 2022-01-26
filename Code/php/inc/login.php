@@ -71,8 +71,7 @@
             console($row['password']);
 
             if($password == $row['password']){
-                console("Accepted");
-                echo '<script>accept();</script>';
+                include(dirname('__FILE__') . "/api/allEvents");
             }else{
                 console("Rejected");
                 echo '<script>reject();</script>';
