@@ -19,7 +19,8 @@
                         <input type="username" class="form-text" id="username">
                     </div>
                     <div class="form-group">
-                        <label for="password" class="form-control" id="password">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-text" id="password"
                     </div>
                     <button type="submit" class="btn btn-primary">Submit<button>
                 </form>
