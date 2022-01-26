@@ -46,7 +46,7 @@
             $JSONresult = json_encode($result);
 
             console($sql);
-            console("Hello this is a test");
+            console($result);
             console($JSONresult);
         }        
 
