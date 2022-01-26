@@ -29,19 +29,19 @@
     </div>
 
     <?php 
-        error_reporting(E_ALL);
-        include("dbconnect.php");
-        function checkDetails($db){
-            $sql = "SELECT * USER WHERE ";
-            $sql = sprintf("%s username = '%s'", $sql, $_COOKIE['username']);
+        // error_reporting(E_ALL);
+        // include("dbconnect.php");
+        // function checkDetails($db){
+        //     $sql = "SELECT * USER WHERE ";
+        //     $sql = sprintf("%s username = '%s'", $sql, $_COOKIE['username']);
                         
-            $stmt = $db->prepare($sql);
-            $stmt->execute();
-            $result = $stmt->fetchAll();
-            $JSONresult = json_encode($result);
+        //     $stmt = $db->prepare($sql);
+        //     $stmt->execute();
+        //     $result = $stmt->fetchAll();
+        //     $JSONresult = json_encode($result);
 
-            echo $JSONresult;
-        }
+        //     echo $JSONresult;
+        // }
 
     ?>
 
@@ -61,13 +61,13 @@
         //     button.classList.add("btn-danger");
         // }
 
-        form.onsubmit = (e)=>{
-            console.log("Check");
-            document.cookie = "username=" + usernameInput.value;
-            console.log(usernameInput.value);
-            var user = <?php echo checkDetails($db);?>;
-            console.log(user[0][0], user[0][1], user[0][2]);
-        }
+        // form.onsubmit = (e)=>{
+        //     console.log("Check");
+        //     document.cookie = "username=" + usernameInput.value;
+        //     console.log(usernameInput.value);
+        //     var user = <?php echo checkDetails($db);?>;
+        //     console.log(user[0][0], user[0][1], user[0][2]);
+        // }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
