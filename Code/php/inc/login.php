@@ -15,7 +15,7 @@
     <div class="page-header header container">
         <div class="d-flex justify-content-center">
             <div class="mb-3">
-                <form action="/loginCheck.php" id="login" method="POST">
+                <form action="#" id="login" method="POST">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username" name="username">
                     </div>
@@ -29,19 +29,29 @@
     </div>
 
     <?php 
-        // error_reporting(E_ALL);
-        // include("dbconnect.php");
-        // function checkDetails($db){
-        //     $sql = "SELECT * USER WHERE ";
-        //     $sql = sprintf("%s username = '%s'", $sql, $_COOKIE['username']);
-                        
-        //     $stmt = $db->prepare($sql);
-        //     $stmt->execute();
-        //     $result = $stmt->fetchAll();
-        //     $JSONresult = json_encode($result);
+        error_reporting(E_ALL);
+        include("dbconnect.php");
 
-        //     echo $JSONresult;
-        // }
+        $usernameSet = isset($_POST['username']) && !empty($_POST['username']);
+        $passwordSet = isset($_POST['password']) && !empty($_POST['password']);
+
+        if($usernameSet && $passwordSet){
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+
+            $sql = "SELECT password FROM user WHERE";
+            $sql = sprintf("%s username = '".$username.'"');
+
+            $stmt = $db->prepare($sql);
+            $result = $db->query($stmt);
+            $JSONresult = json_encode($result);
+
+            console("Hello this is a test");
+            console($JSONresult);
+
+            echo '<script> console.log("Check")</script>';
+            echo '<script> console.log('.$JSONresult.')</script>';
+        }        
 
     ?>
 
