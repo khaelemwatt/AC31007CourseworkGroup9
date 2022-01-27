@@ -1,0 +1,42 @@
+.HowToHelp{
+    margin: 1rem;
+    margin-left:1.75rem;
+    padding:10px;
+    margin-bottom: 2rem;
+    align-items:right;
+}
+.mr-3{
+    width: 5rem;
+    height:5rem;
+}
+.extraPadding{
+    padding:0.5rem;
+}
+.EID{
+    padding:1rem;
+    margin:1rem;
+    min-width :200px;
+}
+.GoalTitle{
+    margin:1rem;
+    margin-bottom: 1.75rem;
+    align-items:center;
+}
+.MoreInfo{
+    outline: 1px solid #049A9B;
+    color:#049A9B;
+}
+.MoreInfo:hover{
+    background-color:#049A9B;
+    color:#93C718;   
+}
+.GoalItem{
+    padding:1rem;
+    margin:1rem;
+    min-width :200px;
+}
+
+.Logo{
+    width:30%;
+    height:5%;
+}
