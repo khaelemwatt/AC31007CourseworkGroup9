@@ -91,8 +91,9 @@
                 $inputEventInfo = $_POST['eventInfo'];
                 $inputEventDate = $_POST['eventDate'];
                 $inputEventLocation = $_POST['eventLocation'];
-                $inputGoal = $_GET['UNGoalID']
-                $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES ("$inputEventName", "$inputEventInfo", "$inputEventDate", "$inputEventLocation", $inputGoal");
+                $inputGoal = $_GET['UNGoalID'];
+                $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.");");
+                console($createStmt);
                 $createStmt->execute();
                 $result = $createStmt->fetchAll();
                 if($result == false){
