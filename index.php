@@ -7,6 +7,9 @@ $rules = array(
     //API Routes
     'apiShowEvents' => "/api/allEvents",
     'apiShowSingleDogs' => "/api/singleDog/(?'dogID'[\w\-]+)",
+    
+    //Goal Pages
+    'Goals/Goal1' => "Goals/Goal1.php",
 
 
 
