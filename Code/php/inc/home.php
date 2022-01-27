@@ -3,9 +3,9 @@
 <head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-<link href='..\CSS\bootstrap.min.css' rel='stylesheet' type='text/css'>
-<link href='..\CSS\Colours.css' rel='stylesheet' type='text/css'>
-<link href='..\CSS\Goals.css' rel='stylesheet' type='text/css'>
+<link href='https://group9agilewebapp.azurewebsites.net/Code/CSS/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='https://group9agilewebapp.azurewebsites.net/Code/CSS/Colours.css' rel='stylesheet' type='text/css'>
+<link href='https://group9agilewebapp.azurewebsites.net/Code/CSS/Goals.css' rel='stylesheet' type='text/css'>
 <title>UN Goals</title>
 
 </head>
@@ -270,6 +270,6 @@
 </body>";
 ?>
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
-<script src='../js/bootstrap.bundle.js' ></script>
+<script src='https://group9agilewebapp.azurewebsites.net/Code/js/bootstrap.bundle.js' ></script>
 
 </html>
