@@ -86,7 +86,7 @@
             // Include the database connection
             include "dbconnect.php";
             // Check that a form has been submitted
-            if( isset($_POST['submit']) ){
+
                 $inputEventName = $_POST['eventName'];
                 $inputEventInfo = $_POST['eventInfo'];
                 $inputEventDate = $_POST['eventDate'];
@@ -113,12 +113,12 @@
                     echo $inputGoal;
                 }
             foreach($result as $row) {
-            echo "<td>".$row['UN Sustainable Development Goal Event']."</td>";
-            echo "<td>".$row['About the Event']."</td>";
-            echo "<td>".$row['Date of the Event']."</td>";
-            echo "<td>".$row['Location of the Event']."</td></tr>";
-           }
-           }
+                echo "<td>".$row['UN Sustainable Development Goal Event']."</td>";
+                echo "<td>".$row['About the Event']."</td>";
+                echo "<td>".$row['Date of the Event']."</td>";
+                echo "<td>".$row['Location of the Event']."</td></tr>";
+            }
+           
         }  
 
     ?>
