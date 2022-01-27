@@ -40,7 +40,7 @@
               </div>
             </div>
             </div>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal2.jpg' alt='Goal2'>
@@ -54,7 +54,7 @@
               </div>
             </div>
             
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal3.jpg' alt='Goal3'>
@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal4.jpg' alt='Goal4'>
@@ -83,7 +83,7 @@
               </div>
             </div>
             
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal5.jpg' alt='Goal5'>
@@ -97,7 +97,7 @@
               </div>
             </div>
           
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal6.jpg' alt='Goal6'>
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal7.jpg' alt='Goal7'>
@@ -126,7 +126,7 @@
               </div>
             </div>
 
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal8.jpg' alt='Goal8'>
@@ -140,7 +140,7 @@
               </div>
             </div>
       
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal9.jpg' alt='Goal9'>
@@ -155,7 +155,7 @@
             </div>
         </div>
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal10.jpg' alt='Goal10'>
@@ -168,7 +168,7 @@
               </div>
               </div>
             </div>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal11.jpg' alt='Goal11'>
@@ -182,7 +182,7 @@
               </div>
             </div>
         
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal12.jpg' alt='Goal12'>
@@ -197,7 +197,7 @@
             </div>
             </div>
             <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal13.jpg' alt='Goal13'>
@@ -210,7 +210,7 @@
               </div>
               </div>
             </div>
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal14.jpg' alt='Goal14'>
@@ -225,7 +225,7 @@
             </div>
             
             
-            <div class='col d-flex align-items-start'>
+            <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal15.jpg' alt='Goal15'>
@@ -240,7 +240,7 @@
             </div>
             </div>
             <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 '>
-            <div class='col d-flex align-items-start '>
+            <div class='col d-flex align-items-flex '>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal16.jpg' alt='Goal16'>
@@ -253,7 +253,7 @@
               </div>
               </div>
             </div>
-            <div class='col d-flex align-items-start '>
+            <div class='col d-flex align-items-flex '>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
                 <img class='align-self-start mr-3' src='/Code/Images/Goal17.jpg' alt='Goal17'>
