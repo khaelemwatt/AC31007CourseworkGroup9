@@ -66,6 +66,7 @@
             //Store the values
             $username = $_POST['username'];
             $password = $_POST['password'];
+            $password = hash('sha256', $password);
 
             //Form the sql query for selecting the password for the username provided
             $sql = "INSERT INTO `user` (`username`, `password`, `level`) VALUES (";
