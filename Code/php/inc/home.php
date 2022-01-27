@@ -31,7 +31,7 @@
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem'>
               <div class=' media extraPadding'>
-                <img class='align-self-start mr-3' src='Goal1.jpg' alt='Goal1'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p>
                 <a href='Goals/Goal1.php' class='btn MoreInfo  '>
@@ -58,7 +58,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='https://group9agilewebapp.azurewebsites.net/Code/php/inc/Images/Goal3.jpg' alt='Goal3'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal3.jpg' alt='Goal3'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure healthy lives and promote well-being for all at all ages</p>
                 <a href='Goals/Goal3.php' class='btn MoreInfo  '>
@@ -73,7 +73,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal4.jpg' alt='Goal4'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal4.jpg' alt='Goal4'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</p>
                 <a href='Goals/Goal4.php' class='btn MoreInfo  '>
@@ -87,7 +87,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal5.jpg' alt='Goal5'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal5.jpg' alt='Goal5'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Achieve gender equality and empower all women and girls</p>
                 <a href='Goals/Goal5.php' class='btn MoreInfo  '>
@@ -101,7 +101,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal6.jpg' alt='Goal6'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal6.jpg' alt='Goal6'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure availability and sustainable management of water and sanitation for all</p>
                 <a href='Goals/Goal6.php' class='btn MoreInfo  '>
@@ -116,7 +116,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal7.jpg' alt='Goal7'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal7.jpg' alt='Goal7'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure access to affordable, reliable, sustainable and modern energy for all</p>
                 <a href='Goals/Goal7.php' class='btn MoreInfo  '>
@@ -130,7 +130,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal8.jpg' alt='Goal8'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal8.jpg' alt='Goal8'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all</p>
                 <a href='Goals/Goal8.php' class='btn MoreInfo  '>
@@ -144,7 +144,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal9.jpg' alt='Goal9'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal9.jpg' alt='Goal9'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation</p>
                 <a href='Goals/Goal9.php' class='btn MoreInfo  '>
@@ -159,7 +159,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal10.jpg' alt='Goal10'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal10.jpg' alt='Goal10'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Reduce inequality within and among countries</p>
                 <a href='Goals/Goal10.php' class='btn MoreInfo  '>
@@ -172,7 +172,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal11.jpg' alt='Goal11'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal11.jpg' alt='Goal11'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Make cities and human settlements inclusive, safe, resilient and sustainable</p>
                 <a href='Goals/Goal11.php' class='btn MoreInfo  '>
@@ -186,7 +186,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal12.jpg' alt='Goal12'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal12.jpg' alt='Goal12'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure sustainable consumption and production patterns</p>
                 <a href='Goals/Goal12.php' class='btn MoreInfo  '>
@@ -201,7 +201,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal13.jpg' alt='Goal13'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal13.jpg' alt='Goal13'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Take urgent action to combat climate change and its impacts</p>
                 <a href='Goals/Goal13.php' class='btn MoreInfo  '>
@@ -214,7 +214,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal14.jpg' alt='Goal14'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal14.jpg' alt='Goal14'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Conserve and sustainably use the oceans, seas and marine resources for sustainable development</p>
                 <a href='Goals/Goal14.php' class='btn MoreInfo  '>
@@ -229,7 +229,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal15.jpg' alt='Goal15'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal15.jpg' alt='Goal15'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss</p>
                 <a href='Goals/Goal15.php' class='btn MoreInfo  '>
@@ -244,7 +244,7 @@
             <div class='col d-flex align-items-flex '>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal16.jpg' alt='Goal16'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal16.jpg' alt='Goal16'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.</p>
                 <a href='Goals/Goal16.php' class='btn MoreInfo  '>
@@ -257,7 +257,7 @@
             <div class='col d-flex align-items-flex '>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal17.jpg' alt='Goal17'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal17.jpg' alt='Goal17'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Strengthen the means of implementation and revitalize the global partnership for sustainable development.</p>
                 <a href='Goals/Goal17.php' class='btn MoreInfo  '>
