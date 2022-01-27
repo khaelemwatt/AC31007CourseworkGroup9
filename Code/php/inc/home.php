@@ -18,7 +18,7 @@
       </div>
     </div>
     <nav class='navbar navbar-dark blackB '>
-      <img class='Logo' src='Code/php/inc/Images/SDGlogo.jpg' alt='SDG'>
+      <img class='Logo' src='SDGlogo.jpg' alt='SDG'>
       <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarToggleExternalContent' aria-controls='navbarToggleExternalContent' aria-expanded='false' aria-label='Toggle navigation'>
         <span class='navbar-toggler-icon'></span>
       </button>
@@ -30,7 +30,7 @@
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem'>
               <div class=' media extraPadding'>
-                <img class='align-self-start mr-3' src='https://group9agilewebapp.azurewebsites.net/Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
+                <img class='align-self-start mr-3' src='Goal1.jpg' alt='Goal1'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p>
                 <a href='Goals/Goal1.php' class='btn MoreInfo  '>
@@ -43,7 +43,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal2.jpg' alt='Goal2'>
+                <img class='align-self-start mr-3' src='../Code/php/inc/Images/Goal2.jpg' alt='Goal2'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>
                 <a href='Goals/Goal2.php' class='btn MoreInfo  '>
@@ -57,7 +57,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='/Code/Images/Goal3.jpg' alt='Goal3'>
+                <img class='align-self-start mr-3' src='Code/../Code/php/inc/Images/Goal3.jpg' alt='Goal3'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure healthy lives and promote well-being for all at all ages</p>
                 <a href='Goals/Goal3.php' class='btn MoreInfo  '>
