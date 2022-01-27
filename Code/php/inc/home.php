@@ -4,7 +4,7 @@
 <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
 <link href='https://group9agilewebapp.azurewebsites.net/Code/CSS/bootstrap.min.css' rel='stylesheet' type='text/css'>
-<link href='https://group9agilewebapp.azurewebsites.net/Code/CSS/Colours.css' rel='stylesheet' type='text/css'>
+<link href='/Code/CSS/Colours.css' rel='stylesheet' type='text/css'>
 <link href='https://group9agilewebapp.azurewebsites.net/Code/CSS/Goals.css' rel='stylesheet' type='text/css'>
 <title>UN Goals</title>
 
