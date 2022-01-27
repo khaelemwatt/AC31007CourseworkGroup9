@@ -9,7 +9,8 @@
 <title>UN Goals</title>
 
 </head>
-<?php echo "<body >
+
+<body >
   <div class='pos-f-t '>
     <div class='collapse' id='navbarToggleExternalContent'>
       <div class='blackB p-4'>
@@ -43,7 +44,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='../Code/php/inc/Images/Goal2.jpg' alt='Goal2'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>
                 <a href='Goals/Goal2.php' class='btn MoreInfo  '>
@@ -57,7 +58,7 @@
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
               <div class='media extraPadding'>
-                <img class='align-self-start mr-3' src='Code/../Code/php/inc/Images/Goal3.jpg' alt='Goal3'>
+                <img class='align-self-start mr-3' src='https://group9agilewebapp.azurewebsites.net/Code/php/inc/Images/Goal3.jpg' alt='Goal3'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Ensure healthy lives and promote well-being for all at all ages</p>
                 <a href='Goals/Goal3.php' class='btn MoreInfo  '>
@@ -267,8 +268,8 @@
               </div>
             </div>
           </div>
-</body>";
-?>
+</body>
+
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
 <script src='/Code/js/bootstrap.bundle.js' ></script>
 
