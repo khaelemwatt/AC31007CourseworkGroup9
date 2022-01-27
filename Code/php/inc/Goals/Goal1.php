@@ -6,7 +6,7 @@
 <link href="..\CSS\bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="..\CSS\Colours.css" rel="stylesheet" type="text/css">
 <link href="..\CSS\Goals.css" rel="stylesheet" type="text/css">
-<title>End Poverty</title>
+<title>End Poverty test</title>
 </head>
 <?php echo '
 <body class="">
