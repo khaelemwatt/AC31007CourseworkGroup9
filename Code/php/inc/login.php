@@ -81,14 +81,14 @@
             
             //Debug statements
             console($sql);
-            console($row['password']);
+            console("Expected Password hash: ".$row['password']);
 
             //
             //NEED TO DO OUR OWN HASHING (SHA256) FIRST BEFORE CHECKING PASSWORDS
             //
             $userPassword = hash('sha256', $password);
-            console($password);
-            console($userPassword);
+            console("Password entered: ".$password);
+            console("Password entered hash: ".$userPassword);
 
             //Check if the password provided matches the one in the database
             if($userPassword == $row['password']){
