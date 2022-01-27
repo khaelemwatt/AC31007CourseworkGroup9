@@ -86,11 +86,12 @@
             //
             //NEED TO DO OUR OWN HASHING (SHA256) FIRST BEFORE CHECKING PASSWORDS
             //
-            $userPassword = hash("sha256", $row['password']);
+            $userPassword = hash('sha256', $password);
+            console($password);
             console($userPassword);
 
             //Check if the password provided matches the one in the database
-            if($password == $row['password']){
+            if($userPassword == $row['password']){
                 //If it matches we need to check what user we are dealing with
                 if($row['level'] == 0){
                     //If user has level 0 they are super admin and can create other admins
