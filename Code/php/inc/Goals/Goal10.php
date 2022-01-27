@@ -8,7 +8,7 @@
     <link href="..\CSS\Goals.css" rel="stylesheet" type="text/css">
     <title>End Poverty</title>
 </head>
-
+<?php echo '
 <body class="">
 <div class="pos-f-t ">
     <div class="collapse" id="navbarToggleExternalContent">
@@ -27,7 +27,7 @@
     </nav>
 </div>
 <div class="container-fluid GoalTitle">
-    <H1 class="display-5 Viridian_Green">Goal 13: Climate Action<br><small class=" Viridian_Green">Take urgent action to combat climate change and its impacts.</small></H1>
+    <H1 class="display-5 Viridian_Green">Goal 10: Reduced Inequalities<br><small class=" Viridian_Green"> Reduce Inequality within and among Countries.</small></H1>
 </div>
 <div class="card  justify-content-center Rose_RedB HowToHelp" >
 
@@ -41,9 +41,8 @@
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">
         <h4 >Charity 1</h4>
         <hr class="my-4">
-        <p>Publish a Strategic Energy and Climate Change Action Plan, designed
-            to deliver sustained reduction in CO2 emissions, and undertake a
-            Climate Change Risk and Vulnerability Assessment.</p>
+        <p>Develop a single Equality Plan to address discrimination due to disability,
+            race, religion, gender, LGBT or age, and the duty of socio-economic inclusion.</p>
         <p class="lead">
             <a class="btn Viridian_Green btn-lg" href="#" role="button">Learn more</a>
         </p>
@@ -51,8 +50,8 @@
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">
         <h4 >Charity 2</h4>
         <hr class="my-4">
-        <p>Deliver a range of projects promoting low carbon fuels, including
-            expanding the % of electric vehicles in the city.</p>
+        <p>Develop a single gateway to provide early support to those with a health
+            condition or disability who are in work, off sick or recently unemployed.</p>
         <p class="lead">
             <a class="btn Viridian_Green btn-lg" href="#" role="button">Learn more</a>
         </p>
@@ -60,14 +59,14 @@
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">S
         <h4 >Charity 3</h4>
         <hr class="my-4">
-        <p>Implement the most appropriate option from the National Low Emission
-            Framework to improve air quality.</p>
+        <p>Deliver a Breakthrough Mentoring Programme for Looked After Children
+            and ensure all looked after children have access to advocacy support.</p>
         <p class="lead">
             <a class="btn Viridian_Green btn-lg" href="#" role="button">Learn more</a>
         </p>
     </div>
 </div>
-</body>
+</body>'?>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 
