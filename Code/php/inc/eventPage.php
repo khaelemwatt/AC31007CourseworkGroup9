@@ -78,9 +78,9 @@
         $infoSet = isset($_POST['eventInfo']) && !empty($_POST['eventInfo']);
         $DateSet = isset($_POST['eventDate']) && !empty($_POST['eventDate']);
         $LocationSet = isset($_POST['eventLocation']) && !empty($_POST['eventLoaction']);
-        $goalSet = isset($_GET['UNGoalID']) && !empty($_GET['UNGoalID']);
+        //$goalSet = isset($_GET['UNGoalID']) && !empty($_GET['UNGoalID']);
 
-        if($nameSet && $infoSet && $DateSet && $LocationSet && $goalSet)
+        if($nameSet && $infoSet && $DateSet && $LocationSet)
         {
 
             // Include the database connection
