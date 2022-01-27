@@ -30,7 +30,7 @@
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem'>
               <div class=' media extraPadding'>
-                <img class='align-self-start mr-3' src='https://group9agilewebapp.azurewebsites.net/Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
+                <img class='align-self-start mr-3' src='https://github.com/khaelemwatt/AC31007CourseworkGroup9/blob/main/Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p>
                 <a href='Goals/goal1.html' class='btn MoreInfo  '>
