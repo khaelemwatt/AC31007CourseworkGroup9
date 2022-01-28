@@ -30,10 +30,10 @@
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem'>
-              <div class=' media extraPadding'>
-                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
+              <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
+              <div class=' media extraPadding'>                
                 <div class='media-body'>
-                <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p>
+                <!-- <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p> -->
                 <a href='Goals/Goal1.php' class='btn MoreInfo  '>
                   More Information
                 </a>
