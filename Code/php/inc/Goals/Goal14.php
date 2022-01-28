@@ -19,7 +19,7 @@
     </div>
     <nav class='navbar navbar-dark blackB '>
           <a class='btn Viridian_Green btn-lg' href='https://group9agilewebapp.azurewebsites.net' role='button'>Return</a>
-          <img class='Logo' src='../Images/SDGlogo.jpg' alt='SDG'>
+          <img class='Logo' src='../Code/php/inc/Images/SDGlogo.jpg' alt='SDG'>
           <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarToggleExternalContent' aria-controls='navbarToggleExternalContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span class='navbar-toggler-icon'></span>
           </button>
