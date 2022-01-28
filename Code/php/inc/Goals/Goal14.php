@@ -57,7 +57,7 @@
             <a class='btn Viridian_Green btn-lg' href='https://www.dundeecity.gov.uk/' role='button'>Learn more</a>
         </p>
     </div>
-    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
+    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
         <h4 >Life Below Water</h4>
         <hr class='my-4'>
         <p>Maintain the Beach Award for Broughty Ferry beach, working in

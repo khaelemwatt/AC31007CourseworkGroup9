@@ -56,7 +56,7 @@
             <a class='btn Viridian_Green btn-lg' href='https://www.nationalgeographic.com/environment/article/benefits-of-green-buildings-human-health-economics-environment?awc=19533_1643379883_d2c19a675f32944ba0a2ea5ff05061c2' role='button'>Learn more</a>
         </p>
     </div>
-    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
+    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
         <h4 >Responsible Consumption And Production</h4>
         <hr class='my-4'>
         <p>Reduce energy consumption in Council buildings through measures

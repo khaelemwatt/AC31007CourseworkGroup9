@@ -56,7 +56,7 @@
             <a class='btn Viridian_Green btn-lg' href='https://www.gov.scot/policies/renewable-and-low-carbon-energy/low-carbon-transport/' role='button'>Learn more</a>
         </p>
     </div>
-    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
+    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
         <h4 >Climate Action</h4>
         <hr class='my-4'>
         <p>Implement the most appropriate option from the National Low Emission

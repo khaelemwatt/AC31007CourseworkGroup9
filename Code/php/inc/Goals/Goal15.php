@@ -56,7 +56,7 @@
             <a class='btn Viridian_Green btn-lg' href='https://www.dundeeandanguschamber.co.uk/news/article/4138/' role='button'>Learn more</a>
         </p>
     </div>
-    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
+    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
         <h4 >Life On Land</h4>
         <hr class='my-4'>
         <p>Complete the regeneration of Dundee Law and continue to invest in improvements to our green spaces in

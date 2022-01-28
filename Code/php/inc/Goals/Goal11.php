@@ -56,7 +56,7 @@
             <a class='btn Viridian_Green btn-lg' href='https://bumblebeeev.com/?utm_source=bing&utm_medium=electric%20car%20charging%20points&utm_campaign=1%20%7C%20United%20Kingdom&msclkid=923a2a374a0d12452ea34bc4ba11d91e' role='button'>Learn more</a>
         </p>
     </div>
-    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
+    <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
         <h4 >Sustainable Cities And Communities</h4>
         <hr class='my-4'>
         <p>Improve neighbourhood bus services, develop a financially sustainable

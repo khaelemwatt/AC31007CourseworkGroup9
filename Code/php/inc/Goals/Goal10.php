@@ -56,8 +56,7 @@
             <a class="btn Viridian_Green btn-lg" href="https://www.intowork.org.uk/" role="button">Learn more</a>
         </p>
     </div>
-    <div class="card Yellow_GreenB EID" style="max-width: 30%;">S
-        <h4 >Reduce Inequalities</h4>
+    <div class="card Yellow_GreenB EID" style="max-width: 30%;"><h4 >Reduce Inequalities</h4>
         <hr class="my-4">
         <p>Deliver a Breakthrough Mentoring Programme for Looked After Children
             and ensure all looked after children have access to advocacy support.</p>
