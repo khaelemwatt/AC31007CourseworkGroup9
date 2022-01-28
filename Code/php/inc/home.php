@@ -267,12 +267,12 @@
 
   var goal2 = document.getElementById("goal2");
   var goal2Card = document.getElementById("goal2card");
-  goal1.addEventListener("mouseover", function(event){
+  goal.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
     goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo'>More Information</a>";
   });
-  goal1.addEventListener("mouseleave", function(event){
+  goal2.addEventListener("mouseleave", function(event){
     goal2card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
   });
 
