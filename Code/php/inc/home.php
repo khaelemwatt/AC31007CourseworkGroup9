@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
-        <div class='col d-flex align-items-flex'>
+          <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem d-flex flex-column' id='goal4card'>
                 <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal5.jpg' alt='Goal5' id='goal5'>
               </div>
@@ -95,6 +95,7 @@
               </div>
             </div>
         </div>
+        <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
         <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem d-flex flex-column' id='goal13card'>
                 <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal13.jpg' alt='Goal13' id='goal13'>
@@ -111,6 +112,8 @@
               </div>
             </div>
         </div>
+        </div>
+        <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
         <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem d-flex flex-column' id='goal16card'>
                 <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal16.jpg' alt='Goal16' id='goal16'>
@@ -122,6 +125,7 @@
               </div>
             </div>
         </div>
+        </div>        
 </body>
 
 <script>
