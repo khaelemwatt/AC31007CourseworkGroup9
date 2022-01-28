@@ -66,38 +66,29 @@
 
         
         <?php
-
-        <table>
-        <thead>
-        <td>Name</td>
-        <td>Info</td>
-        <td>Date</td>
-        <td>Location</td>
-        </thead>
-        <tbody>
             
         $nameSet = isset($_POST['eventName']) && !empty($_POST['eventName']);
         $infoSet = isset($_POST['eventInfo']) && !empty($_POST['eventInfo']);
         $DateSet = isset($_POST['eventDate']) && !empty($_POST['eventDate']);
         $LocationSet = isset($_POST['eventLocation']) && !empty($_POST['eventLoaction']);
         //$goalSet = isset($_GET['UNGoalID']) && !empty($_GET['UNGoalID']);
-        echo $nameSet;
-        echo $eventName;
+        echo "one";
+        echo "two";
 
         if($nameSet && $infoSet && $DateSet && $LocationSet)
         {
 
             // Include the database connection
-            //include "dbconnect.php";
+            include "dbconnect.php";
             // Check that a form has been submitted
 
             $inputEventName = $_POST['eventName'];
             $inputEventInfo = $_POST['eventInfo'];
             $inputEventDate = $_POST['eventDate'];
             $inputEventLocation = $_POST['eventLocation'];
-            echo $inputEventName;
+            echo "three";
             $inputGoal = $_GET['UNGoalID'];
-            echo $inputGoal;
+            echo "four";
             $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.")");
             console($createStmt);
             $createStmt->execute();
@@ -127,8 +118,6 @@
            
         }  
 
-        </tbody>
-        </table>
     ?>
     
 
