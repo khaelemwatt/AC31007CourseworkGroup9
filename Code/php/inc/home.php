@@ -265,6 +265,7 @@
   goal1card.addEventListener("mouseleave", function(event){
     console.log("Mouse out");
     goal1card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
+    var goal1 = document.getElementById("goal1");
     goal1.addEventListener("mouseover", function(event){
       console.log("Mouse over");
       goal1card.innerHTML = "<h1>No Poverty</h1>";
@@ -284,6 +285,7 @@
   goal2card.addEventListener("mouseleave", function(event){
     console.log("Mouse out");
     goal2card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
+    var goal2 = document.getElementById("goal2");
     goal2.addEventListener("mouseover", function(event){
       console.log("Mouse over");
       goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
