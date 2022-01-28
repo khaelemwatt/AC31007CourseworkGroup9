@@ -276,6 +276,11 @@
   goal2card.addEventListener("mouseleave", function(event){
     console.log("Mouse out");
     goal2card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
+    goal2.addEventListener("mouseover", function(event){
+    console.log("Mouse over");
+    goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
+    goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
+  });
   });
 
   
