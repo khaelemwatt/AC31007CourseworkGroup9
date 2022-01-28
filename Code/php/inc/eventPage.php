@@ -82,7 +82,7 @@
             $inputEventDate = $_POST['eventDate'];
             $inputEventLocation = $_POST['eventLocation'];
             echo "three";
-            $inputGoal = $_GET['UNGoalID'];
+            $inputGoal = $_POST['UNGoalID'];
             
             $sql = "INSERT INTO `event` (Name, Info, Date, Location, goalID) VALUES ('";
             $sql = sprintf("'%s', '%s', %s, '%s', %s);", $sql, $inputEventName, $inputEventInfo, $inputEventDate, $inputEvenLocation, $inputGoal);
