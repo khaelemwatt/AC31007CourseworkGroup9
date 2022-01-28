@@ -79,6 +79,8 @@
         $DateSet = isset($_POST['eventDate']) && !empty($_POST['eventDate']);
         $LocationSet = isset($_POST['eventLocation']) && !empty($_POST['eventLoaction']);
         //$goalSet = isset($_GET['UNGoalID']) && !empty($_GET['UNGoalID']);
+        echo $nameSet;
+        echo $eventName;
 
         if($nameSet && $infoSet && $DateSet && $LocationSet)
         {
