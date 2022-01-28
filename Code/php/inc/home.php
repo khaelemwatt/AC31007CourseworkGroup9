@@ -34,16 +34,8 @@
               </div>
             </div>
             <div class='col d-flex align-items-flex'>
-              <div class='card GoalB GoalItem'>
-              <div class='media'>
-                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2'>
-                <div class='media-body'>
-                <p class='mt-0 Mikado_Yellow'>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>
-                <a href='Goals/Goal2.php' class='btn MoreInfo  '>
-                  More Information
-                </a>
-                </div>
-              </div>
+              <div class='card GoalB GoalItem' id='goal2card'>
+                <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>
               </div>
             </div>
             
@@ -266,12 +258,25 @@
   goal1.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal1card.innerHTML = "<h1>No Poverty</h1>";
-    goal1card.innerHTML = "<p>End Poverty in all its forms everywhere.</p>";
+    goal1card.innerHTML = "<p>End Poverty in all its forms everywhere</p>";
     goal1card.innerHTML += "<a href='Goals/Goal1.php' class='btn MoreInfo  '>More Information</a>";
   });
   goal1.addEventListener("mouseleave", function(event){
-    goal1.innerHTML = "<img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
+    goal1card.innerHTML = "<img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
   });
+
+  var goal2 = document.getElementById("goal2");
+  var goal2Card = document.getElementById("goal2card");
+  goal1.addEventListener("mouseover", function(event){
+    console.log("Mouse over");
+    goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
+    goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo'>More Information</a>";
+  });
+  goal1.addEventListener("mouseleave", function(event){
+    goal2card.innerHTML = "<img class='align-self-start mr-3' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
+  });
+
+  
 </script>
 
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
