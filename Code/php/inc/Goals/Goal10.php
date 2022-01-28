@@ -44,7 +44,7 @@
         <p>Develop a single Equality Plan to address discrimination due to disability,
             race, religion, gender, LGBT or age, and the duty of socio-economic inclusion.</p>
         <p class="lead">
-            <a class="btn Viridian_Green btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn Viridian_Green btn-lg" href="https://www.dundeecity.gov.uk/council-plan-2017-2022/how-do-we-plan-to-deliver" role="button">Learn more</a>
         </p>
     </div>
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">
@@ -53,7 +53,7 @@
         <p>Develop a single gateway to provide early support to those with a health
             condition or disability who are in work, off sick or recently unemployed.</p>
         <p class="lead">
-            <a class="btn Viridian_Green btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn Viridian_Green btn-lg" href="https://www.intowork.org.uk/" role="button">Learn more</a>
         </p>
     </div>
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">S
@@ -62,7 +62,7 @@
         <p>Deliver a Breakthrough Mentoring Programme for Looked After Children
             and ensure all looked after children have access to advocacy support.</p>
         <p class="lead">
-            <a class="btn Viridian_Green btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn Viridian_Green btn-lg" href="https://childlawadvice.org.uk/information-pages/education-for-looked-after-children/" role="button">Learn more</a>
         </p>
     </div>
 </div>
