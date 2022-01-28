@@ -61,7 +61,7 @@
                     <option value="16">Peace and Justice, Strong Insitutions</option>
                     <option value="17">Partnerships to Achieve Goal</option>
                 </select>
-                <button class="btn btn-secondary" type="submit" name="submit">Check</button>
+                <button class="btn btn-secondary" type="submit" name="submit" value="submit">Check</button>
         </form>
 
         
@@ -75,7 +75,7 @@
         echo "one";
         echo "two";
 
-        if($LocationSet)
+        if(isset($_POST['submit']))
         {
          // Include the database connection
             include "dbconnect.php";
