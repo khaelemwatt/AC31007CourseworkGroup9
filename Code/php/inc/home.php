@@ -30,7 +30,7 @@
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem h-100' id="goal1card">
-                <img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id="goal1">
+                <img style="object-fit: cover;" class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id="goal1">
               </div>
             </div>
             <div class='col d-flex align-items-flex'>
@@ -268,6 +268,9 @@
     goal1card.innerHTML = "<h1>No Poverty</h1>";
     goal1card.innerHTML = "<p>End Poverty in all its forms everywhere.</p>";
     goal1card.innerHTML += "<a href='Goals/Goal1.php' class='btn MoreInfo  '>More Information</a>";
+  });
+  goal1.addEventListener("mouseleave", function(event){
+    goal1.innerHTML = "<img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
   });
 </script>
 
