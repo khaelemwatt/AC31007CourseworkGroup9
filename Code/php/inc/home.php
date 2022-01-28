@@ -31,11 +31,6 @@
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem h-100' id="goal1card">
                 <img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id="goal1">
-                <div class=' media extraPadding'>                
-                  <div class='media-body'>
-                  <!-- <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p> -->
-                  </div>
-                </div>
               </div>
             </div>
             <div class='col d-flex align-items-flex'>
