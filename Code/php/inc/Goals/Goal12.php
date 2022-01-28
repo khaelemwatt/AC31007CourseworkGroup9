@@ -39,7 +39,7 @@
 </div>
 <div class='row justify-content-center '>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Responsible Consumption And Production</h4>
         <hr class='my-4'>
         <p>Complete the roll-out of a new household recycling service which meets
             the Charter for Recycling and Code of Practice.</p>
@@ -48,7 +48,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Responsible Consumption And Production</h4>
         <hr class='my-4'>
         <p>Rationalise use of the Council's buildings, land and vehicles to achieve
             efficiencies and minimise our impact on the environment.</p>
@@ -57,7 +57,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
-        <h4 >Charity 3</h4>
+        <h4 >Responsible Consumption And Production</h4>
         <hr class='my-4'>
         <p>Reduce energy consumption in Council buildings through measures
             such as SMART metering, Building Energy Management systems and
