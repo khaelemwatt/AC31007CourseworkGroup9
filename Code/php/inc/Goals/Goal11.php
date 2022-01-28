@@ -44,7 +44,7 @@
         <hr class='my-4'>
         <p>Build 1,000 new affordable homes over 5 years.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.dundeecity.gov.uk/sustainable-dundee' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -53,7 +53,7 @@
         <p>Continue to develop the city's electric vehicle charging infrastructure and
             the Council's own fleet of electric vehicles.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://bumblebeeev.com/?utm_source=bing&utm_medium=electric%20car%20charging%20points&utm_campaign=1%20%7C%20United%20Kingdom&msclkid=923a2a374a0d12452ea34bc4ba11d91e' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
@@ -63,7 +63,7 @@
             model of accessible transport and implement a range of 'active travel
             projects which encourage people to walk, cycle or use public transport.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.gov.scot/publications/fairer-greener-scotland-programme-government-2021-22/pages/8/' role='button'>Learn more</a>
         </p>
     </div>
 </div>
