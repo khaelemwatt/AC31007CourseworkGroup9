@@ -44,6 +44,7 @@ function goal2Hover(){
     var goal3 = document.getElementById("goal3");
     var goal3Card = document.getElementById("goal3card");
     goal3.addEventListener("mouseover", goal3Hover());
+    goal3card.addEventListener("mouseleave", goal3Leave());
   }
   function goal3Leave(){
     console.log("Mouse out");
@@ -61,6 +62,7 @@ function goal2Hover(){
     var goal4 = document.getElementById("goal4");
     var goal4Card = document.getElementById("goal4card");
     goal4.addEventListener("mouseover", goal4Hover());
+    goal4card.addEventListener("mouseleave", goal4Leave());
   }
   function goal4Leave(){
     console.log("Mouse out");
