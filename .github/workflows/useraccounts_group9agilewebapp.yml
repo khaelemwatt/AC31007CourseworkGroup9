@@ -6,7 +6,7 @@ name: Build and deploy PHP app to Azure Web App - Group9AgileWebApp
 on:
   push:
     branches:
-      - main
+      - userAccounts
   workflow_dispatch:
 
 jobs:
@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'Group9AgileWebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B0104819B8A441FE8BB32EE59135D900 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_617545F6C0524622A4C91E733DE0F83F }}
           package: .

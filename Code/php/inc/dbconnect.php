@@ -32,3 +32,8 @@ if (!$db) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
+
+//Function to enable easier debugging statements to be used in php
+function console($data){    
+    echo '<script>console.log("Debug: '.$data.'");</script>';
+}
