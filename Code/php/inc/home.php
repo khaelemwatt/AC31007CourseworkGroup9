@@ -73,7 +73,7 @@
               </div>
             </div>
             <div class='col d-flex align-items-flex'>
-              <div class='card GoalB GoalItem d-flex flex-column' id='goal9ard'>
+              <div class='card GoalB GoalItem d-flex flex-column' id='goal9card'>
                 <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal9.jpg' alt='Goal9' id='goal9'>
               </div>
             </div>
