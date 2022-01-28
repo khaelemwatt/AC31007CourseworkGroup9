@@ -29,7 +29,7 @@
     <H1 class='display-4 GoalTitle'>The 17 Goals of The UN</H1>
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
             <div class='col d-flex align-items-flex' >
-              <div class='card GoalB GoalItem'>
+              <div class='card GoalB GoalItem' id="goal1">
               <img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
               <div class=' media extraPadding'>                
                 <div class='media-body'>
@@ -269,6 +269,13 @@
             </div>
           </div>
 </body>
+
+<script>
+  var goal1 = document.getElementsById("goal1");
+  goal1.addEventListener("mouseenter", function(event){
+    goal1.innerHtml = "<h1>No Poverty</h1>";
+  });
+</script>
 
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
 <script src='/Code/js/bootstrap.bundle.js' ></script>
