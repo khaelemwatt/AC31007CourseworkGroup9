@@ -217,9 +217,7 @@
                 <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal14.jpg' alt='Goal14'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>Conserve and sustainably use the oceans, seas and marine resources for sustainable development</p>
-                <a href='Goals/Goal14.php' class='btn MoreInfo  '>
-                  More Information
-                </a>
+                
                 </div>
               </div>
               </div>
@@ -274,6 +272,7 @@
   var goal1 = document.getElementsById("goal1");
   goal1.addEventListener("mouseenter", function(event){
     goal1.innerHtml = "<h1>No Poverty</h1>";
+    goal1.innerHtml += "<a href='Goals/Goal14.php' class='btn MoreInfo  '>More Information</a>";
   });
 </script>
 
