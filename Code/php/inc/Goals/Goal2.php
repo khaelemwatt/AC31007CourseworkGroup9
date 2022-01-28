@@ -81,7 +81,7 @@
     <nav aria-label="Page navigation example">
       <ul class="pagination pagination-lg">
         <li class="page-item"><a class="page-link Viridian_Green" href="Goal1.php">Previous</a></li>
-        <li class="page-item"><a class="page-link Viridian_Green href="Goal1.php">1</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal1.php">1</a></li>
         <li class="page-item"><span class="page-link disabled CurrentGoal">2</span></li>
         <li class="page-item"><a class="page-link Viridian_Green" href="Goal3.php">3</a></li>
         <li class="page-item"><a class="page-link Viridian_Green" href="Goal4.php">4</a></li>

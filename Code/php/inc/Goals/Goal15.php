@@ -70,7 +70,7 @@
     <nav aria-label='Page navigation example'>
       <ul class='pagination pagination-lg'>
         <li class='page-item'><a class='page-link Viridian_Green' href='Goal14.php'>Previous</a></li>
-        <li class='page-item'><a class='page-link Viridian_Green href='Goal13.php'>13</a></li>
+        <li class='page-item'><a class='page-link Viridian_Green' href='Goal13.php'>13</a></li>
         <li class='page-item'><a class='page-link Viridian_Green' href='Goal14.php'>14</a></li>
 	<li class='page-item'><span class='page-link disabled CurrentGoal'>15</span></li>
         <li class='page-item'><a class='page-link Viridian_Green' href='Goal16.php'>16</a></li>
