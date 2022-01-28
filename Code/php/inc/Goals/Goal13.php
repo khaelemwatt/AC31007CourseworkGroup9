@@ -38,7 +38,7 @@
 </div>
 <div class='row justify-content-center '>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Climate Action</h4>
         <hr class='my-4'>
         <p>Publish a Strategic Energy and Climate Change Action Plan, designed
             to deliver sustained reduction in CO2 emissions, and undertake a
@@ -48,7 +48,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Climate Action</h4>
         <hr class='my-4'>
         <p>Deliver a range of projects promoting low carbon fuels, including
             expanding the % of electric vehicles in the city.</p>
@@ -57,7 +57,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
-        <h4 >Charity 3</h4>
+        <h4 >Climate Action</h4>
         <hr class='my-4'>
         <p>Implement the most appropriate option from the National Low Emission
             Framework to improve air quality.</p>
