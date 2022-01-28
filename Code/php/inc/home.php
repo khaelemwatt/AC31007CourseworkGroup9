@@ -283,7 +283,7 @@
   });
 
   var goal9 = document.getElementById("goal9");
-  var goal9Card = document.getElementById("goal9card");
+  var goal9card = document.getElementById("goal9card");
   goal9.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal9card.innerHTML = "<p>Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation</p>";
@@ -302,7 +302,7 @@
   });
   
   var goal10 = document.getElementById("goal10");
-  var goal10Card = document.getElementById("goal10card");
+  var goal10card = document.getElementById("goal10card");
   goal10.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal10card.innerHTML = "<p>Reduce inequality within and among countries</p>";
@@ -321,7 +321,7 @@
   });
   
   var goal11 = document.getElementById("goal11");
-  var goal11Card = document.getElementById("goal11card");
+  var goal11card = document.getElementById("goal11card");
   goal11.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal11card.innerHTML = "<p>Make cities and human settlements inclusive, safe, resilient and sustainable</p>";
@@ -340,7 +340,7 @@
   });
 
   var goal12 = document.getElementById("goal12");
-  var goal12Card = document.getElementById("goal12card");
+  var goal12card = document.getElementById("goal12card");
   goal12.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal12card.innerHTML = "<p>Ensure sustainable consumption and production patterns</p>";
@@ -359,7 +359,7 @@
   });
   
   var goal13 = document.getElementById("goal13");
-  var goal13Card = document.getElementById("goal13card");
+  var goal13card = document.getElementById("goal13card");
   goal13.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal13card.innerHTML = "<p>Take urgent action to combat climate change and its impacts</p>";
@@ -378,7 +378,7 @@
   });
   
   var goal14 = document.getElementById("goal14");
-  var goal14Card = document.getElementById("goal14card");
+  var goal14card = document.getElementById("goal14card");
   goal14.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal14card.innerHTML = "<p>Conserve and sustainably use the oceans, seas and marine resources for sustainable development</p>";
@@ -397,7 +397,7 @@
   });
 
   var goal15 = document.getElementById("goal15");
-  var goal15Card = document.getElementById("goal15card");
+  var goal15card = document.getElementById("goal15card");
   goal15.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal15card.innerHTML = "<p>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss</p>";
@@ -416,7 +416,7 @@
   });
   
   var goal16 = document.getElementById("goal16");
-  var goal16Card = document.getElementById("goal16card");
+  var goal16card = document.getElementById("goal16card");
   goal16.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal16card.innerHTML = "<p>Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels</p>";
@@ -435,7 +435,7 @@
   });
   
   var goal17 = document.getElementById("goal17");
-  var goal17Card = document.getElementById("goal17card");
+  var goal17card = document.getElementById("goal17card");
   goal17.addEventListener("mouseover", function(event){
     console.log("Mouse over");
     goal17card.innerHTML = "<p>Strengthen the means of implementation and revitalize the global partnership for sustainable development</p>";
