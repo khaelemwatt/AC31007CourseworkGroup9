@@ -22,16 +22,12 @@
             <input class="form-control mr-sm-2" type="search" name="eventInfo" placeholder="" aria-label="Search">
             <br>
             <br>
-            </div>
-            <div class="col">
                 <u><b>Please Input the date of the event </b></u>
                 <br>
                 <br>
                 <input class="form-control mr-sm-2" type="search" name="eventDate" placeholder="" aria-label="Search">
                 <br>
                 <br>
-            </div>
-            <div class="col">
                 <u><b>Please Input the Location of the event</b></u>
                 <br>
                 <br>
@@ -87,8 +83,12 @@
             $inputEventLocation = $_POST['eventLocation'];
             echo "three";
             $inputGoal = $_GET['UNGoalID'];
+            
+            $sql = "INSERT INTO `event` (Name, Info, Date, Location, goalID) VALUES ('";
+            $sql = sprintf("'%s', '%s', %s, '%s', %s);", $sql, $inputEventName, $inputEventInfo, $inputEventDate, $inputEvenLocation, $inputGoal);
+            console($sql);
             echo "four";
-            $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.")");
+            $createStmt = $mysql->prepare($sql);
             echo "five";
             console($createStmt);
             $createStmt->execute();
