@@ -267,11 +267,12 @@
 
 <script>
   var goal1 = document.getElementById("goal1");
+  var goal1Card = document.getElementById("goal1card");
   goal1.addEventListener("mouseover", function(event){
     console.log("Mouse over");
-    goal1.innerHTML = "<h1>No Poverty</h1>";
-    goal1.innerHTML = "<p>End Poverty in all its forms everywhere.</p>";
-    goal1.innerHTML += "<a href='Goals/Goal14.php' class='btn MoreInfo  '>More Information</a>";
+    goal1card.innerHTML = "<h1>No Poverty</h1>";
+    goal1card.innerHTML = "<p>End Poverty in all its forms everywhere.</p>";
+    goal1card.innerHTML += "<a href='Goals/Goal14.php' class='btn MoreInfo  '>More Information</a>";
   });
 </script>
 
