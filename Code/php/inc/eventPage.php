@@ -87,31 +87,33 @@
             include "dbconnect.php";
             // Check that a form has been submitted
 
-                $inputEventName = $_POST['eventName'];
-                $inputEventInfo = $_POST['eventInfo'];
-                $inputEventDate = $_POST['eventDate'];
-                $inputEventLocation = $_POST['eventLocation'];
-                $inputGoal = $_GET['UNGoalID'];
-                $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.");");
-                console($createStmt);
-                $createStmt->execute();
-                $result = $createStmt->fetchAll();
-                if($result == false){
-                    echo "Event creation failed please try again";
-                    echo $inputEventName;
-                    echo $inputEventInfo;
-                    echo $inputEventDate;
-                    echo $inputEventLocation;
-                    echo $inputGoal;
-                }else{
-                    $readStmt = $mysql->prepare("SELECT * 'event'");
-                    $readStmt->execute();
-                    echo $inputEventName;
-                    echo $inputEventInfo;
-                    echo $inputEventDate;
-                    echo $inputEventLocation;
-                    echo $inputGoal;
-                }
+            $inputEventName = $_POST['eventName'];
+            $inputEventInfo = $_POST['eventInfo'];
+            $inputEventDate = $_POST['eventDate'];
+            $inputEventLocation = $_POST['eventLocation'];
+            echo $inputEventName;
+            $inputGoal = $_GET['UNGoalID'];
+            echo $inputGoal;
+            $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.")");
+            console($createStmt);
+            $createStmt->execute();
+            $result = $createStmt->fetchAll();
+            if($result == false){
+                echo "Event creation failed please try again";
+                echo $inputEventName;
+                echo $inputEventInfo;
+                echo $inputEventDate;
+                echo $inputEventLocation;
+                echo $inputGoal;
+            }else{
+                $readStmt = $mysql->prepare("SELECT * 'event'");
+                $readStmt->execute();
+                echo $inputEventName;
+                echo $inputEventInfo;
+                echo $inputEventDate;
+                echo $inputEventLocation;
+                echo $inputGoal;
+            }
             foreach($result as $row) {
                 echo "<td>".$row['UN Sustainable Development Goal Event']."</td>";
                 echo "<td>".$row['About the Event']."</td>";
