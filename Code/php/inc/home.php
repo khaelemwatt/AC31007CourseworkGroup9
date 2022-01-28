@@ -253,23 +253,6 @@
 </body>
 
 <script>
-
-  var goal2 = document.getElementById("goal2");
-  var goal2Card = document.getElementById("goal2card");
-  goal2.addEventListener("mouseover", function(event){
-    console.log("Mouse over");
-    goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
-    goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
-  });
-
-  goal2card.addEventListener("mouseleave", function(event){
-    
-      console.log("Mouse over");
-      goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
-      goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
-    });
-  });
-
   
   function goal1Hover(){
     cosnole.log("mouse over");
