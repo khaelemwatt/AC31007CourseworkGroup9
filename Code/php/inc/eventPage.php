@@ -75,10 +75,7 @@
         echo "one";
         echo "two";
 
-        if($nameSet && $infoSet && $DateSet && $LocationSet)
-        {
-
-            // Include the database connection
+         // Include the database connection
             include "dbconnect.php";
             // Check that a form has been submitted
 
@@ -115,8 +112,6 @@
                 echo "<td>".$row['Date of the Event']."</td>";
                 echo "<td>".$row['Location of the Event']."</td></tr>";
             }
-           
-        }  
 
     ?>
     
