@@ -36,7 +36,7 @@ $rules = array(
     'createAdmin' => "/createAdmin",
     'eventPage' => "/api/createEvent",
     'logout' => "/logout",
-    'editEvent'=> "/api/editEvent",
+    'editEvent' => "/api/editEvent",
     //
     // Home Page
     //
