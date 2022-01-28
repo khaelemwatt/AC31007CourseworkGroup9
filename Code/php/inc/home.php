@@ -30,7 +30,7 @@
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem'>
-              <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
+              <img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
               <div class=' media extraPadding'>                
                 <div class='media-body'>
                 <!-- <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p> -->
