@@ -252,12 +252,46 @@
           </div>
 </body>
 
-<script src="Code/js/home.js"></script>
 <script>
-  addgoal1Hover();
-  addgoal2Hover();
-  addgoal3Hover();
-  addgoal4Hover();
+  var goal1 = document.getElementById("goal1");
+  var goal1Card = document.getElementById("goal1card");
+  goal1.addEventListener("mouseover", function(event){
+    console.log("Mouse over");
+    goal1card.innerHTML = "<h1>No Poverty</h1>";
+    goal1card.innerHTML = "<p>End Poverty in all its forms everywhere</p>";
+    goal1card.innerHTML += "<a href='Goals/Goal1.php' class='btn MoreInfo mt-auto'>More Information</a>";
+  });
+
+  goal1card.addEventListener("mouseleave", function(event){
+    console.log("Mouse out");
+    goal1card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
+    goal1.addEventListener("mouseover", function(event){
+      console.log("Mouse over");
+      goal1card.innerHTML = "<h1>No Poverty</h1>";
+      goal1card.innerHTML = "<p>End Poverty in all its forms everywhere</p>";
+      goal1card.innerHTML += "<a href='Goals/Goal1.php' class='btn MoreInfo mt-auto'>More Information</a>";
+    });
+  });
+
+  var goal2 = document.getElementById("goal2");
+  var goal2Card = document.getElementById("goal2card");
+  goal2.addEventListener("mouseover", function(event){
+    console.log("Mouse over");
+    goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
+    goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
+  });
+  
+  goal2card.addEventListener("mouseleave", function(event){
+    console.log("Mouse out");
+    goal2card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
+    goal2.addEventListener("mouseover", function(event){
+      console.log("Mouse over");
+      goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
+      goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
+    });
+  });
+
+  
 </script>
 
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
