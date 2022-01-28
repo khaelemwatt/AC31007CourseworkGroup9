@@ -40,7 +40,7 @@
 </div>
 <div class='row justify-content-center '>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Life On Land</h4>
         <hr class='my-4'>
         <p>Prepare a new Bio-diversity Duty Plan, with actions species and people.</p>
         <p class='lead'>
@@ -48,7 +48,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Life On Land</h4>
         <hr class='my-4'>
         <p>Encourage citizens to take personal and shared responsibility for the environment through the 'Take Pride
             In Your City' campaign.</p>
@@ -57,7 +57,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
-        <h4 >Charity 3</h4>
+        <h4 >Life On Land</h4>
         <hr class='my-4'>
         <p>Complete the regeneration of Dundee Law and continue to invest in improvements to our green spaces in
             partnership with conimunity groups.</p>
