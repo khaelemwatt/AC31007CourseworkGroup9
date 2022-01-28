@@ -29,7 +29,7 @@
     <H1 class='display-4 GoalTitle'>The 17 Goals of The UN</H1>
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
             <div class='col d-flex align-items-flex' >
-              <div class='card GoalB GoalItem h-100' id="goal1card">
+              <div class='card GoalB GoalItem' id="goal1card">
                 <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id="goal1">
               </div>
             </div>
