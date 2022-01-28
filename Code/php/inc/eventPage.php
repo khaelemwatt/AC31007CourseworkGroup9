@@ -87,8 +87,12 @@
             $inputEventLocation = $_POST['eventLocation'];
             echo "three";
             $inputGoal = $_GET['UNGoalID'];
+            
+            $sql = "INSERT INTO `event` (Name, Info, Date, Location, goalID) VALUES ('";
+            $sql = sprintf("'%s', '%s', %s, '%s', %s);", $sql, $inputEventName, $inputEventInfo, $inputEventDate, $inputEvenLocation, $inputGoal);
+            console($sql);
             echo "four";
-            $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.")");
+            $createStmt = $mysql->prepare($sql);
             echo "five";
             console($createStmt);
             $createStmt->execute();
