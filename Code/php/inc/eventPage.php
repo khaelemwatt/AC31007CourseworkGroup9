@@ -89,6 +89,7 @@
             $inputGoal = $_GET['UNGoalID'];
             echo "four";
             $createStmt = $mysql->prepare("INSERT INTO 'event' ('Name', 'Info', 'Date', 'Location', 'goalID') VALUES (".$inputEventName.", ".$inputEventInfo.", ".$inputEventDate.", ".$inputEventLocation.", ".$inputGoal.")");
+            echo "five";
             console($createStmt);
             $createStmt->execute();
             $result = $createStmt->fetchAll();
