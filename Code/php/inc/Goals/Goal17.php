@@ -38,7 +38,7 @@
 </div>
 <div class='row justify-content-center'>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Partnerships for the Goals</h4>
         <hr class='my-4'>
         <p> Recognise Dundee Third Sector Interface - Which supports social enterprises and the voluntary sector -
             as an equal partner in the delivery of the City Plan.</p>
@@ -47,7 +47,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Partnerships for the Goals</h4>
         <hr class='my-4'>
         <p> Delivery on the follow up to Dundee Fairness Commission, with people who have personal experience of
             povetry working with senior civic and business leaders to make proposals around key areas of anti-poverty
@@ -57,7 +57,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 3</h4>
+        <h4 >Partnerships for the Goals</h4>
         <hr class='my-4'>
         <p> Work with partners in the Tay Cities Region Joint Committee to manage the principal levers of economic
             growth across local goverment boundaries within Tayside.</p>
