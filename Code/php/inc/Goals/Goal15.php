@@ -44,7 +44,7 @@
         <hr class='my-4'>
         <p>Prepare a new Bio-diversity Duty Plan, with actions species and people.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.gov.uk/guidance/biodiversity-duty-public-authority-duty-to-have-regard-to-conserving-biodiversity' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -53,7 +53,7 @@
         <p>Encourage citizens to take personal and shared responsibility for the environment through the 'Take Pride
             In Your City' campaign.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.dundeeandanguschamber.co.uk/news/article/4138/' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
@@ -62,7 +62,7 @@
         <p>Complete the regeneration of Dundee Law and continue to invest in improvements to our green spaces in
             partnership with conimunity groups.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.alliance-scotland.org.uk/blog/area_of_work/policy/' role='button'>Learn more</a>
         </p>
     </div>
 </div>
