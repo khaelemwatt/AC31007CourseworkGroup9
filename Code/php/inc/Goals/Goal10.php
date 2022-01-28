@@ -39,7 +39,7 @@
 </div>
 <div class="row justify-content-center ">
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">
-        <h4 >Charity 1</h4>
+        <h4 >Reduce Inequalities</h4>
         <hr class="my-4">
         <p>Develop a single Equality Plan to address discrimination due to disability,
             race, religion, gender, LGBT or age, and the duty of socio-economic inclusion.</p>
@@ -48,7 +48,7 @@
         </p>
     </div>
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">
-        <h4 >Charity 2</h4>
+        <h4 >Reduce Inequalities</h4>
         <hr class="my-4">
         <p>Develop a single gateway to provide early support to those with a health
             condition or disability who are in work, off sick or recently unemployed.</p>
@@ -57,7 +57,7 @@
         </p>
     </div>
     <div class="card Yellow_GreenB EID" style="max-width: 30%;">S
-        <h4 >Charity 3</h4>
+        <h4 >Reduce Inequalities</h4>
         <hr class="my-4">
         <p>Deliver a Breakthrough Mentoring Programme for Looked After Children
             and ensure all looked after children have access to advocacy support.</p>
