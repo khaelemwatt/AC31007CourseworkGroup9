@@ -191,7 +191,7 @@
   var goal4Card = document.getElementById("goal4card");
   goal4.addEventListener("mouseover", function(event){
     console.log("Mouse over");
-    goal4card.innerHTML = "<p>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</p>";
+    goal4card.innerHTML = "<p>End Poverty in all its forms everywhere</p>";
     goal4card.innerHTML += "<a href='Goals/Goal4.php' class='btn MoreInfo mt-auto'>More Information</a>";
   });
 
@@ -201,7 +201,7 @@
     var goal4 = document.getElementById("goal4");
     goal4.addEventListener("mouseover", function(event){
       console.log("Mouse over");
-      goal4card.innerHTML = "<p>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</p>";
+      goal4card.innerHTML = "<p>End Poverty in all its forms everywhere</p>";
       goal4card.innerHTML += "<a href='Goals/Goal4.php' class='btn MoreInfo mt-auto'>More Information</a>";
     });
   });
