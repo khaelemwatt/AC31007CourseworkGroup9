@@ -73,6 +73,11 @@ function editEvent(eventId)
                 <option>17</option>
             </select>
         </div>
+        <div class="form-row text-center"> 
+            <button onclick="location.reload();" class="btn btn-secondary m-3">Back</button>
+            <button class="btn btn-danger m-3">Delete</button>
+            <button type="submit" class="btn btn-primary m-3">Save Changes</button>
+        </div>
     </form>
     `
 }
