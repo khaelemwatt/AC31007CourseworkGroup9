@@ -40,7 +40,7 @@
 </div>
 <div class='row justify-content-center '>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Life Below Water</h4>
         <hr class='my-4'>
         <p>Contribute to maintaining the water quality of the River Tay, which
             supports a wide range of internationally recognised habitats.</p>
@@ -49,7 +49,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Life Below Water</h4>
         <hr class='my-4'>
         <p>Continue to maintain the wildlife corridor of the Dighty Bum, which
             promotes habitat continuity and supports conservation.</p>
@@ -58,7 +58,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
-        <h4 >Charity 3</h4>
+        <h4 >Life Below Water</h4>
         <hr class='my-4'>
         <p>Maintain the Beach Award for Broughty Ferry beach, working in
             partnership with the Community Council, SEPA, Port Authority, Scottish
