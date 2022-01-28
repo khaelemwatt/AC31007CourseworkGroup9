@@ -84,7 +84,7 @@
         {
 
             // Include the database connection
-            include "dbconnect.php";
+            //include "dbconnect.php";
             // Check that a form has been submitted
 
             $inputEventName = $_POST['eventName'];
