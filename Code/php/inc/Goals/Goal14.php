@@ -45,7 +45,7 @@
         <p>Contribute to maintaining the water quality of the River Tay, which
             supports a wide range of internationally recognised habitats.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://emps.exeter.ac.uk/engineering/research/cws/research/water-distribution/' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -54,7 +54,7 @@
         <p>Continue to maintain the wildlife corridor of the Dighty Bum, which
             promotes habitat continuity and supports conservation.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.dundeecity.gov.uk/' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
@@ -64,7 +64,7 @@
             partnership with the Community Council, SEPA, Port Authority, Scottish
             Water and Scottish Natural Heritage to manage the beach.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.dundeecity.gov.uk/' role='button'>Learn more</a>
         </p>
     </div>
 </div>
