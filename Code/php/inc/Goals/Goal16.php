@@ -9,7 +9,7 @@
     <title>Peace</title>
 </head>
 <?php echo "
-<body class='blackB'>
+<body class=''>
 <nav class='navbar navbar-dark blackB '>
           <a class='btn Viridian_Green btn-lg' href='https://group9agilewebapp.azurewebsites.net' role='button'>Return</a>
           <img class='Logo' src='../Code/php/inc/Images/SDGlogo.jpg' alt='SDG'>
