@@ -262,6 +262,7 @@
     goal1card.innerHTML += "<a href='Goals/Goal1.php' class='btn MoreInfo mt-auto'>More Information</a>";
   });
   goal1.addEventListener("mouseout", function(event){
+    console.log("Mouse out");
     goal1card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
   });
 
@@ -273,6 +274,7 @@
     goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
   });
   goal2.addEventListener("mouseout", function(event){
+    console.log("Mouse out");
     goal2card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
   });
 
