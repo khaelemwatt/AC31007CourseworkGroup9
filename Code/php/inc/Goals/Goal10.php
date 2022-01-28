@@ -66,6 +66,19 @@
         </p>
     </div>
 </div>
+<div class=" row  justify-content-center">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal9.php">Previous</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green href="Goal8.php">8</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal9.php">9</a></li>
+	<li class="page-item"><span class="page-link disabled CurrentGoal">10</span></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal11.php">11</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal12.php">12</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal11.php">Next</a></li>
+      </ul>
+    </nav>
+    </div>
 </body>'?>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="../Code/js/bootstrap.bundle.min.js"></script>

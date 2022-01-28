@@ -62,6 +62,19 @@
         </p>
     </div>
 </div>
+<div class=' row  justify-content-center'>
+    <nav aria-label='Page navigation example'>
+      <ul class='pagination pagination-lg'>
+        <li class='page-item'><a class='page-link Viridian_Green' href='Goal15.php'>Previous</a></li>
+	<li class='page-item'><a class='page-link Viridian_Green href='Goal13.php'>13</a></li>
+        <li class='page-item'><a class='page-link Viridian_Green href='Goal14.php'>14</a></li>
+        <li class='page-item'><a class='page-link Viridian_Green' href='Goal15.php'>15</a></li>
+	<li class='page-item'><span class='page-link disabled CurrentGoal'>16</span></li>
+        <li class='page-item'><a class='page-link Viridian_Green' href='Goal17.php'>17</a></li>
+        <li class='page-item'><a class='page-link Viridian_Green' href='Goal17.php'>Next</a></li>
+      </ul>
+    </nav>
+    </div>
 </body>"?>
 
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>

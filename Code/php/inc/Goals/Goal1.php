@@ -19,7 +19,7 @@
         </div>
         <nav class="navbar navbar-dark blackB ">
           <a class="btn Viridian_Green btn-lg" href="https://group9agilewebapp.azurewebsites.net" role="button">Return</a>
-          <img class="Logo" src="../Code/php/inc/Images/SDGlogo.jpg" alt="SDG">
+          <img class="Logo" src="https://group9agilewebapp.azurewebsites.net//Code/php/inc/Images/SDGlogo.jpg" alt="SDG">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,7 +38,7 @@
     <div class="container-fluid justify-content-center GoalTitle" >
         <H3 class="display-5 Viridian_Green">Local Charities</H1>
     </div>
-      <div class="row justify-content-center ">
+      <div class="row justify-content-center GoalTitle ">
         <div class="card Yellow_GreenB EID" style="max-width: 30%;">
             <h4 >Dundee Bairns</h4>
             <hr class="my-4">
@@ -64,8 +64,21 @@
             </p>
           </div>
     </div>
-</body>
-'?>
+    <div class=" row  justify-content-center">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><span class="page-link disabled Viridian_Green">Previous</span></li>
+        <li class="page-item"><span class="page-link disabled CurrentGoal" href="">1</span></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal2.php">2</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal3.php">3</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal4.php">4</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal5.php">5</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal2.php">Next</a></li>
+      </ul>
+    </nav>
+    </div>
+</body>'?>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="../Code/js/bootstrap.bundle.min.js"></script>
 

@@ -40,3 +40,11 @@
     width:30%;
     height:5%;
 }
+.CurrentGoal{
+    background-color: #049A9B;
+    color:#93C718;
+}
+.CurrentGoal:hover{
+    background-color: #049A9B;
+    color:#93C718;
+}
