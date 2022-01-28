@@ -36,7 +36,7 @@
 </div>
 <div class='row justify-content-center'>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Peace Justice and Strong Institutions</h4>
         <hr class='my-4'>
         <p>Introduce a new Community infrastructure Fund, using the 'Dundee Decides' participatory budgeting process to give
             local people a say in spending on local infracture.</p>
@@ -45,7 +45,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Peace Justice and Strong Institutions</h4>
         <hr class='my-4'>
         <p> Deliver a more interated health and social care service though Dundee Health and Social Care Partnership.</p>
         <p class='lead'>
@@ -53,7 +53,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 3</h4>
+        <h4 >Peace Justice and Strong Institutions</h4>
         <hr class='my-4'>
         <p>Support Dundee's Protecting People Framework, which co-ordinates multi-agency work on child protection,
             vulnerable adults, violence against women, alcohol and drug misuse and racist incidents.</p>
