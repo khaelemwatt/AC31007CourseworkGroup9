@@ -47,7 +47,7 @@
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
           <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem d-flex flex-column' id='goal4card'>
-                <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal5.jpg' alt='Goal5' id='goal5'>
+                <img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal4.jpg' alt='Goal4' id='goal4'>
               </div>
             </div>
             <div class='col d-flex align-items-flex'>
