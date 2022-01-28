@@ -44,7 +44,7 @@
             to deliver sustained reduction in CO2 emissions, and undertake a
             Climate Change Risk and Vulnerability Assessment.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.gov.scot/policies/climate-change/' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -53,7 +53,7 @@
         <p>Deliver a range of projects promoting low carbon fuels, including
             expanding the % of electric vehicles in the city.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.gov.scot/policies/renewable-and-low-carbon-energy/low-carbon-transport/' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
@@ -62,7 +62,7 @@
         <p>Implement the most appropriate option from the National Low Emission
             Framework to improve air quality.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/791025/air-quality-napcp-march2019.pdf' role='button'>Learn more</a>
         </p>
     </div>
 </div>
