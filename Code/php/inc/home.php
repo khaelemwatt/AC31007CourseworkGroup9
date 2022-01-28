@@ -30,16 +30,13 @@
         <div class='row g-4 py-5 row-cols-1 row-cols-lg-3 GoalItem'>
             <div class='col d-flex align-items-flex' >
               <div class='card GoalB GoalItem' id="goal1">
-              <img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
-              <div class=' media extraPadding'>                
-                <div class='media-body'>
-                <!-- <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p> -->
-                <a href='Goals/Goal1.php' class='btn MoreInfo  '>
-                  More Information
-                </a>
+                <img class='card-img-top' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1'>
+                <div class=' media extraPadding'>                
+                  <div class='media-body'>
+                  <!-- <p class='mt-0 Mikado_Yellow'>End Poverty in all its forms everywhere.</p> -->
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
@@ -269,7 +266,7 @@
 </body>
 
 <script>
-  var goal1 = document.getElementsById("goal1");
+  var goal1 = document.getElementById("goal1");
   goal1.addEventListener("mouseenter", function(event){
     goal1.innerHtml = "<h1>No Poverty</h1>";
     goal1.innerHtml += "<a href='Goals/Goal14.php' class='btn MoreInfo  '>More Information</a>";
