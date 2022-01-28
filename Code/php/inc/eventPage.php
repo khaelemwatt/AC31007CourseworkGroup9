@@ -64,6 +64,9 @@
                 <button class="btn btn-secondary" type="submit" name="submit">Check</button>
         </form>
 
+        
+        <?php
+
         <table>
         <thead>
         <td>Name</td>
@@ -72,8 +75,7 @@
         <td>Location</td>
         </thead>
         <tbody>
-        <?php
-
+            
         $nameSet = isset($_POST['eventName']) && !empty($_POST['eventName']);
         $infoSet = isset($_POST['eventInfo']) && !empty($_POST['eventInfo']);
         $DateSet = isset($_POST['eventDate']) && !empty($_POST['eventDate']);
@@ -125,9 +127,10 @@
            
         }  
 
+        </tbody>
+        </table>
     ?>
-    </tbody>
-    </table>
+    
 
     </main>
 
