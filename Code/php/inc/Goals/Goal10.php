@@ -70,7 +70,7 @@
     <nav aria-label="Page navigation example">
       <ul class="pagination pagination-lg">
         <li class="page-item"><a class="page-link Viridian_Green" href="Goal9.php">Previous</a></li>
-        <li class="page-item"><a class="page-link Viridian_Green href="Goal8.php">8</a></li>
+        <li class="page-item"><a class="page-link Viridian_Green" href="Goal8.php">8</a></li>
         <li class="page-item"><a class="page-link Viridian_Green" href="Goal9.php">9</a></li>
 	<li class="page-item"><span class="page-link disabled CurrentGoal">10</span></li>
         <li class="page-item"><a class="page-link Viridian_Green" href="Goal11.php">11</a></li>
