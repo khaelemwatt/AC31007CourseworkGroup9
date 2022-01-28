@@ -44,7 +44,7 @@
         <p>Complete the roll-out of a new household recycling service which meets
             the Charter for Recycling and Code of Practice.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.oneplanetnetwork.org/knowledge-centre/policies/scottish-household-recycling-charter-and-its-associated-code-practice' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -53,7 +53,7 @@
         <p>Rationalise use of the Council's buildings, land and vehicles to achieve
             efficiencies and minimise our impact on the environment.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.nationalgeographic.com/environment/article/benefits-of-green-buildings-human-health-economics-environment?awc=19533_1643379883_d2c19a675f32944ba0a2ea5ff05061c2' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
@@ -63,7 +63,7 @@
             such as SMART metering, Building Energy Management systems and
             behavioural changes, and expand the use of LED streetlighting.</p>
         <p class='lead'>
-            <a class='btn Viridian_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Viridian_Green btn-lg' href='https://www.energy.gov/eere/buildings/about-commercial-buildings-integration-program' role='button'>Learn more</a>
         </p>
     </div>
 </div>
