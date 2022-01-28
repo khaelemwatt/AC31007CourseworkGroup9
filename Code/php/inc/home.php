@@ -268,6 +268,7 @@
 <script>
   var goal1 = document.getElementById("goal1");
   goal1.addEventListener("mouseover", function(event){
+    console.log("Mouse over");
     goal1.innerHtml = "<h1>No Poverty</h1>";
     goal1.innerHtml = "<p>End Poverty in all its forms everywhere.</p>";
     goal1.innerHtml += "<a href='Goals/Goal14.php' class='btn MoreInfo  '>More Information</a>";
