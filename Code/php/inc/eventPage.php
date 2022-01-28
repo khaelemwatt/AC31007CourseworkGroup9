@@ -22,16 +22,12 @@
             <input class="form-control mr-sm-2" type="search" name="eventInfo" placeholder="" aria-label="Search">
             <br>
             <br>
-            </div>
-            <div class="col">
                 <u><b>Please Input the date of the event </b></u>
                 <br>
                 <br>
                 <input class="form-control mr-sm-2" type="search" name="eventDate" placeholder="" aria-label="Search">
                 <br>
                 <br>
-            </div>
-            <div class="col">
                 <u><b>Please Input the Location of the event</b></u>
                 <br>
                 <br>
