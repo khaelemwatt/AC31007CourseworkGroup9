@@ -261,7 +261,7 @@
     goal1card.innerHTML = "<p>End Poverty in all its forms everywhere</p>";
     goal1card.innerHTML += "<a href='Goals/Goal1.php' class='btn MoreInfo mt-auto'>More Information</a>";
   });
-  goal1card.addEventListener("mouseout", function(event){
+  goal1card.addEventListener("mouseleave", function(event){
     console.log("Mouse out");
     goal1card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal1.jpg' alt='Goal1' id='goal1'>";
   });
@@ -273,7 +273,7 @@
     goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
     goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
   });
-  goal2card.addEventListener("mouseout", function(event){
+  goal2card.addEventListener("mouseleave", function(event){
     console.log("Mouse out");
     goal2card.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2' id='goal2'>";
   });
