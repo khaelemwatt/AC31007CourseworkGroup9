@@ -8,6 +8,7 @@ function goal1Hover(){
     var goal1 = document.getElementById("goal1");
     var goal1Card = document.getElementById("goal1card");
     goal1.addEventListener("mouseover", goal1Hover());
+    goal1card.addEventListener("mouseleave", goal1Leave());
   }
   function goal1Leave(){
     console.log("Mouse out");
@@ -25,6 +26,7 @@ function goal2Hover(){
     var goal2 = document.getElementById("goal2");
     var goal2Card = document.getElementById("goal2card");
     goal2.addEventListener("mouseover", goal2Hover());
+    goal2card.addEventListener("mouseleave", goal2Leave());
   }
   function goal2Leave(){
     console.log("Mouse out");
@@ -286,3 +288,6 @@ function goal2Hover(){
     goalcard.innerHTML = "<img class='card-img-top img-fluid' src='Code/php/inc/Images/goal17.jpg' alt='goal17' id='goal17'>";
     goal17.addEventListener("mouseover", addgoal17Hover());
   }
+
+  addgoal1Hover();
+  addgoal2Hover();
