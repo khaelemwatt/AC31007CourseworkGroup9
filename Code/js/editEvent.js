@@ -26,8 +26,9 @@ function editEvent(eventId)
     var event;
 
     for (var i=0; i<response.length; i++)
-        if (response[i].EventId = eventId) event = response[i];
+        if (response[i].EventId == eventId) event = response[i];
 
+    
     listGroup.style.display = "none";
     document.getElementById("subtitle").style.display = "none";
 
