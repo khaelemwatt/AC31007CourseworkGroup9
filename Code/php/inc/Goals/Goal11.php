@@ -40,7 +40,7 @@
 </div>
 <div class='row justify-content-center '>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 1</h4>
+        <h4 >Sustainable Cities And Communities</h4>
         <hr class='my-4'>
         <p>Build 1,000 new affordable homes over 5 years.</p>
         <p class='lead'>
@@ -48,7 +48,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
-        <h4 >Charity 2</h4>
+        <h4 >Sustainable Cities And Communities</h4>
         <hr class='my-4'>
         <p>Continue to develop the city's electric vehicle charging infrastructure and
             the Council's own fleet of electric vehicles.</p>
@@ -57,7 +57,7 @@
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>S
-        <h4 >Charity 3</h4>
+        <h4 >Sustainable Cities And Communities</h4>
         <hr class='my-4'>
         <p>Improve neighbourhood bus services, develop a financially sustainable
             model of accessible transport and implement a range of 'active travel
