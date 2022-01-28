@@ -40,7 +40,7 @@
             </div>
             <div class='col d-flex align-items-flex'>
               <div class='card GoalB GoalItem'>
-              <div class='media extraPadding'>
+              <div class='media'>
                 <img class='align-self-start mr-3' src='Code/php/inc/Images/Goal2.jpg' alt='Goal2'>
                 <div class='media-body'>
                 <p class='mt-0 Mikado_Yellow'>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>
