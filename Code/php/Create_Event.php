@@ -21,7 +21,7 @@ $inputGoalsInDundee = $_POST['goalsInDundee'];
 $inputUsefulInformation = $_POST['usefulInformation'];
 $inputWebsite = $_POST['website'];
 //Need to update column names for real table
-$createStmt = $mysql->prepare("INSERT INTO un_goals_table (UN_Sustainable_Development_Goal, About_The_Goal, Things_To_Do, Examples_In_Dundee, Useful_Information, Website) VALUES ($inputGoalTitle, $inputGoalAbout, $inputGoalToDos, $inputGoalsInDundee, $inputUsefulInformation, $inputWebsite);
+$createStmt = $mysql->prepare("INSERT INTO un_goals_table (UN_Sustainable_Development_Goal, About_The_Goal, Things_To_Do, Examples_In_Dundee, Useful_Information, Website) VALUES ($inputGoalTitle, $inputGoalAbout, $inputGoalToDos, $inputGoalsInDundee, $inputUsefulInformation, $inputWebsite");
 $createStmt->execute();
 $result = $stmt->fetchAll();
 
