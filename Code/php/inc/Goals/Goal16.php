@@ -41,7 +41,7 @@
         <p>Introduce a new Community infrastructure Fund, using the 'Dundee Decides' participatory budgeting process to give
             local people a say in spending on local infracture.</p>
         <p class='lead'>
-            <a class='btn Yellow_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Yellow_Green btn-lg' href='https://www.gov.uk/government/publications/housing-infrastructure-fund' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -49,7 +49,7 @@
         <hr class='my-4'>
         <p> Deliver a more interated health and social care service though Dundee Health and Social Care Partnership.</p>
         <p class='lead'>
-            <a class='btn Yellow_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Yellow_Green btn-lg' href='https://www.nhstayside.scot.nhs.uk/OurServicesA-Z/DundeeHealthandSocialCarePartnership/index.htm' role='button'>Learn more</a>
         </p>
     </div>
     <div class='card Yellow_GreenB EID' style='max-width: 30%;'>
@@ -58,7 +58,7 @@
         <p>Support Dundee's Protecting People Framework, which co-ordinates multi-agency work on child protection,
             vulnerable adults, violence against women, alcohol and drug misuse and racist incidents.</p>
         <p class='lead'>
-            <a class='btn Yellow_Green btn-lg' href='#' role='button'>Learn more</a>
+            <a class='btn Yellow_Green btn-lg' href='https://www.gov.scot/publications/national-guidance-child-protection-scotland/' role='button'>Learn more</a>
         </p>
     </div>
 </div>
