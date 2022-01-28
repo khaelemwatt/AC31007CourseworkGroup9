@@ -164,7 +164,7 @@
     goal2.addEventListener("mouseover", function(event){
       console.log("Mouse over");
       goal2card.innerHTML = "<p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</p>";
-      goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo align-self-end'>More Information</a>";
+      goal2card.innerHTML += "<a href='Goals/Goal2.php' class='btn MoreInfo mt-auto'>More Information</a>";
     });
   });
 
