@@ -85,7 +85,7 @@
             $inputGoal = $_POST['UNGoalID'];
             
             $sql = "INSERT INTO `event` (Name, Info, Date, Location, goalID) VALUES ('";
-            $sql = sprintf("'%s', '%s', %s, '%s', %s);", $sql, $inputEventName, $inputEventInfo, $inputEventDate, $inputEventLocation, $inputGoal);
+            $sql = sprintf("%s, '%s', '%s', %s, '%s', %s);", $sql, $inputEventName, $inputEventInfo, $inputEventDate, $inputEventLocation, $inputGoal);
             console($sql);
             echo "four";
             $createStmt = $mysql->prepare($sql);
