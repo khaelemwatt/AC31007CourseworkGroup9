@@ -51,7 +51,7 @@
         xml.open("POST", "https://group9agilewebapp.azurewebsites.net/login");
         xml.onreadystatechange = function(){
             if(xml.readyState == XMLHttpRequest.DONE){
-                fetch("https://https://group9agilewebapp.azurewebsites.net/login")
+                fetch("https://group9agilewebapp.azurewebsites.net/login")
                 .then(response => response.json())
                 .then(data => console.log(data));
                 console.log(xml.responseTest);
