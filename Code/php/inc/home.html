@@ -127,6 +127,8 @@
 </body>
 
 <script>
+fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents').then(response => response.json()).then(data => console.log(data));
+
   var goal1 = document.getElementById("goal1");
   var goal1Card = document.getElementById("goal1card");
   goal1.addEventListener("mouseover", function(event){
