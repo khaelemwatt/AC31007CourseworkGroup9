@@ -80,9 +80,19 @@ function editEvent(eventId)
         </div>
         <div class="form-row text-center"> 
             <button onclick="location.reload();" class="btn btn-secondary m-3">Back</button>
-            <button class="btn btn-danger m-3">Delete</button>
+            <button onclick="deleteEvent(` + event.EventId + `)" class="btn btn-danger m-3">Delete</button>
             <button type="submit" class="btn btn-primary m-3">Save Changes</button>
         </div>
     </form>
     `
+}
+
+function deleteEvent(eventId) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/delete", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        "EventId": eventId
+    }));
+
 }
