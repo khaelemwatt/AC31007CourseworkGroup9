@@ -20,7 +20,6 @@
     </div>
     <nav class='navbar navbar-dark blackB ' id = "navbar">
       <img class='Logo' src='./Images/SDGlogo.jpg' alt='SDG'>
-      <a href="./login.html" class="btn btn-info" role="button">Events</a>
       
     </nav>
   </div>
@@ -142,6 +141,8 @@
     if(sessionStorage.getItem("level") <=2){
       //Placeholder for now
     }    
+  }else{    
+    nav.innerHTML += '<a href="./login.html" class="btn btn-info" role="button">Login</a>';
   }
 </script>
 
