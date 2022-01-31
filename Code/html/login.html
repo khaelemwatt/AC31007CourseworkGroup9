@@ -28,6 +28,8 @@
         </div>
     </div>
     <script>
+        window.sessionStorage;
+        console.log(sessionStorage.getItem("username"));
         //Get references to html elements
         const form = document.getElementById("login");
         button = document.getElementById("submitButton");
@@ -43,6 +45,11 @@
         //If accepted go back to the home page
         function accept(data){
             //NEED TO SEND USER DETAILS IN
+            window.sessionStorage;
+            sessionStorage.setItem("userID", data['userID']);
+            sessionStorage.setItem("username", data['username']);
+            sessionStorage.setItem("level", data['level']);
+
             window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/home.html";
         }
 
