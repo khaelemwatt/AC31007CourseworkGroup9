@@ -18,7 +18,7 @@
         <span class='text-muted'></span>
       </div>
     </div>
-    <nav class='navbar navbar-dark blackB '>
+    <nav class='navbar navbar-dark blackB ' id = "navbar">
       <img class='Logo' src='./Images/SDGlogo.jpg' alt='SDG'>
       <a href="./createEvent.html" class="btn btn-info" role="button">Events</a>
       
@@ -128,6 +128,10 @@
 
 <script>
   window.sessionStorage;
+  if(sessionStorage.getItem("username") != null){
+    var nav = document.getElementById("navbar");
+    nav.innerHTML += '<a href="./createAdmin.html" class="btn btn-info" role="button">Create Admin</a>';
+  }
 </script>
 
 <script>
