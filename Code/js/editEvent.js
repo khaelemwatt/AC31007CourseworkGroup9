@@ -106,18 +106,32 @@ function saveEvent(eventId) {
     var info = document.getElementById("infoInput").value;
     var goal = document.getElementById("goalSelect").value;
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/editEvent", false);
-    xhr.setRequestHeader('Content-Type', 'application/json');
+  
+    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/editEvent", true);
     
-    
-    xhr.send(JSON.stringify({
+    var json = JSON.stringify({
         "EventId": eventId,
         "Name": name,
         "Location": location,
         "Date": date,
         "Info": info,
         "goalID": goal
-    }));
+    });
 
+    fetch('https://group9agilewebapp.azurewebsites.net/editEvent', {
+    method: 'POST', // or 'PUT'
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: json,
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    accept(data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    reject();
+    });
 }
