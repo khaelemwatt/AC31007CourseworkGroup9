@@ -25,6 +25,23 @@ function addToList(event)
     `
 }
 
+function buildSelect(goalId)
+{
+    var s = "";
+
+    for (var i=1; i<=17; i++)
+    {
+        if (i == goalId)
+        {
+            s += '<option selected="selected">' + i.toString() + '</option>\n';
+        }
+
+        s += '<option>' + i.toString() + '</option>\n';
+    }
+
+    return s;
+}
+
 function editEvent(eventId)
 {
     var event;
@@ -58,24 +75,8 @@ function editEvent(eventId)
         </div>
         <div class="form-group">
             <label for="goalSelect">Goal ID</label>
-            <select class="form-control" id="goalSelect" value="` + event.goalID + `">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
+            <select class="form-control" id="goalSelect">
+                ` + buildSelect(event.goalID) + `
             </select>
         </div>
         <div class="form-row text-center"> 
