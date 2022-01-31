@@ -128,7 +128,7 @@
 
 <script>
   window.sessionStorage;
-  if(sessionStorage.getItem("username") != null){
+  if(sessionStorage.getItem("username") != null && sessionStorage.getItem("level") == 0){
     var nav = document.getElementById("navbar");
     nav.innerHTML += '<a href="./createAdmin.html" class="btn btn-info" role="button">Create Admin</a>';
   }
