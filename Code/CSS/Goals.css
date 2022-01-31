@@ -22,13 +22,141 @@
     margin-bottom: 1.75rem;
     align-items:center;
 }
-.MoreInfo{
-    outline: 1px solid #049A9B;
-    color:#049A9B;
+.MoreInfo1{
+    outline: 1px solid #FFF;
+    color:#FFF;
 }
-.MoreInfo:hover{
-    background-color:#049A9B;
-    color:#93C718;   
+.MoreInfo1:hover{
+    background-color:#FFF;
+    color:#E61F38;   
+}
+.MoreInfo2{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo2:hover{
+    background-color:#FFF;
+    color:#DEAA37;   
+}
+.MoreInfo3{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo3:hover{
+    background-color:#FFF;
+    color:#4BA035;   
+}
+.MoreInfo4{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo4:hover{
+    background-color:#FFF;
+    color:#C61229;   
+}
+.MoreInfo5{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo5:hover{
+    background-color:#FFF;
+    color:#FF371B;   
+}
+.MoreInfo6{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo6:hover{
+    background-color:#FFF;
+    color:#21BEE3;   
+}
+.MoreInfo7{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo7:hover{
+    background-color:#FFF;
+    color:#FCC403;   
+}
+.MoreInfo8{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo8:hover{
+    background-color:#FFF;
+    color:#A31240;   
+}
+.MoreInfo9{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo9:hover{
+    background-color:#FFF;
+    color:#FD6920;   
+}
+.MoreInfo10{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo10:hover{
+    background-color:#FFF;
+    color:#DE0B67;   
+}
+.MoreInfo11{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo11:hover{
+    background-color:#FFF;
+    color:#FD9E1F;   
+}
+.MoreInfo12{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo12:hover{
+    background-color:#FFF;
+    color:#C08C2A;   
+}
+.MoreInfo13{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo13:hover{
+    background-color:#FFF;
+    color:#3D7F42;   
+}
+.MoreInfo14{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo14:hover{
+    background-color:#FFF;
+    color:#0298DA;   
+}
+.MoreInfo15{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo15:hover{
+    background-color:#FFF;
+    color:#55C127;   
+}
+.MoreInfo16{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo16:hover{
+    background-color:#FFF;
+    color:#00689E;   
+}
+.MoreInfo17{
+    outline: 1px solid #FFF;
+    color:#FFF;
+}
+.MoreInfo17:hover{
+    background-color:#FFF;
+    color:#12466A;   
 }
 .GoalItem{
     padding:1rem;
