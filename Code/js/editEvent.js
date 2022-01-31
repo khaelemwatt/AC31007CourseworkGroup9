@@ -39,7 +39,7 @@ function editEvent(eventId)
     var formRow = document.getElementById("formRow");
     
     formRow.innerHTML = `
-    <form>
+    <form id="eventForm">
         <div class="form-group">
             <label for="nameInput">Name</label>
             <input type="text" class="form-control" id="nameInput" value="` + event.Name + `">
@@ -81,7 +81,7 @@ function editEvent(eventId)
         <div class="form-row text-center"> 
             <button onclick="location.reload();" class="btn btn-secondary m-3">Back</button>
             <button onclick="deleteEvent(` + event.EventId + `)" class="btn btn-danger m-3">Delete</button>
-            <button type="submit" class="btn btn-primary m-3">Save Changes</button>
+            <button onclick="saveEvent(` + event.EventId + `) class="btn btn-primary m-3">Save Changes</button>
         </div>
     </form>
     `
@@ -89,10 +89,30 @@ function editEvent(eventId)
 
 function deleteEvent(eventId) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/delete", true);
+    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/deleteEvent", false);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({
         "EventId": eventId
     }));
+}
 
+function saveEvent(eventId) {
+    var name = document.getElementById("nameInput").value;
+    var location = document.getElementById("locationInput").value;
+    var date = document.getElementById("dateInput").value;
+    var info = document.getElementById("infoInput").value;
+    var goal = document.getElementById("goalSelect").value;
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/editEvent", false);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        "EventId": eventId,
+        "Name": name,
+        "Location": location,
+        "Date": date,
+        "Info": info,
+        "goalID": goal
+    }));
+    
 }
