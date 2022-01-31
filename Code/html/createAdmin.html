@@ -15,7 +15,7 @@
     <div class="page-header header container">
         <div class="d-flex justify-content-center">
             <div class="mb-3">
-                <form action="#" id="login" method="POST">
+                <form action="#" id="login" method="POST" id="form">
                     <div class="form-group">
                         <input type="username" class="form-text" id="username" placeholder="Username" name="username">
                     </div>
@@ -45,6 +45,24 @@
             console.log("Reject function");
             button.classList.add("animate__headShake");
             button.classList.add("btn-danger");
+        }
+
+        form.onsubmit = (e) => {
+            e.preventDefault();
+
+            var usernameInput = document.getElementById("username");
+            var passwordInput = document.getElementById("password");
+
+            var parameters = {"username": usernameInput.value, "password": passwordInput.value};
+            console.log(parameters);
+
+            fetch('https://group9agilewebapp.azurewebsites.net/createEvent', {
+                method: 'POST', // or 'PUT'
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(parameters),
+                });
         }
     </script>
     
