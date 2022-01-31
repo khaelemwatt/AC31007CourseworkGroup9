@@ -61,12 +61,6 @@
         form.onsubmit = (e) => {
             e.preventDefault();
 
-            const CryptoJS = require('crypto-js');
-
-            let utf16le = CryptoJS.enc.Utf16LE.parse(passwordInput.value);
-            let utf16Sha256 = CryptoJS.SHA256(utf16le);
-            console.log(utf16Sha256.toString(CryptoJS.enc.hex));
-
             var parameters = {
                 "username": usernameInput.value,
                 "password": passwordInput.value
