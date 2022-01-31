@@ -58,7 +58,7 @@ function editEvent(eventId)
         </div>
         <div class="form-group">
             <label for="goalSelect">Goal ID</label>
-            <select class="form-control" id="goalSelect">
+            <select class="form-control" id="goalSelect" value="` + event.goalID + `">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
