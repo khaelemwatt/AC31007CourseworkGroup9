@@ -8,36 +8,35 @@
 
 <body>
     <main>
-
         <u><b>Please Input the name of the event</b></u>
         <br>
         <br>
-        <form class="form-inline" method="POST">
-            <input class="form-control mr-sm-2" type="search" name="eventName" placeholder="" aria-label="Search">
+        <form class="form-inline" method="POST" id="form">
+            <input class="form-control mr-sm-2" type="search" name="eventName" placeholder="" aria-label="Search" id="name">
             <br>
             <br>
             <u><b>Please Input some information about the event</b></u>
             <br>
             <br>
-            <input class="form-control mr-sm-2" type="search" name="eventInfo" placeholder="" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" name="eventInfo" placeholder="" aria-label="Search" id="info">
             <br>
             <br>
                 <u><b>Please Input the date of the event </b></u>
                 <br>
                 <br>
-                <input class="form-control mr-sm-2" type="search" name="eventDate" placeholder="" aria-label="Search">
+                <input class="form-control mr-sm-2" type="date" name="eventDate" placeholder="" aria-label="Search" id="date">
                 <br>
                 <br>
                 <u><b>Please Input the Location of the event</b></u>
                 <br>
                 <br>
-                <input class="form-control mr-sm-2" type="search" name="eventLocation" placeholder="" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" name="eventLocation" placeholder="" aria-label="Search" id="location">
                 <br>
                 <br>
                 <u><b>Please select which goal this event relates too</b></u>
                 <br>
                 <br>
-                <select name="UNGoalID">
+                <select name="UNGoalID" id="goal">
                     <option value="" disabled>Please select...</option>
                     <option value="1">No Poverty</option>
                     <option value="2">Zero Hunger</option>
@@ -63,6 +62,40 @@
     </main>
 
  </body>
+
+ <script>
+    var form = document.getElementById("form");
+
+    form.onsubmit = (e) => {
+        e.preventDefualt();
+
+        var nameInput = document.getElementById("name");
+        var infoInput = document.getElementById("info");
+        var dateInput = document.getElementById("date");
+        var locationInput = document.getElementById("location");
+        var goalInput = document.getElementById("goal");
+
+        var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput, "goal": goalInput};
+        console.log(parameters);
+
+        fetch('https://group9agilewebapp.azurewebsites.net/createEvent', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(parameters),
+            })
+            .then(response => response.json())
+            .then(data => {
+            console.log('Success:', data);
+            accept(data);
+            })
+            .catch((error) => {
+            console.error('Error:', error);
+            reject();
+            });
+    };
+ </script>
 
   
 
