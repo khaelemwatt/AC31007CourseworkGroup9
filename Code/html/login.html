@@ -40,23 +40,18 @@
             button.classList.remove("btn-danger");
         });
 
+        //If accepted go back to the home page
+        function accept(data){
+            //NEED TO SEND USER DETAILS IN
+            window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/home.html";
+        }
+
         //If rejected, animate the button
         function reject(){
             console.log("Reject function");
             button.classList.add("animate__headShake");
             button.classList.add("btn-danger");
         }
-
-        // xml = new XMLHttpRequest();
-        // xml.open("POST", "https://group9agilewebapp.azurewebsites.net/login");
-        // xml.onreadystatechange = function(){
-        //     if(xml.readyState == XMLHttpRequest.DONE){
-        //         fetch("https://group9agilewebapp.azurewebsites.net/login")
-        //         .then(response => response.json())
-        //         .then(data => console.log(data));
-        //         console.log(xml.responseTest);
-        //     }
-        // };
 
         form.onsubmit = (e) => {
             e.preventDefault();
@@ -79,9 +74,11 @@
             .then(response => response.json())
             .then(data => {
             console.log('Success:', data);
+            accept(data);
             })
             .catch((error) => {
             console.error('Error:', error);
+            reject();
             });
 
             // xml.send(JSON.stringify(parameters));
