@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<form id="eventForm">
+<form id="form">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" required>
@@ -66,7 +66,7 @@
         var locationInput = document.getElementById("location");
         var goalInput = document.getElementById("goal");
 
-        var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput.value, "goal": goalInput.value};
+        var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput.value, "goalID": goalInput.value};
         console.log(parameters);
 
         fetch('https://group9agilewebapp.azurewebsites.net/createEvent', {
