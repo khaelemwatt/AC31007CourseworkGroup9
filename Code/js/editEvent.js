@@ -92,12 +92,10 @@ function deleteEvent(eventId) {
     xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/deleteEvent", false);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
-    // xhr.send(JSON.stringify({
-    //     "EventId": eventId
-    // }));
-    console.log(JSON.stringify({
+    xhr.send(JSON.stringify({
         "EventId": eventId
     }));
+
 }
 
 function saveEvent(eventId) {
@@ -112,15 +110,7 @@ function saveEvent(eventId) {
     xhr.setRequestHeader('Content-Type', 'application/json');
     
     
-    // xhr.send(JSON.stringify({
-    //     "EventId": eventId,
-    //     "Name": name,
-    //     "Location": location,
-    //     "Date": date,
-    //     "Info": info,
-    //     "goalID": goal
-    // }));
-    console.log(JSON.stringify({
+    xhr.send(JSON.stringify({
         "EventId": eventId,
         "Name": name,
         "Location": location,
