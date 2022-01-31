@@ -47,16 +47,16 @@
             button.classList.add("btn-danger");
         }
 
-        xml = new XMLHttpRequest();
-        xml.open("POST", "https://group9agilewebapp.azurewebsites.net/login");
-        xml.onreadystatechange = function(){
-            if(xml.readyState == XMLHttpRequest.DONE){
-                fetch("https://group9agilewebapp.azurewebsites.net/login")
-                .then(response => response.json())
-                .then(data => console.log(data));
-                console.log(xml.responseTest);
-            }
-        };
+        // xml = new XMLHttpRequest();
+        // xml.open("POST", "https://group9agilewebapp.azurewebsites.net/login");
+        // xml.onreadystatechange = function(){
+        //     if(xml.readyState == XMLHttpRequest.DONE){
+        //         fetch("https://group9agilewebapp.azurewebsites.net/login")
+        //         .then(response => response.json())
+        //         .then(data => console.log(data));
+        //         console.log(xml.responseTest);
+        //     }
+        // };
 
         form.onsubmit = (e) => {
             e.preventDefault();
@@ -67,9 +67,25 @@
             };
 
             console.log(parameters);
+            const data = { username: 'example' };
 
-            xml.send(JSON.stringify(parameters));
-            console.log("Request Sent");
+            fetch('https://group9agilewebapp.azurewebsites.net/login', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+            console.log('Success:', data);
+            })
+            .catch((error) => {
+            console.error('Error:', error);
+            });
+
+            // xml.send(JSON.stringify(parameters));
+            // console.log("Request Sent");
         };
 
     </script>
