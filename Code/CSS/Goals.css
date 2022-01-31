@@ -176,3 +176,7 @@
     background-color: #049A9B;
     color:#93C718;
 }
+.navbar-toggler{
+    position : absolute;
+    right:1rem;
+}
