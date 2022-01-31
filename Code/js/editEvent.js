@@ -105,9 +105,6 @@ function saveEvent(eventId) {
     var date = document.getElementById("dateInput").value;
     var info = document.getElementById("infoInput").value;
     var goal = document.getElementById("goalSelect").value;
-
-  
-    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/editEvent", true);
     
     var json = JSON.stringify({
         "EventId": eventId,
