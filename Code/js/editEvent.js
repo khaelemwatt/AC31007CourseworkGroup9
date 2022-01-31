@@ -115,8 +115,8 @@ function saveEvent(eventId) {
         "goalID": parseInt(goal)
     });
 
-    fetch('https://group9agilewebapp.azurewebsites.net/editEvent', {
-    method: 'POST', // or 'PUT'
+    fetch('https://group9agilewebapp.azurewebsites.net/api/editEvent', {
+    method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
