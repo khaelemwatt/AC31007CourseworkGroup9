@@ -130,7 +130,7 @@
   window.sessionStorage;
   var nav = document.getElementById("navbar");
   if(sessionStorage.getItem("username") != null){
-    if(sessionStorage.getItem['level'] == 0){
+    if(sessionStorage.getItem("level") == 0){
       nav.innerHTML += '<a href="./createAdmin.html" class="btn btn-info" role="button">Create Admin</a>';
     }
     if(sessionStorage.getItem['level'] <= 1){      
