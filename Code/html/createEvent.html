@@ -86,15 +86,6 @@
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(parameters),
-            })
-            .then(response => response.json())
-            .then(data => {
-            console.log('Success:', data);
-            accept(data);
-            })
-            .catch((error) => {
-            console.error('Error:', error);
-            reject();
             });
     };
  </script>
