@@ -14,7 +14,7 @@ response.forEach(addToList);
 function addToList(event)
 {
     listGroup.innerHTML += `
-    <a href="#" onclick="editEvent(` + event.EventId + `)" class="list-group-item list-group-item-action flex-column align-items-start">
+    <a href="#" onclick="editEvent(` + parseInt(event.EventId) + `)" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">` + event.Name + `</h5>
             <small>` + event.Date + `</small>
@@ -47,7 +47,7 @@ function editEvent(eventId)
     var event;
 
     for (var i=0; i<response.length; i++)
-        if (response[i].EventId == eventId) event = response[i];
+        if (parseInt(response[i].EventId) == eventId) event = response[i];
 
     
     listGroup.style.display = "none";
@@ -76,13 +76,13 @@ function editEvent(eventId)
         <div class="form-group">
             <label for="goalSelect">Goal ID</label>
             <select class="form-control" id="goalSelect">
-                ` + buildSelect(event.goalID) + `
+                ` + buildSelect(parseInt(event.goalID)) + `
             </select>
         </div>
         <div class="form-row text-center"> 
             <button onclick="location.reload();" class="btn btn-secondary m-3">Back</button>
-            <button onclick="deleteEvent(` + event.EventId + `)" class="btn btn-danger m-3">Delete</button>
-            <button onclick="saveEvent(` + event.EventId + `)" class="btn btn-primary m-3">Save Changes</button>
+            <button onclick="deleteEvent(` + parseInt(event.EventId) + `)" class="btn btn-danger m-3">Delete</button>
+            <button onclick="saveEvent(` + parseInt(event.EventId) + `)" class="btn btn-primary m-3">Save Changes</button>
         </div>
     </form>
     `
@@ -94,7 +94,7 @@ function deleteEvent(eventId) {
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.send(JSON.stringify({
-        "EventId": eventId
+        "EventId": parseInt(eventId)
     }));
 
 }
@@ -107,12 +107,12 @@ function saveEvent(eventId) {
     var goal = document.getElementById("goalSelect").value;
     
     var json = JSON.stringify({
-        "EventId": eventId,
+        "EventId": parseInt(eventId),
         "Name": name,
         "Location": location,
         "Date": date,
         "Info": info,
-        "goalID": goal
+        "goalID": parseInt(goal)
     });
 
     fetch('https://group9agilewebapp.azurewebsites.net/editEvent', {
