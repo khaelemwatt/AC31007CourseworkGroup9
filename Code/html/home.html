@@ -127,6 +127,11 @@
 </body>
 
 <script>
+  window.sessionStorage;
+  sessionStorage.setItem("username", "test");
+</script>
+
+<script>
 fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents', {mode: 'cors'})
 .then(response => response.json())
 .then(data => console.log(data));
