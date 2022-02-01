@@ -88,6 +88,10 @@
   center: [-3.002864, 56.472182],
   zoom: 11.15,
   });
+
+  const marker1 = new mapboxgl.Marker()
+  .setLngLat([56.4614, -2.96811])
+  .addTo(map);
   
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
