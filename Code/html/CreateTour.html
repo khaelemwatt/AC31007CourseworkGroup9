@@ -69,22 +69,25 @@
     const form = document.getElementById("form1");
     var btn = document.getElementById("addEvent");
     var arr = [];
+    
     fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents')
             .then(response => response.json)
             .then(function(data){
                 let events = data.results;
                 return events.map(function(event){
-                    let option = document.createElement("option");
-                    option.text= '${event.Name}';
-                    option.value='${event.EventId}';
-                    arr.push(option);
+                    let para = document.createElement("p");
+                    para.innerHTML= '${event.Name}';
+                    //option.value='${event.EventId}';
+                    arr.push(para);
                 })
             
             })
             .catch(function(){
                 console.log(error);
             });
-    
+            for(var i=0;i<arr.length;i++){
+                form1.appendChild(arr[i]);
+            }
     form.onsubmit = (e) => {
             e.preventDefault();
             var Form = document.getElementById("AddEvents");
@@ -106,9 +109,9 @@
             selectForm.add(option1,selectForm[0]);
             selectForm.add(option2,selectForm[1]);
             Form.appendChild(selectForm);
-            for(var i=2;i<arr.length;i++){
-                selectForm.add(arr[i],selectForm[i+2]);
-            }
+            // for(var i=2;i<arr.length;i++){
+            //     selectForm.add(arr[i],selectForm[i+2]);
+            // }
     };
 </script>
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
