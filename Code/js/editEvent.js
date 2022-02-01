@@ -25,6 +25,49 @@ function addToList(event)
     `
 }
 
+function goalToString(goalId)
+{
+    switch (goalId)
+    {
+        case 1:
+            return "End poverty in all its forms everywhere";
+        case 2:
+            return "End hunger, achieve food security and imporoved nutrition and promote sustainable agriculture";
+        case 3:
+            return "Ensure healthy lives and promote well being for all ages";
+        case 4:
+            return "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all";
+        case 5:
+            return "Achieve gender equality and empower all women and girls";
+        case 6:
+            return "Ensure availability and sustainable management of water and sanitation for all";
+        case 7:
+            return "Ensure access to affordable, reliable, sustainable and modern energy for all";
+        case 8:
+            return "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all";
+        case 9:
+            return "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation";
+        case 10:
+            return "Reduce inequality within and among countries";
+        case 11:
+            return "Make cities and human settlements inclusive, safe, resilient and sustainable";
+        case 12:
+            return "Ensure sustainable consumption and production patterns";
+        case 13:
+            return "Take urgent action to combat climate change and its impacts";
+        case 14:
+            return "Conserve and sustainably use the oceans, seas and marine resources for sustainable development";
+        case 15:
+            return "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss";
+        case 16:
+            return "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels";
+        case 17:
+            return "Strengthen the means of implementation and revitalize the global partnership for sustainable development";
+        default:
+            return "Error: incorrect goal ID";
+    }
+}
+
 function buildSelect(goalId)
 {
     var s = "";
@@ -90,7 +133,7 @@ function editEvent(eventId)
 
 function deleteEvent(eventId) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/deleteEvent", false);
+    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/api/deleteEvent", false);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.send(JSON.stringify({
