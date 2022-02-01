@@ -20,7 +20,7 @@
     </div>
     <nav class='navbar navbar-dark blackB '>
       <img class='Logo' src='Code/php/inc/Images/SDGlogo.jpg' alt='SDG'>
-      <a href="/editEvent" class="btn btn-info" role="button">Events</a>
+      <a href="/api/editEvent" class="btn btn-info" role="button">Events</a>
       
     </nav>
   </div>
