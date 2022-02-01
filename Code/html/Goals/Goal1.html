@@ -64,6 +64,7 @@
             </p>
           </div>
     </div>
+    <div id='map' style='width: 400px; height: 300px;'></div>
     <div class=" row  justify-content-center">
     <nav aria-label="Page navigation example">
       <ul class="pagination pagination-lg">
@@ -78,6 +79,14 @@
     </nav>
     </div>
 </body>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoia2hhZWxlbXdhdHQiLCJhIjoiY2syczhpdGFhMGU3ejNnbnozYXB0cm03YSJ9.GCaekm2x9qIeIWZe_Kq5LA';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11'
+  });
+  </script>
 
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
 <script src='./../../js/bootstrap.bundle.js' ></script>
