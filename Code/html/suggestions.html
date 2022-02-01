@@ -74,7 +74,7 @@
         var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput.value, "email": emailInput.value, "goalID": goalInput.value};
         console.log(parameters);
 
-        fetch('https://group9agilewebapp.azurewebsites.net/suggestEvent', {
+        fetch('https://group9agilewebapp.azurewebsites.net/api/suggestEvent', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
