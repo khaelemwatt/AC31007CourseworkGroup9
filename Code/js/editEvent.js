@@ -76,10 +76,10 @@ function buildSelect(goalId)
     {
         if (i == goalId)
         {
-            s += '<option selected="selected">' + i.toString() + '</option>\n';
+            s += '<option selected="selected">' + goalToString(i) + '</option>\n';
         }
 
-        s += '<option>' + i.toString() + '</option>\n';
+        s += '<option>' + goalToString(i) + '</option>\n';
     }
 
     return s;
