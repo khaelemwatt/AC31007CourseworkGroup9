@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
@@ -72,7 +72,7 @@
     
     fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents')
             .then(response => response.json)
-            .then(function(data){
+            .then(function(data,arr){
                 let events = data.results;
                 return events.map(function(event){
                     let para = document.createElement("p");
