@@ -100,11 +100,10 @@
   .then(response => response.json())
   .then(data => {
   console.log('Success:', data);
-  accept(data);
+  var events = data;
   })
   .catch((error) => {
   console.error('Error:', error);
-  reject();
   });
 
   for(var event in data){
