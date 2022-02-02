@@ -99,13 +99,11 @@
   var events = fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
   .then(response => response.json())
   .then(data => {
-  events = data;
   })
   .catch((error) => {
   console.error('Error:', error);
   });
 
-  events = events.json();
   console.log(events);
 
   for(var event in events){
