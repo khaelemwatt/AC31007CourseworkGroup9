@@ -88,19 +88,21 @@
   center: [-3.002864, 56.472182],
   zoom: 11.15,
   });
-  
+
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
+  //Fetches all events related to one goal and sends the data to load in the markers
   fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
-    .then(response => response.json())
-    .then(data => {
-      loadMarkers(data);
-    })
-    .catch((error) => {
-    console.error('Error:', error);
-    });
+  .then(response => response.json())
+  .then(data => {
+    loadMarkers(data);
+  })
+  .catch((error) => {
+  console.error('Error:', error);
+  });
 
+  //Takes in JSON data and displays their marker on the map
   function loadMarkers(data){
     console.log(data);
     for(var i=0; i< data.length; i++){
