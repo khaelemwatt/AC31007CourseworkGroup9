@@ -102,7 +102,6 @@
   .then(response => response.json())
   .then(data => {
   console.log('Success:', data);
-  events = data;
   })
   .catch((error) => {
   console.error('Error:', error);
@@ -110,7 +109,7 @@
 
   console.log(response);
 
-  for(var event in events){
+  for(var event in response){
     var marker = new mapboxgl.Marker()
     .setLngLat([event.Longitude, event.Latitude])
     .addTo(map);
