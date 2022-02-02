@@ -10,6 +10,7 @@ const twitterBtn = document.querySelector(".twitter-btn");
 
 function init()
 {
+    console.log("test");
     let postURL = encodeURI(document.location.href);
     let postTitle = encodeURI("This is a test goal");
 
