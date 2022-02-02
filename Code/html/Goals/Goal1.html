@@ -96,9 +96,7 @@
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
-  var events;
-
-  fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
+  var events = await fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
   .then(response => response.json())
   .then(data => {
   events = data;
