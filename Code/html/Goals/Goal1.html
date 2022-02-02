@@ -108,7 +108,7 @@
   console.error('Error:', error);
   });
 
-  for(var event in data){
+  for(var event in events){
     var marker = new mapboxgl.Marker()
     .setLngLat([event.Longitude, event.Latitude])
     .addTo(map);
