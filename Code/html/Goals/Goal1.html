@@ -108,8 +108,8 @@
   }
 
   async function loadEvents(){
-    var events = await fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
-    .then(response => response.json());
+    var response = await fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1');
+    var events = await response.json();
 
     console.log(events);
 
