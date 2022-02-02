@@ -108,6 +108,8 @@
   console.error('Error:', error);
   });
 
+  console.log(response);
+
   for(var event in events){
     var marker = new mapboxgl.Marker()
     .setLngLat([event.Longitude, event.Latitude])
