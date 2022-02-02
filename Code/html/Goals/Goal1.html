@@ -116,7 +116,17 @@
         'type': 'geojson',
         'data': {
           'type': 'FeatureCollection',
-          'features': [markers]
+          'features': [
+            {'type': 'Feature', 
+            'properties': {
+              'description': '<p>Test</p>'
+            }, 
+            'geometry': {
+              'type': 'Point',
+               'coordinates': [-2.-2.968220, 56.461478]
+              }
+            }
+          ]
         }
       })
 
