@@ -107,7 +107,7 @@
   function loadMarkers(data){
     var markers;
     for(var i=0; i < 1; i++){
-      markers += "{'type': 'Feature', 'properties': {'description': '<p>" + data[i].info + "</p>'}, 'geometry': {'type': 'Point', 'coordinates': [" + data[i].Longitude + "," + data[i].Latitude + "]}}"
+      markers += "{'type': 'Feature', 'properties': {'description': '<p>" + data[i].Info + "</p>'}, 'geometry': {'type': 'Point', 'coordinates': [" + data[i].Longitude + "," + data[i].Latitude + "]}}";
       console.log(markers);
     }
 
