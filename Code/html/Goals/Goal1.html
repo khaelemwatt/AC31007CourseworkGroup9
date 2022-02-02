@@ -96,7 +96,7 @@
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
-  var events = JSON.parse(loadEvents());
+  var events = loadEvents();
   console.log(events);  
 
   for(var event in events){
