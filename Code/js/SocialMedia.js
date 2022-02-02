@@ -15,6 +15,7 @@ function init()
     let postTitle = encodeURI("This is a test goal");
     console.log(postTitle);
     let postURL = encodeURI(document.location.href);
+    console.log(postURL);
 
     twitterBtn.setAttribute("href", `https://twitter.com/share?url=${postURL}&text=${postTitle}`);
 }
