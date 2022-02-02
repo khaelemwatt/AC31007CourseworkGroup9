@@ -10,16 +10,10 @@
     <title>Create Tour</title>
 </head>
 
-<body>
-    <form action="#"  id="form1">
-        <label for="infoInput">Add Events Here</label>
-            <div class="form-row text-center"> 
-                <div id="AddEvents"></div>
-            </div>
-        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
-    </form>
-<form id="form2">
-        <!--<div class="form-group">
+<body class="blackB">
+    
+<form id="form1">
+        <div class="form-group">
             <label for="name">Tour Name:</label>
             <input type="text" class="form-control" id="name" required>
         </div>
@@ -50,20 +44,20 @@
         <div class="form-group">
             <label for="location">Location</label>
             <input type="text" class="form-control" id="location" required>
-        </div>-->
-        <div class="form-group">
-            
-            
-            <!--
-            <select class="form-control" id="goal" required>
-                <option disabled selected value> -- select an option -- </option>
-                <option value="" disabled></option>
-            </select>-->
         </div>
+
 		<div class="form-row text-center"> 
             <button class="btn btn-secondary" type="submit" name="submit">Submit</button>
         </div>
     </form>
+    <form action="#"  id="form2">
+        <label for="Events">Add Events Here</label>
+            <div class="form-row text-center"> 
+                <div id="AddEvents"></div>
+            </div>
+        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
+    </form>
+    <ul id='posts'></ul>
 </body>
 <script>
     const form = document.getElementById("form1");
@@ -73,40 +67,45 @@
     form.onsubmit = (e) => {
             e.preventDefault();
             var Form = document.getElementById("AddEvents");
-            var selectForm= document.createElement("select");
             var option1= document.createElement("option");
             var option2= document.createElement("option");
             var count=2;
-            
+            var selectForm= document.createElement("select");
+             selectForm.setAttribute("id","sel");
+    
+            fetch(url)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let events = data;
+                events.map(function(event) {
+
+                    let option = document.createElement('option');
+                    option.textContent = `${event.Name}`;
+                    option.value = `${event.EventId}`;
+                    console.log(`${event.name}`);
+                    selectForm.appendChild(option);
+                });
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
             
             selectForm.classList.add("form-control") ;
             selectForm.id="Event";
+
             option1.disabled=true;
             option1.value= "";
             option1.text=" -- select an option -- ";
+
             option2.disabled=true;
-            
             option2.selected=true;
             option2.text="Please select...";
+
             selectForm.add(option1,selectForm[0]);
             selectForm.add(option2,selectForm[1]);
             Form.appendChild(selectForm);
-            fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents')
-                .then(response => response.json)
-                .then(function(data){
-                    let events = data.results;
-                    return events.map(function(event){
-                        let option = document.createElement('option'), selectF=document.createElement('select');
-                        option.innerHTML= '${event.Name}';
-                        option.value='${event.EventId}';
-                        selectF.add(option2,selectF[option.value]);
-                    })
-                
-                })
-                .catch(function(){
-                    console.log(error);
-                });
-            
     };
 </script>
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
