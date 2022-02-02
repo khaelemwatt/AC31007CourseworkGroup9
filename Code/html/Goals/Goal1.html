@@ -95,6 +95,23 @@
   
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
+
+  fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
+  .then(response => response.json())
+  .then(data => {
+  console.log('Success:', data);
+  accept(data);
+  })
+  .catch((error) => {
+  console.error('Error:', error);
+  reject();
+  });
+
+  for(var event in data){
+    var marker = new mapboxgl.Marker()
+    .setLngLat([event.Longitude, event.Latitude])
+    .addTo(map);
+  }
   </script>
 
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
