@@ -109,11 +109,13 @@
     
     for(var event in data){
       console.log("Test");
+      console.log(event.Longitude);
+      console.log(event.Latitude);
+      console.log(event['Longitude']);
+      console.log(event['Latitude']);
       var marker = new mapboxgl.Marker()
       .setLngLat([event.Longitude, event.Latitude])
       .addTo(map);
-      console.log(event.Longitude);
-      console.log(event.Latitude);
     }
 
     console.log(events);
