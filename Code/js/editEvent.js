@@ -160,7 +160,7 @@ function editEvent(eventId)
             <textarea class="form-control" id="infoInput" rows="3">` + event.Info + `</textarea>
         </div>
         <div class="form-group">
-            <label for="goalSelect">Goal ID</label>
+            <label for="goalSelect">Goal</label>
             <select class="form-control" id="goalSelect">
                 ` + buildSelect(parseInt(event.goalID)) + `
             </select>
@@ -176,7 +176,7 @@ function editEvent(eventId)
 
 function deleteEvent(eventId) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/deleteEvent", false);
+    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/api/deleteEvent", false);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.send(JSON.stringify({
