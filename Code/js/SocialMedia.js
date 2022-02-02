@@ -13,6 +13,8 @@ function init()
     console.log("test");
     let postURL = encodeURI(document.location.href);
     let postTitle = encodeURI("This is a test goal");
+    
+    console.log(postURL);
 
     twitterBtn.setAttribute("href", `https://twitter.com/share?url=${postURL}&text=${postTitle}`);
 }
