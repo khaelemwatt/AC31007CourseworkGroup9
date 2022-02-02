@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <link href='./../CSS/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='./../CSS/Colours.css' rel='stylesheet' type='text/css'>
+    <link href='./../CSS/Goals.css' rel='stylesheet' type='text/css'>
+    <title>Create Tour</title>
+</head>
+
+<body>
+    <form action="#"  id="form1">
+        <label for="infoInput">Add Events Here</label>
+            <div class="form-row text-center"> 
+                <div id="AddEvents"></div>
+            </div>
+        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
+    </form>
+<form id="form2">
+        <!--<div class="form-group">
+            <label for="name">Tour Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="goalSelect">What Goal Does The Tour Relate To?</label>
+            <select class="form-control" id="goal" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="" disabled>Please select...</option>
+                <option value="1">No Poverty</option>
+                <option value="2">Zero Hunger</option>
+                <option value="3">Good Health and Wellbeing</option>
+                <option value="4">Quality Education</option>
+                <option value="5">Gender Equality</option>
+                <option value="6">Clean Water and Sanitation</option>
+                <option value="7">Affordable and Clean Energy</option>
+                <option value="8">Decent Work and Economic Growth</option>
+                <option value="9">Industry, Innovation and Infrastructure</option>
+                <option value="10">Reduced Inequality</option>
+                <option value="11">Sustainable Cities and Communities</option>
+                <option value="12">Responsible Consumption and Production</option>
+                <option value="13">Climate Action</option>
+                <option value="14">Life Below Water</option>
+                <option value="15">Life on Land</option>
+                <option value="16">Peace and Justice, Strong Insitutions</option>
+                <option value="17">Partnerships to Achieve Goal</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" required>
+        </div>-->
+        <div class="form-group">
+            
+            
+            <!--
+            <select class="form-control" id="goal" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="" disabled></option>
+            </select>-->
+        </div>
+		<div class="form-row text-center"> 
+            <button class="btn btn-secondary" type="submit" name="submit">Submit</button>
+        </div>
+    </form>
+</body>
+<script>
+    const form = document.getElementById("form1");
+    var btn = document.getElementById("addEvent");
+    var arr = [];
+   
+    form.onsubmit = (e) => {
+            e.preventDefault();
+            var Form = document.getElementById("AddEvents");
+            var selectForm= document.createElement("select");
+            var option1= document.createElement("option");
+            var option2= document.createElement("option");
+            var count=2;
+            
+            
+            selectForm.classList.add("form-control") ;
+            selectForm.id="Event";
+            option1.disabled=true;
+            option1.value= "";
+            option1.text=" -- select an option -- ";
+            option2.disabled=true;
+            
+            option2.selected=true;
+            option2.text="Please select...";
+            selectForm.add(option1,selectForm[0]);
+            selectForm.add(option2,selectForm[1]);
+            Form.appendChild(selectForm);
+            fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents')
+                .then(response => response.json)
+                .then(function(data){
+                    let events = data.results;
+                    return events.map(function(event){
+                        let option = document.createElement('option'), selectF=document.createElement('select');
+                        option.innerHTML= '${event.Name}';
+                        option.value='${event.EventId}';
+                        selectF.add(option2,selectF[option.value]);
+                    })
+                
+                })
+                .catch(function(){
+                    console.log(error);
+                });
+            
+    };
+</script>
+<script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+<script src='./../js/bootstrap.bundle.js' ></script>
+</html>
