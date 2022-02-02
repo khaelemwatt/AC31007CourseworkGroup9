@@ -96,11 +96,13 @@
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
+  var events;
+
   fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
   .then(response => response.json())
   .then(data => {
   console.log('Success:', data);
-  var events = data;
+  events = data;
   })
   .catch((error) => {
   console.error('Error:', error);
