@@ -107,15 +107,15 @@
 
   function loadMarkers(data){
     console.log(data);
-    for(var event in data){
+    for(var i=0; i< data.length; i++){
       console.log("Test");
-      console.log(event);
-      console.log(event.Longitude);
-      console.log(event.Latitude);
-      console.log(event['Longitude']);
-      console.log(event['Latitude']);
+      console.log(data[i]);
+      console.log(data[i].Longitude);
+      console.log(data[i].Latitude);
+      console.log(data[i]['Longitude']);
+      console.log(data[i]['Latitude']);
       var marker = new mapboxgl.Marker()
-      .setLngLat([event.Longitude, event.Latitude])
+      .setLngLat([data[i].Longitude, data[i].Latitude])
       .addTo(map);
     }
 
