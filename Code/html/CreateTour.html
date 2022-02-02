@@ -60,10 +60,29 @@
     <ul id='posts'></ul>
 </body>
 <script>
-    const form = document.getElementById("form1");
-    var btn = document.getElementById("addEvent");
-    var arr = [];
-   
+    var form = document.getElementById("form");
+
+    form.onsubmit = (e) => {
+        e.preventDefault();
+
+        var nameInput = document.getElementById("name");
+        var locationInput = document.getElementById("location");
+        var goalInput = document.getElementById("goal");
+
+        var parameters = {"name": nameInput.value,  "location": locationInput.value, "goalID": goalInput.value};
+        console.log(parameters);
+
+        fetch('https://group9agilewebapp.azurewebsites.net/createTour', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(parameters),
+            });
+    };
+
+    const form= document.getElementById("form2")
+    const url="http://group9agilewebapp.azurewebsites.net/api/allEvents";
     form.onsubmit = (e) => {
             e.preventDefault();
             var Form = document.getElementById("AddEvents");
@@ -80,9 +99,8 @@
             .then((data) => {
                 let events = data;
                 events.map(function(event) {
-
                     let option = document.createElement('option');
-                    option.textContent = `${event.Name}`;
+                    option.text = `${event.Name}`;
                     option.value = `${event.EventId}`;
                     console.log(`${event.name}`);
                     selectForm.appendChild(option);
