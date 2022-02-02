@@ -83,10 +83,10 @@
 <script>
   mapboxgl.accessToken = 'pk.eyJ1Ijoia2hhZWxlbXdhdHQiLCJhIjoiY2syczhpdGFhMGU3ejNnbnozYXB0cm03YSJ9.GCaekm2x9qIeIWZe_Kq5LA';
   var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11',
-  center: [-3.002864, 56.472182],
-  zoom: 11.15,
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-3.002864, 56.472182],
+    zoom: 11.15,
   });
 
   // Add zoom and rotation controls to the map.
@@ -108,62 +108,63 @@
     var markers = [];
     for(var i=0; i < data.Length; i++){
       var obj = {'type': 'Feature','properties': {'description': '<p>' + data[i].Info + '</p>'},'geometry': {'type': 'Point','coordinates': [data[i].Longitude, data[i].Latitude]}};
+      console.log(obj);
       markers.push(obj);
       console.log(markers);
     }    
 
     map.on('load', () => {
-map.addSource('places', {
-'type': 'geojson',
-'data': {
-'type': 'FeatureCollection',
-'features': markers
-}
-});
-// Add a layer showing the places.
-map.addLayer({
-'id': 'places',
-'type': 'circle',
-'source': 'places',
-'paint': {
-'circle-color': '#4264fb',
-'circle-radius': 6,
-'circle-stroke-width': 2,
-'circle-stroke-color': '#ffffff'
-}
-});
- 
-// Create a popup, but don't add it to the map yet.
-const popup = new mapboxgl.Popup({
-closeButton: false,
-closeOnClick: false
-});
- 
-map.on('mouseenter', 'places', (e) => {
-// Change the cursor style as a UI indicator.
-map.getCanvas().style.cursor = 'pointer';
- 
-// Copy coordinates array.
-const coordinates = e.features[0].geometry.coordinates.slice();
-const description = e.features[0].properties.description;
- 
-// Ensure that if the map is zoomed out such that multiple
-// copies of the feature are visible, the popup appears
-// over the copy being pointed to.
-while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-}
- 
-// Populate the popup and set its coordinates
-// based on the feature found.
-popup.setLngLat(coordinates).setHTML(description).addTo(map);
-});
- 
-map.on('mouseleave', 'places', () => {
-map.getCanvas().style.cursor = '';
-popup.remove();
-});
-});
+      map.addSource('places', {
+        'type': 'geojson',
+        'data': {
+          'type': 'FeatureCollection',
+          'features': markers
+        }
+      });
+      // Add a layer showing the places.
+      map.addLayer({
+        'id': 'places',
+        'type': 'circle',
+        'source': 'places',
+        'paint': {
+          'circle-color': '#4264fb',
+          'circle-radius': 6,
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#ffffff'
+        }
+      });
+      
+      // Create a popup, but don't add it to the map yet.
+      const popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+      
+      map.on('mouseenter', 'places', (e) => {
+      // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+        
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties.description;
+        
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(coordinates).setHTML(description).addTo(map);
+      });
+      
+      map.on('mouseleave', 'places', () => {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+      });
+    });
   }
  
 
