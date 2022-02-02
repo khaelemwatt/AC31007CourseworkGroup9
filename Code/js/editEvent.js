@@ -175,14 +175,27 @@ function editEvent(eventId)
 }
 
 function deleteEvent(eventId) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://group9agilewebapp.azurewebsites.net/api/deleteEvent", false);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-
-    xhr.send(JSON.stringify({
+    
+    var json = JSON.stringify({
         "EventId": parseInt(eventId)
-    }));
+    });
 
+    fetch('https://group9agilewebapp.azurewebsites.net/api/deleteEvent', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: json, 
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    accept(data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    reject();
+    });
 }
 
 function saveEvent(eventId) {
