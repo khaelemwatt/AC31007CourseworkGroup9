@@ -92,6 +92,7 @@
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
+
   //Fetches all events related to one goal and sends the data to load in the markers
   fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
   .then(response => response.json())
@@ -104,12 +105,65 @@
 
   //Takes in JSON data and displays their marker on the map
   function loadMarkers(data){
-    console.log(data);
-    for(var i=0; i< data.length; i++){
-      var marker = new mapboxgl.Marker()
-      .setLngLat([data[i].Longitude, data[i].Latitude])
-      .addTo(map);
+    for(var i=0; i < 1; i++){
+      markers += "{'type': 'Feature', 'properties': {'description': '<p>" + data[i].info + "</p>'}, 'geometry': {'type': 'Point', 'coordinates': [" + data[i].Longitude + "," + data[i].Latitude + "]}}"
+      console.log(markers);
     }
+
+    map.on('load', () => {
+      map.addSource('places', {
+        'type': 'geojson',
+        'data': {
+          'type': 'FeatureCollection',
+          'features': [markers]
+        }
+      })
+
+      map.addLayer({
+      'id': 'places',
+      'type': 'circle',
+      'source': 'places',
+      'paint': {
+        'circle-color': '#4264fb',
+        'circle-radius': 6,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': '#ffffff'
+      }
+      });
+
+      const popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+
+      map.on('mouseenter', 'places', (e) => {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+        
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties.description;
+        
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(coordinates).setHTML(description).addTo(map);
+      });
+
+      map.on('mouseleave', 'places', () => {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+      });
+
+    });
+
+    
   }
   </script>
 
