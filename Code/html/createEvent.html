@@ -13,7 +13,7 @@
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" required>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="location">
             <label for="location">Location</label>
             <input type="text" class="form-control" id="location" required>
         </div>
@@ -56,6 +56,8 @@
 
  <script>
     var form = document.getElementById("form");
+    
+
 
     form.onsubmit = (e) => {
         e.preventDefault();
@@ -65,6 +67,22 @@
         var dateInput = document.getElementById("date");
         var locationInput = document.getElementById("location");
         var goalInput = document.getElementById("goal");
+        var locationInput = document.getElementById("location").value;
+        //Sanitise locationInput
+
+        var url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + locationInput + ".json?proximity=-2.0,56.0&access_token=pk.eyJ1Ijoia2hhZWxlbXdhdHQiLCJhIjoiY2syczhpdGFhMGU3ejNnbnozYXB0cm03YSJ9.GCaekm2x9qIeIWZe_Kq5LA"
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            getLatitude(data);
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
+
+        function getLatitude(data){
+            //placeholder
+        }
 
         var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput.value, "goalID": goalInput.value};
         console.log(parameters);
