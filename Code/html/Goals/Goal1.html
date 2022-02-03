@@ -146,8 +146,8 @@
         });
 
         map.on('click', 'places', (e) => {
-          var url = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/h"
-          //window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/home.html";
+          sessionStorage.setItem("singleEvent", data[i].EventId);
+          window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/home.html";
         })
         
         map.on('mouseenter', 'places', (e) => {
