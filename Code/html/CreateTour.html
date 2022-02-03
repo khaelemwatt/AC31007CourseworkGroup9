@@ -10,8 +10,17 @@
     <title>Create Tour</title>
 </head>
 
-<body class="blackB">
-    
+<body class="black">
+    <form action="#"  id="form2">
+        <div class="form-group container">
+            <label for="Events">Add Events Here</label>
+            <div class="form-row text-center "> 
+                <div id="AddEvents" ></div>
+            </div>
+        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
+    </div>
+        
+    </form>
 <form id="form1">
         <div class="container form-group">
             <label for="name"><H3 class="Display-4">Tour Name:</H1></label>
@@ -41,26 +50,17 @@
                 <option value="17">Partnerships to Achieve Goal</option>
             </select>
         </div>
-        <div class="form-group container">
+        <div class="form-group container" >
             <label for="location">Location</label>
             <input type="text" class="form-control" id="location" required>
             <div class="form-row text-center container"> 
-                <button class="btn btn-secondary" type="submit" name="submit">Submit</button>
+                <button class="btn btn-secondary" type="submit" name="submit" style="margin-top:0.5rem;">Submit</button>
             </div>
         </div>
 
 		
     </form>
-    <form action="#"  id="form2">
-        <div class="form-group container">
-            <label for="Events">Add Events Here</label>
-            <div class="form-row text-center "> 
-                <div id="AddEvents" ></div>
-            </div>
-        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
-    </div>
-        
-    </form>
+    
     <ul id='posts'></ul>
 </body>
 <script>
