@@ -78,9 +78,7 @@
         button.href = socialLink;
     }
 
-  document.getElementById('print_to_pdf').onclick = function () {
-    var element = document.getElementsByTagName('body')[0]
-    html2pdf().from(element).toPdf().save('my_document.pdf')
-  }
+  const element = document.querySelector('body');
+  html2pdf(element);
     
 </script>
