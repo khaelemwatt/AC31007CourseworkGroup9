@@ -23,6 +23,9 @@
           
         </nav>
       </div>
+      <h1 id="title"></h1>
+      <h2 id="date"></h2>
+      <h3 id="info"></h3>
 
       
 </body>
@@ -44,6 +47,13 @@
 
     function loadDetails(data){
         console.log(data);
+        var title = document.getElementById("title");
+        var date = document.getElementById("date");
+        var info = document.getElementById("info");
+
+        title.innerHTML = data.Name;
+        date.innerHTML = data.Date;
+        info.innerHTML = data.Info;
     }
     
 </script>
