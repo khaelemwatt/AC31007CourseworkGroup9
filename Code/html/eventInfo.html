@@ -37,13 +37,14 @@
     var id = sessionStorage.getItem("singleEvent");
     
     var url= window.location.href;
-    var pos = url.search('?');
+    var pos = url.search('\\?');
     
     if(pos != -1){
         //User loaded in link from external website. Use the id in the url params instead
         var split = url.split('?');
         id = split[1]; //since theres only one question mark in url then we know id is after it for this page
     }
+    console.log(id);
    
     var url = 'https://group9agilewebapp.azurewebsites.net/api/singleEvent/' + id;
 
