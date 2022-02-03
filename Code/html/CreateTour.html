@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
-=======
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
@@ -12,20 +10,23 @@
     <title>Create Tour</title>
 </head>
 
-<body>
-    <form action="#"  id="form1">
-        <label for="infoInput">Add Events Here</label>
-            <div class="form-row text-center"> 
-                <div id="AddEvents"></div>
+<body class="black">
+    <form action="#"  id="form2">
+        <div class="form-group container">
+            <label for="Events">Add Events Here</label>
+            <div class="form-row text-center "> 
+                <div id="AddEvents" ></div>
             </div>
         <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
+    </div>
+        
     </form>
-<form id="form2">
-        <!--<div class="form-group">
-            <label for="name">Tour Name:</label>
+<form id="form1">
+        <div class="container form-group">
+            <label for="name"><H3 class="Display-4">Tour Name:</H1></label>
             <input type="text" class="form-control" id="name" required>
         </div>
-        <div class="form-group">
+        <div class="form-group container">
             <label for="goalSelect">What Goal Does The Tour Relate To?</label>
             <select class="form-control" id="goal" required>
                 <option disabled selected value> -- select an option -- </option>
@@ -49,74 +50,93 @@
                 <option value="17">Partnerships to Achieve Goal</option>
             </select>
         </div>
-        <div class="form-group">
+        <div class="form-group container" >
             <label for="location">Location</label>
             <input type="text" class="form-control" id="location" required>
-        </div>-->
-        <div class="form-group">
-            
-            
-            <!--
-            <select class="form-control" id="goal" required>
-                <option disabled selected value> -- select an option -- </option>
-                <option value="" disabled></option>
-            </select>-->
+            <div class="form-row text-center container"> 
+                <button class="btn btn-secondary" type="submit" name="submit" style="margin-top:0.5rem;">Submit</button>
+            </div>
         </div>
-		<div class="form-row text-center"> 
-            <button class="btn btn-secondary" type="submit" name="submit">Submit</button>
-        </div>
+
+		
     </form>
+    
+    <ul id='posts'></ul>
 </body>
 <script>
-    const form = document.getElementById("form1");
-    var btn = document.getElementById("addEvent");
-    var arr = [];
-    
-    fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents')
-            .then(response => response.json)
-            .then(function(data){
-                let events = data.results;
-                return events.map(function(event){
-                    let para = document.createElement("p");
-                    para.innerHTML= '${event.Name}';
-                    //option.value='${event.EventId}';
-                    arr.push(para);
-                })
-            
+    var form1 = document.getElementById("form1");
+    var Count=0;
+    form1.onsubmit = (e) => {
+        e.preventDefault();
+
+        var nameInput = document.getElementById("name");
+        var locationInput = document.getElementById("location");
+        var goalInput = document.getElementById("goal");
+        var Events = [];
+        try {
+            for(i=1;i<Count+1;i++){
+                Events.push(document.getElementById(i.toString()).value);
+                //console.log(document.getElementById(i.toString()).value);
+            }
+            console.log(Events);
+        }
+        catch{
+            Events=["-1"];
+        };
+        var parameters = {"name": nameInput.value,  "location": locationInput.value, "goalID": goalInput.value,"events":Events};
+        console.log(parameters);
+
+        fetch('https://group9agilewebapp.azurewebsites.net/createTour', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(parameters),
+            });
+    };
+    const form2= document.getElementById("form2");
+    const url="https://group9agilewebapp.azurewebsites.net/api/allEvents";
+    form2.onsubmit = (e) => {
+            e.preventDefault();
+            Count++;
+            var div1 = document.getElementById("AddEvents");
+            var option1= document.createElement("option");
+            var option2= document.createElement("option");
+            var selectForm= document.createElement("select");
+            selectForm.classList.add("form-control") ;
+            selectForm.classList.add("sel");
+            selectForm.id=Count.toString();
+            fetch(url)
+            .then((response) => {
+                return response.json();
             })
-            .catch(function(){
+            .then((data) => {
+                let events = data;
+                events.map(function(event) {
+                    let option = document.createElement('option');
+                    option.text = `${event.Name}`;
+                    option.value = `${event.EventId}`;
+                    console.log(`${event.name}`);
+                    selectForm.appendChild(option);
+                });
+            })
+            .catch(function(error) {
                 console.log(error);
             });
-            for(var i=0;i<arr.length;i++){
-                form1.appendChild(arr[i]);
-            }
-    form.onsubmit = (e) => {
-            e.preventDefault();
-            var Form = document.getElementById("AddEvents");
-            var selectForm= document.createElement("select");
-            var option1= document.createElement("option");
-            var option2= document.hhhhcreateElement("option");
-            var count=2;
             
-            
-            selectForm.classList.add("form-control") ;
-            selectForm.id="Event";
             option1.disabled=true;
             option1.value= "";
             option1.text=" -- select an option -- ";
+
             option2.disabled=true;
-            
             option2.selected=true;
             option2.text="Please select...";
+
             selectForm.add(option1,selectForm[0]);
             selectForm.add(option2,selectForm[1]);
-            Form.appendChild(selectForm);
-            // for(var i=2;i<arr.length;i++){
-            //     selectForm.add(arr[i],selectForm[i+2]);
-            // }
+            div1.appendChild(selectForm);
     };
 </script>
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
 <script src='./../js/bootstrap.bundle.js' ></script>
 </html>
->>>>>>> Stashed changes
