@@ -32,6 +32,7 @@
     </div>
     
     <a id="social-media">Post about this on twitter</a>
+    <a id="print">Save Event as a PDF</a>
 
       
 </body>
@@ -79,6 +80,8 @@
     }
 
   const element = document.querySelector('body');
-  html2pdf(element);
+  var printPDF = html2pdf(element);
+  var button = document.getElementById("print");
+  button.href = printPDF;
     
 </script>
