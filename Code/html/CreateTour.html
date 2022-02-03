@@ -88,7 +88,7 @@
         catch{
             Events=["-1"];
         };
-        var parameters = {"name": nameInput.value,  "location": locationInput.value, "goalID": goalInput.value,"events":Events};
+        var parameters = {"name": nameInput.value,  "location": locationInput.value, "goalID": goalInput.value,"events":Events.toString()};
         console.log(parameters);
 
         fetch('https://group9agilewebapp.azurewebsites.net/createTour', {
