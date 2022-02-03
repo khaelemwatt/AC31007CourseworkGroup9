@@ -1,0 +1,102 @@
+<!doctype html>
+<htmllang='en'>
+<head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+<link href='./../CSS/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='./../CSS/Colours.css' rel='stylesheet' type='text/css'>
+<link href='./../CSS/Goals.css' rel='stylesheet' type='text/css'>
+<title>UN Goals</title>
+
+</head>
+
+<body >
+  <div class='pos-f-t '>
+    <div class='collapse' id='navbarToggleExternalContent'>
+      <div class='blackB p-4'>
+        <h4 class='text-white'></h4>
+        <span class='text-muted'></span>
+      </div>
+    </div>
+    <nav class='navbar navbar-dark blackB ' id = "navbar">
+        <a href="./home.html" style="width:80%"> <img class="Logo" src="./Images/SDGlogo.jpg" alt="SDG" ></a>
+      
+    </nav>
+  </div>
+    <H1 class='display-4 GoalTitle'>Tours</H1>
+    <form id="form">
+        <div class="form-group container">
+            <label for="goalSelect">What Goal Does The Tour Relate To?</label>
+            <select class="form-control" id="goal" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="" disabled>Please select...</option>
+                <option value="1">No Poverty</option>
+                <option value="2">Zero Hunger</option>
+                <option value="3">Good Health and Wellbeing</option>
+                <option value="4">Quality Education</option>
+                <option value="5">Gender Equality</option>
+                <option value="6">Clean Water and Sanitation</option>
+                <option value="7">Affordable and Clean Energy</option>
+                <option value="8">Decent Work and Economic Growth</option>
+                <option value="9">Industry, Innovation and Infrastructure</option>
+                <option value="10">Reduced Inequality</option>
+                <option value="11">Sustainable Cities and Communities</option>
+                <option value="12">Responsible Consumption and Production</option>
+                <option value="13">Climate Action</option>
+                <option value="14">Life Below Water</option>
+                <option value="15">Life on Land</option>
+                <option value="16">Peace and Justice, Strong Insitutions</option>
+                <option value="17">Partnerships to Achieve Goal</option>
+            </select>
+        </div>
+        <div class="form-group container" >
+            <div class="form-row text-center container"> 
+                <button class="btn btn-secondary" type="submit" name="submit" style="margin-top:0.5rem;">Submit</button>
+            </div>
+        </div>
+    </form>
+    <h4 class="display-5" id="tourname"></h4>
+    <ul class="list-group" id=eventsList>
+        <!--<li class="list-group-item">Cras justo odio</li>-->
+        
+    </ul>
+</body>
+<script>
+    var form = document.getElementById("form");
+    form.onsubmit = (e) => {
+        e.preventDefault();
+        var goalInput = document.getElementById("goal");        
+        var parameters = { "goalID": goalInput.value};
+        console.log(parameters);
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://group9agilewebapp.azurewebsites.net/api/ShowTour/(?',goalInput,'[\w\-]+)', false );
+        xmlHttp.send( null );
+        var jsonResponse = xmlHttp.responseText;
+
+        var response = JSON.parse(jsonResponse);
+
+        var listGroup = document.getElementById("eventsList");
+
+        response.forEach(addToList);
+
+    };
+    function addToList(eventID)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", '/api/singleEvent/(?',eventId,'[\w\-]+)', false );
+        xmlHttp.send( null );
+        var jsonResponse = xmlHttp.responseText;
+        var event = JSON.parse(jsonResponse);
+        listGroup.innerHTML += `
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">` + event.Name + `</h5>
+                <small>` + event.Date + `</small>
+            </div>
+            <p class="mb-1">` + event.Info + `</p>
+            <small>` + event.Location + `</small>
+        `
+    }
+</script>
+<script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+<script src='./../js/bootstrap.bundle.js' ></script>
+</html>
