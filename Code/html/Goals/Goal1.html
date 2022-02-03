@@ -111,7 +111,8 @@
     var markers = [];
     console.log(data);
     console.log(Object.keys(data).length);
-    sessionStorage.setItem("event", data[i]);
+    sessionStorage.setItem("event", data);
+    console.log(sessionStorage.getItem("event");
 
     for(var i=0; i < Object.keys(data).length; i++){
       var desc = "<strong>" + data[i].Name + "</strong><p>" + data[i].Info + "</p>";
