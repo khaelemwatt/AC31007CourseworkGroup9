@@ -65,7 +65,7 @@
 </body>
 <script>
     var form1 = document.getElementById("form1");
-
+    var Count=0;
     form1.onsubmit = (e) => {
         e.preventDefault();
 
@@ -73,6 +73,16 @@
         var locationInput = document.getElementById("location");
         var goalInput = document.getElementById("goal");
         var Events = [];
+        try {
+            for(i=1;i<Count+1;i++){
+                Events.push(document.getElementById(i.toString()).value);
+                //console.log(document.getElementById(i.toString()).value);
+            }
+            console.log(Events);
+        }
+        catch{
+            Events=["-1"];
+        };
         var parameters = {"name": nameInput.value,  "location": locationInput.value, "goalID": goalInput.value,"events":Events};
         console.log(parameters);
 
@@ -84,17 +94,18 @@
             body: JSON.stringify(parameters),
             });
     };
-
     const form2= document.getElementById("form2");
-    const url="http://group9agilewebapp.azurewebsites.net/api/allEvents";
+    const url="https://group9agilewebapp.azurewebsites.net/api/allEvents";
     form2.onsubmit = (e) => {
             e.preventDefault();
+            Count++;
             var div1 = document.getElementById("AddEvents");
             var option1= document.createElement("option");
             var option2= document.createElement("option");
             var selectForm= document.createElement("select");
-            selectForm.id="sel";
-    
+            selectForm.classList.add("form-control") ;
+            selectForm.classList.add("sel");
+            selectForm.id=Count.toString();
             fetch(url)
             .then((response) => {
                 return response.json();
@@ -112,9 +123,6 @@
             .catch(function(error) {
                 console.log(error);
             });
-            
-            selectForm.classList.add("form-control") ;
-            selectForm.id="sel";
             
             option1.disabled=true;
             option1.value= "";
