@@ -111,11 +111,9 @@
     var markers = [];
     console.log(data);
     console.log(Object.keys(data).length);
-    sessionStorage.setItem("event", JSON.stringify(data));
-    console.log(JSON.parse(sessionStorage.getItem("event")));
 
     for(var i=0; i < Object.keys(data).length; i++){
-      var desc = "<strong>" + data[i].Name + "</strong><p>" + data[i].Info + "</p>";
+      var desc = "<strong>" + data[i].Name + "</strong><p>" + data[i].Info + "</p>1";
       var obj = {'type': 'Feature','properties': {'description': desc},'geometry': {'type': 'Point','coordinates': [data[i].Longitude, data[i].Latitude]}};
       markers.push(obj);
 
@@ -146,13 +144,9 @@
           closeButton: false,
           closeOnClick: false
         });
-        
+
         map.on('click', 'places', (e) => {
-          var event = JSON.parse(sessionStorage.getItem("event"));
-          console.log(event);
-          var eventId = event[i].EventId;
-          console.log(event[i].EventId)
-          sessionStorage.setItem("singleEvent", eventId);
+          
           window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/eventInfo.html";
         })
         
