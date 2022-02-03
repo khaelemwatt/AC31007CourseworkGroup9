@@ -75,8 +75,11 @@
         var Events = [];
         try {
             for(i=1;i<Count+1;i++){
-                Events.push(document.getElementById(i.toString()).value);
-                //console.log(document.getElementById(i.toString()).value);
+                if(document.getElementById(i.toString()).disabled=false){
+                    Events.push(document.getElementById(i.toString()).value);
+                console.log(document.getElementById(i.toString()).value);
+                }
+                
             }
             console.log(Events);
         }
