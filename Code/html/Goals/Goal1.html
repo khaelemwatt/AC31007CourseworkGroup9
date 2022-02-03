@@ -163,6 +163,7 @@
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup.setLngLat(coordinates).setHTML(description).addTo(map);
+        document.getElementsByClassName("mapboxgl-popup").innerHtml = "<p>This is a test</p>"
       });
       
       map.on('mouseleave', 'places', () => {
