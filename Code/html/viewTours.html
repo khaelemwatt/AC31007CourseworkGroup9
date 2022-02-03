@@ -65,25 +65,28 @@
     var form = document.getElementById("form");
     form.onsubmit = (e) => {
         e.preventDefault();
-        var goalInput = document.getElementById("goal");        
-        var parameters = { "goalID": goalInput.value};
-        console.log(parameters);
+        var goalInput = document.getElementById("goal").value;   
+        var ur='https://group9agilewebapp.azurewebsites.net/api/ShowTour/'     
+        var url1=ur.concat(goalInput);
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", 'https://group9agilewebapp.azurewebsites.net/api/ShowTour/(?',goalInput,'[\w\-]+)', false );
+        xmlHttp.open( "GET", url1, false );
         xmlHttp.send( null );
         var jsonResponse = xmlHttp.responseText;
 
         var response = JSON.parse(jsonResponse);
-
+        
         var listGroup = document.getElementById("eventsList");
-
-        response.forEach(addToList);
+        var arr = response.Events.split(",");
+        console.log(arr);
+        arr.forEach(addToList);
 
     };
     function addToList(eventID)
     {
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", '/api/singleEvent/(?',eventId,'[\w\-]+)', false );
+        var ur2='/api/singleEvent/';
+        var url2=ur2.concat(eventID);
+        xmlHttp.open( "GET", url2, false );
         xmlHttp.send( null );
         var jsonResponse = xmlHttp.responseText;
         var event = JSON.parse(jsonResponse);
