@@ -175,8 +175,10 @@ function editEvent(eventId)
 }
 
 function deleteEvent(eventId) {
+
     
     var json = JSON.stringify({
+
         "EventId": parseInt(eventId)
     });
 

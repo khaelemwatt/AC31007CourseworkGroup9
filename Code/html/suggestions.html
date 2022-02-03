@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <title>Create Event</title>
+    <title>Suggest Event</title>
 </head>
 
 <body>
@@ -74,7 +74,7 @@
         var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput.value, "email": emailInput.value, "goalID": goalInput.value};
         console.log(parameters);
 
-        fetch('https://group9agilewebapp.azurewebsites.net/suggestEvent', {
+        fetch('https://group9agilewebapp.azurewebsites.net/api/suggestEvent', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

@@ -106,3 +106,9 @@ body{
 h1{
     color:black;
 }
+.addBtn{
+    margin: 1rem;
+}
+.sel{
+    margin-bottom: 0.5rem;
+}
