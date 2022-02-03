@@ -117,7 +117,7 @@
       var obj = {'type': 'Feature','properties': {'description': desc},'geometry': {'type': 'Point','coordinates': [data[i].Longitude, data[i].Latitude]}};
       markers.push(obj);
 
-      map.on('load', () => {
+      map.on('load', (data) => {
         map.addSource('places', {
           'type': 'geojson',
           'data': {
