@@ -113,7 +113,7 @@
     console.log(Object.keys(data).length);
 
     for(var i=0; i < Object.keys(data).length; i++){
-      var desc = "<strong>" + data[i].Name + "</strong><p class='popup-text' id='" + data[i].EventId + "'>" + data[i].Info + "</p>";
+      var desc = "<strong>" + data[i].Name + "</strong><p class='popup-text' id='" + data[i].EventId + "'>" + data[i].Info + "</p><br><p>" + data[i].Date + "</p>";
       var obj = {'type': 'Feature','properties': {'description': desc},'geometry': {'type': 'Point','coordinates': [data[i].Longitude, data[i].Latitude]}};
       markers.push(obj);
 
