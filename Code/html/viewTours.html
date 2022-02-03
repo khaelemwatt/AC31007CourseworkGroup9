@@ -69,7 +69,7 @@
         var parameters = { "goalID": goalInput.value};
         console.log(parameters);
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", 'https://group9agilewebapp.azurewebsites.net/api/ShowTour/(?',goalInput,'[\w\-]+)', false );
+        xmlHttp.open( "GET", 'https://group9agilewebapp.azurewebsites.net/api/ShowTour/'+goalInput, false );
         xmlHttp.send( null );
         var jsonResponse = xmlHttp.responseText;
 
