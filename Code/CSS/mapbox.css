@@ -3,6 +3,6 @@
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
- .mapboxgl-popup-content p {
+ .mapboxgl-popup-content p, strong {
     color: #000;
 }
