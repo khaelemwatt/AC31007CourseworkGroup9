@@ -146,9 +146,9 @@
           closeButton: false,
           closeOnClick: false
         });
-        console.log(sessionStorage.getItem("event"));
+        console.log(JSON.parse(sessionStorage.getItem("event"))[i].EventId);
         map.on('click', 'places', (e) => {
-          sessionStorage.setItem("singleEvent", data[i].EventId);
+          sessionStorage.setItem("singleEvent", JSON.parse(sessionStorage.getItem("event"))[i].EventId);
           window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/eventInfo.html";
         })
         
