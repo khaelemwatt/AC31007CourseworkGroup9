@@ -26,6 +26,8 @@
       <h1 id="title"></h1>
       <h1 id="date"></h1>
       <h1 id="info"></h1>
+    
+    <a id="social-media">Post about this on twitter</a>
 
       
 </body>
@@ -33,7 +35,16 @@
 <script>
 
     var id = sessionStorage.getItem("singleEvent");
-
+    
+    var url= window.location.href;
+    var pos = url.search('?');
+    
+    if(pos != -1){
+        //User loaded in link from external website. Use the id in the url params instead
+        var split = url.split('?');
+        id = split[1]; //since theres only one question mark in url then we know id is after it for this page
+    }
+   
     var url = 'https://group9agilewebapp.azurewebsites.net/api/singleEvent/' + id;
 
     fetch(url)
@@ -54,6 +65,8 @@
         title.innerHTML = data[0].Name;
         date.innerHTML = data[0].Date;
         info.innerHTML = data[0].Info;
+        
+        var socialLink = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkhaelemwatt.github.io%2FAC31007CourseworkGroup9%2FCode%2FeventInfo.html%3F" + data[i].eventId; + "&text=I%20am%20participating%20in%20this%20goal";
     }
     
 </script>
