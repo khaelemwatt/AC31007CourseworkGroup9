@@ -146,7 +146,7 @@
           closeButton: false,
           closeOnClick: false
         });
-        console.log(JSON.parse(sessionStorage.getItem("event"))[i].EventId);
+        
         map.on('click', 'places', (e) => {
           var event = JSON.parse(sessionStorage.getItem("event"));
           console.log(event);
