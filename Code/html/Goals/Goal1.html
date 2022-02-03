@@ -147,8 +147,8 @@
 
         map.on('click', 'places', (e) => {
           var text = document.getElementsByClassName("popup-text")[0];
-          console.log(text.id);
-          //window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/eventInfo.html";
+          sessionStorage.setItem("singleEvent", text.id);
+          window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/eventInfo.html";
         })
         
         map.on('mouseenter', 'places', (e) => {
