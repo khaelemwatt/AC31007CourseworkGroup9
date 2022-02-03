@@ -51,11 +51,9 @@
         var date = document.getElementById("date");
         var info = document.getElementById("info");
 
-        console.log(data[0]);
-
-        title.innerHTML = data.Name;
-        date.innerHTML = data.Date;
-        info.innerHTML = data.Info;
+        title.innerHTML = data[0].Name;
+        date.innerHTML = data[0].Date;
+        info.innerHTML = data[0].Info;
     }
     
 </script>
