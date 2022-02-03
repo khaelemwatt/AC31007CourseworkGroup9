@@ -6,6 +6,7 @@
 <link href='./../CSS/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <link href='./../CSS/Colours.css' rel='stylesheet' type='text/css'>
 <link href='./../CSS/Goals.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <title>UN Goals</title>
 
 </head>
@@ -24,8 +25,9 @@
         </nav>
       </div>
       <h1 id="title"></h1>
-      <h1 id="date"></h1>
-      <h1 id="info"></h1>
+      <h2 id="date"></h2>
+      <h2 id="location"></h2>
+      <h2 id="info"></h2>
     
     <a id="social-media">Post about this on twitter</a>
 
@@ -61,15 +63,22 @@
         console.log(data);
         var title = document.getElementById("title");
         var date = document.getElementById("date");
+        var location = document.getElementById("location");
         var info = document.getElementById("info");
 
         title.innerHTML = data[0].Name;
         date.innerHTML = data[0].Date;
+        location.innerHTML = data[0].Location;
         info.innerHTML = data[0].Info;
         
         var socialLink = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkhaelemwatt.github.io%2FAC31007CourseworkGroup9%2FCode%2FeventInfo.html%3F" + data[0].eventId; + "&text=I%20am%20participating%20in%20this%20event";
         var button = document.getElementById("social-media");
         button.href = socialLink;
     }
+
+  document.getElementById('print_to_pdf').onclick = function () {
+  var element = document.getElementsByTagName('body')[0]
+  html2pdf().from(element).toPdf().save('my_document.pdf')
+  }
     
 </script>
