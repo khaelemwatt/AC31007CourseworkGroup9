@@ -142,9 +142,13 @@
           closeButton: false,
           closeOnClick: false
         });
+
+        map.on('click', 'places', (e) => {
+          window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/home.html";
+        })
         
         map.on('mouseenter', 'places', (e) => {
-        // Change the cursor style as a UI indicator.
+          // Change the cursor style as a UI indicator.
           map.getCanvas().style.cursor = 'pointer';
           
           // Copy coordinates array.
