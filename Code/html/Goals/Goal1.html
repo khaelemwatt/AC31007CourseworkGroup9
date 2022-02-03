@@ -113,7 +113,7 @@
     console.log(Object.keys(data).length);
 
     for(var i=0; i < Object.keys(data).length; i++){
-      var desc = "<strong>" + data[i].Name + "</strong><p>" + data[i].Info + "</p>1";
+      var desc = "<strong>" + data[i].Name + "</strong><p id='" + data[i].EventId + "'>" + data[i].Info + "</p>";
       var obj = {'type': 'Feature','properties': {'description': desc},'geometry': {'type': 'Point','coordinates': [data[i].Longitude, data[i].Latitude]}};
       markers.push(obj);
 
@@ -146,7 +146,8 @@
         });
 
         map.on('click', 'places', (e) => {
-          
+          var 
+          console.log();
           window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/eventInfo.html";
         })
         
