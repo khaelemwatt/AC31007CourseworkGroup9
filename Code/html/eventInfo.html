@@ -30,9 +30,10 @@
 <script>
 
     var id = sessionStorage.getItem("singleEvent");
-    document.getElementById("test").innerHTML = id;
 
-    fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/1')
+    var url = 'https://group9agilewebapp.azurewebsites.net/api/singleEvent/' + id;
+
+    fetch(url)
     .then(response => response.json())
     .then(data => {
         loadDetails(data);
