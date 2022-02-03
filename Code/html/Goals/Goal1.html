@@ -148,7 +148,11 @@
         });
         console.log(JSON.parse(sessionStorage.getItem("event"))[i].EventId);
         map.on('click', 'places', (e) => {
-          sessionStorage.setItem("singleEvent", JSON.parse(sessionStorage.getItem("event"))[i].EventId);
+          var event = JSON.parse(sessionStorage.getItem("event"));
+          console.log(event);
+          var eventId = event[i].EventId;
+          console.log(event[i].EventId)
+          sessionStorage.setItem("singleEvent", eventId);
           window.location.href = "https://khaelemwatt.github.io/AC31007CourseworkGroup9/Code/html/eventInfo.html";
         })
         
