@@ -112,8 +112,9 @@
     console.log(data);
     console.log(Object.keys(data).length);
 
+    console.log(data);
+
     for(var i=0; i < Object.keys(data).length; i++){
-      console.log("Test");
       var desc = "<strong>" + data[i].Name + "</strong><p>" + data[i].Info + "</p>";
       var obj = {'type': 'Feature','properties': {'description': desc},'geometry': {'type': 'Point','coordinates': [data[i].Longitude, data[i].Latitude]}};
       markers.push(obj);
