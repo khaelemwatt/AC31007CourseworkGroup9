@@ -56,7 +56,7 @@
         </div>
     </form>
     <h4 class="display-5" id="tourname"></h4>
-    <ul class="list-group" id=eventsList>
+    <ul class="list-group black" id=eventsList>
         <!--<li class="list-group-item">Cras justo odio</li>-->
         
     </ul>
@@ -64,12 +64,14 @@
 <script>
     
     var listGroup = document.getElementById("eventsList");
-    //var goalInput = document.getElementById("goal").value;   
-    var url1='https://group9agilewebapp.azurewebsites.net/api/ShowTour/1'     
-    //var url1=ur.concat(goalInput);    
+       
+    
+        
     form.onsubmit = (e) => {
             e.preventDefault();
+            var goalInput = document.getElementById("goal").value;
             var listGroup = document.getElementById("eventsList");
+            var url1='https://group9agilewebapp.azurewebsites.net/api/ShowTour/'+goalInput;   
             console.log(url1);
             fetch(url1)
             .then((response) => {
@@ -89,8 +91,8 @@
                     var eventIDs=eventstr.split(',');
                     console.log(eventIDs);
                     eventIDs.forEach(function(eventID){
-                        var ur2='https://group9agilewebapp.azurewebsites.net/api/singleEvent/';
-                        var url2=ur2.concat(eventID);
+                        var url2='https://group9agilewebapp.azurewebsites.net/api/singleEvent/'+eventID;
+                        
                         fetch(url2)
                         .then((response) => {
                             return response.json();
