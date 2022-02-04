@@ -84,7 +84,8 @@
                     name.innerHTML = `${tour.Name}`;
                     location.innerHTML = `${tour.Location}`;
                     console.log(`${tour.Name}`);
-                    var eventIDs = (`${tour.Events}`).split(',');
+                    var eventstr = (`${tour.Events}`);
+                    var eventIDs=eventstr.split(',');
                     console.log(eventIDs);
                     eventIDs.forEach(function(eventID){
                         var ur2='https://group9agilewebapp.azurewebsites.net/api/singleEvent/';
