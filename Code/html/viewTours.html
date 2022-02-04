@@ -103,8 +103,8 @@
                                 let p = document.createElement('p');
                                 let location = document.createElement('p');
                             name.innerHTML = `${event.name}`;
-                            location = `${event.location}`;
-                            p=`${event.info}`;
+                            location.innerHTML = `${event.location}`;
+                            p.innerHTML=`${event.info}`;
                             console.log(`${event.name}`);
                             li2.appendChild(name);
                             li2.appendChild(location);
