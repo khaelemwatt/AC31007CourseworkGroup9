@@ -68,7 +68,8 @@
         var goalInput = document.getElementById("goal");
         var coords;
     
-        //Sanitise locationInput
+        locationInput = encodeURIComponent(locationInput.trim());
+        console.log(locationInput);
 
         var url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + locationInput.value + ".json?proximity=-2.0,56.0&access_token=pk.eyJ1Ijoia2hhZWxlbXdhdHQiLCJhIjoiY2syczhpdGFhMGU3ejNnbnozYXB0cm03YSJ9.GCaekm2x9qIeIWZe_Kq5LA"
         console.log(url);
