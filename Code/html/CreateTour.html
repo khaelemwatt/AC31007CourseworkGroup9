@@ -11,6 +11,7 @@
 </head>
 
 <body class="black">
+
     <div class='pos-f-t '>
         <div class='collapse' id='navbarToggleExternalContent'>
           <div class='blackB p-4'>
@@ -22,17 +23,10 @@
             <a href="./home.html" style="width:80%"> <img class="Logo" src="./Images/SDGlogo.jpg" alt="SDG" ></a>
           
         </nav>
-      </div>
-    <form action="#"  id="form2">
-        <div class="form-group container">
-            <label for="Events">Add Events Here</label>
-            <div class="form-row text-center "> 
-                <div id="AddEvents" ></div>
-            </div>
-        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
-    </div>
+  </div>
+    <div class="row">
         
-    </form>
+    <div class="col">
 <form id="form1">
         <div class="container form-group">
             <label for="name"><H3 class="Display-4">Tour Name:</H1></label>
@@ -72,11 +66,24 @@
 
 		
     </form>
-    
-    <ul id='posts'></ul>
+</div>
+<div class="col">
+    <form action="#"  id="form2">
+        <div class="form-group container">
+            <label for="Events"><H4 class="display-5" >Add Events Here</H4></label>
+            <div class="form-row text-center "> 
+                <div id="AddEvents" ></div>
+            </div>
+        <button class="btn btn-secondary addBtn"  type="submit" id="addEvent">Add Event</button>
+        </div>
+            
+        </form>
+    </div>
+    </div>
 </body>
 <script>
     var form1 = document.getElementById("form1");
+    const form2= document.getElementById("form2");
     var Count=0;
     form1.onsubmit = (e) => {
         e.preventDefault();
@@ -87,8 +94,6 @@
         var Events = [];
         try {
             for(i=1;i<Count+1;i++){
-
-
                 if(document.getElementById(i.toString()).valiue!=""){
                     Events.push(document.getElementById(i.toString()).value);
                 console.log(document.getElementById(i.toString()).value);
@@ -110,8 +115,10 @@
             },
             body: JSON.stringify(parameters),
             });
+            form1.reset();
+            form2.reset();
     };
-    const form2= document.getElementById("form2");
+    
     const url="https://group9agilewebapp.azurewebsites.net/api/allEvents";
     form2.onsubmit = (e) => {
             e.preventDefault();

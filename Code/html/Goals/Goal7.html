@@ -99,6 +99,9 @@
       </ul>
     </nav>
     </div>
+	<a class="btn btn-info" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkhaelemwatt.github.io%2FAC31007CourseworkGroup9%2FCode%2Fhtml%2FGoals%2FGoal7.html&text=I%20am%20participating%20in%20this%20goal">Post about this on Twitter</a>
+    </a>
+</div>
 </body>
 
 <script>
@@ -113,6 +116,18 @@
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
+  // Add geolocate control to the map.
+  map.addControl(
+    new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      // When active the map will receive updates to the device's location as it changes.
+      trackUserLocation: true,
+      // Draw an arrow next to the location dot to indicate which direction the device is heading.
+      showUserHeading: true
+    })
+  );
 
   //Fetches all events related to one goal and sends the data to load in the markers
   fetch('https://group9agilewebapp.azurewebsites.net/api/devEvents/7')
