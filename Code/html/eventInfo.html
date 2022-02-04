@@ -78,7 +78,7 @@
 
         title.innerHTML = data[0].Name;
         date.innerHTML = data[0].Date;
-        location.innerHTML = data[0].Location;
+        location.innerHTML = decodeURI(data[0].Location);
         info.innerHTML = data[0].Info;
         
         var socialLink = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkhaelemwatt.github.io%2FAC31007CourseworkGroup9%2FCode%2FeventInfo.html%3F" + data[0].eventId; + "&text=I%20am%20participating%20in%20this%20event";
