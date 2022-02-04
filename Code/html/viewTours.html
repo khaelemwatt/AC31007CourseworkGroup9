@@ -84,6 +84,8 @@
                     let name = document.createElement('h2');
                     let location = document.createElement('h4');
                     let eventul = document.createElement('ul')
+                    li.classList.add('list-group-item');
+                    eventul.classList.add('list-group');
                     name.innerHTML = `${tour.Name}`;
                     location.innerHTML = `${tour.Location}`;
                     console.log(`${tour.Name}`);
@@ -108,6 +110,7 @@
                             location.innerHTML = `${event.Location}`;
                             p.innerHTML=`${event.Info}`;
                             console.log(`${event.Name}`);
+                            li2.classList.add('list-group-item');
                             li2.appendChild(name);
                             li2.appendChild(location);
                             li2.appendChild(p);
