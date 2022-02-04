@@ -159,8 +159,8 @@
     color:#12466A;   
 }
 .GoalItem{
-    padding:1rem;
-    margin:1rem;
+    margin-left:1rem;
+    margin-right:1rem;
     min-width :200px;
 }
 
