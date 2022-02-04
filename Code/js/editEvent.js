@@ -1,15 +1,18 @@
-//example response, cross site scripting rules mean that you cant 
-// need to add escape chars to api
-var xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", 'https://group9agilewebapp.azurewebsites.net/api/allEvents', false );
-xmlHttp.send( null );
-var jsonResponse = xmlHttp.responseText;
-
-var response = JSON.parse(jsonResponse);
-
 var listGroup = document.getElementById("eventsList");
+var response;
 
-response.forEach(addToList);
+popList();
+
+async function popList()
+{
+    await fetch('https://group9agilewebapp.azurewebsites.net/api/allEvents', {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => response = data);
+
+    response.forEach(addToList);
+}
 
 function addToList(event)
 {
@@ -175,10 +178,8 @@ function editEvent(eventId)
 }
 
 function deleteEvent(eventId) {
-
     
     var json = JSON.stringify({
-
         "EventId": parseInt(eventId)
     });
 
@@ -188,16 +189,9 @@ function deleteEvent(eventId) {
             'Content-Type': 'application/json',
         },
         body: json, 
-    })
-    .then(response => response.json())
-    .then(data => {
-    console.log('Success:', data);
-    accept(data);
-    })
-    .catch((error) => {
-    console.error('Error:', error);
-    reject();
     });
+
+    location.reload();
 }
 
 function saveEvent(eventId) {
@@ -222,14 +216,7 @@ function saveEvent(eventId) {
         'Content-Type': 'application/json',
     },
     body: json,
-    })
-    .then(response => response.json())
-    .then(data => {
-    console.log('Success:', data);
-    accept(data);
-    })
-    .catch((error) => {
-    console.error('Error:', error);
-    reject();
     });
+    
+    location.reload();
 }
