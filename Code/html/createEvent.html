@@ -86,20 +86,24 @@
             console.log(data);
             coords = data["features"][0]["geometry"]["coordinates"];
             console.log(coords);
-        }
+
+            console.log
+
+            var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "longitude": coords[0], "latitude": coords[1], "goalID": goalInput.value};
+            console.log(parameters);
+
+            fetch('https://group9agilewebapp.azurewebsites.net/createEvent', {
+                method: 'POST', // or 'PUT'
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(parameters),
+                });
+            }
 
         
 
-        var parameters = {"name": nameInput.value, "info": infoInput.value, "date": dateInput.value, "location": locationInput.value, "goalID": goalInput.value};
-        console.log(parameters);
-
-        // fetch('https://group9agilewebapp.azurewebsites.net/createEvent', {
-        //     method: 'POST', // or 'PUT'
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(parameters),
-        //     });
+        
     };
  </script>
 
