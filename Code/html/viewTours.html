@@ -62,43 +62,71 @@
     </ul>
 </body>
 <script>
-    var form = document.getElementById("form");
+    
+    var listGroup = document.getElementById("eventsList");
+    var goalInput = document.getElementById("goal").value;   
+    var ur='https://group9agilewebapp.azurewebsites.net/api/ShowTour/'     
+    var url1=ur.concat(goalInput);    
     form.onsubmit = (e) => {
-        e.preventDefault();
-        var goalInput = document.getElementById("goal").value;   
-        var ur='https://group9agilewebapp.azurewebsites.net/api/ShowTour/'     
-        var url1=ur.concat(goalInput);
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", url1, false );
-        xmlHttp.send( null );
-        var jsonResponse = xmlHttp.responseText;
+            e.preventDefault();
+            var listGroup = document.getElementById("eventsList");
+            fetch(url1)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let Tours = data;
+                Tours.map(function(tour) {
+                    let li=document.createElement('li');
+                    let name = document.createElement('h2');
+                    let location = document.createElement('h4');
+                    let eventul = document.createElement('ul')
+                    name.innerHTML = `${tour.Name}`;
+                    location.innerHTML = `${tour.Location}`;
+                    console.log(`${tour.Name}`);
+                    var eventIDs = (`${tour.Events}`).split(',');
+                    console.log(eventIDs);
+                    eventIDs.forEach(function(eventID){
+                        var ur2='https://group9agilewebapp.azurewebsites.net/api/singleEvent/';
+                        var url2=ur2.concat(eventID);
+                        fetch(url2)
+                        .then((response) => {
+                            return response.json();
+                        })
+                        .then((data) => {
+                            let events = data;
+                            events.map(function(event) {
+                                let li2=document.createElement('li');
+                                let name = document.createElement('h5');
+                                let p = document.createElement('p');
+                                let location = document.createElement('p');
+                            name.innerHTML = `${event.name}`;
+                            location = `${event.location}`;
+                            p=`${event.info}`;
+                            console.log(`${event.name}`);
+                            li2.appendChild(name);
+                            li2.appendChild(location);
+                            li2.appendChild(p);
+                            eventul.appendChild(li2);
+                            });
+                        })
+                        .catch(function(error) {
+                            console.log(error);
+                        });
+                    });
+                    li.appendChild(name);
+                    li.appendChild(location);
+                    li.appendChild(eventul);
+                    listGroup.appendChil(li);
 
-        var response = JSON.parse(jsonResponse);
-        
-        var listGroup = document.getElementById("eventsList");
-        var arr = response.Events.split(",");
-        console.log(arr);
-        arr.forEach(addToList);
-
-    };
-    function addToList(eventID)
-    {
-        var xmlHttp = new XMLHttpRequest();
-        var ur2='/api/singleEvent/';
-        var url2=ur2.concat(eventID);
-        xmlHttp.open( "GET", url2, false );
-        xmlHttp.send( null );
-        var jsonResponse = xmlHttp.responseText;
-        var event = JSON.parse(jsonResponse);
-        listGroup.innerHTML += `
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">` + event.Name + `</h5>
-                <small>` + event.Date + `</small>
-            </div>
-            <p class="mb-1">` + event.Info + `</p>
-            <small>` + event.Location + `</small>
-        `
-    }
+                })
+                    
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+            
+            }
 </script>
 <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
 <script src='./../js/bootstrap.bundle.js' ></script>
