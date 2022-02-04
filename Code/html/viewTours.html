@@ -64,12 +64,14 @@
 <script>
     
     var listGroup = document.getElementById("eventsList");
-    var goalInput = document.getElementById("goal").value;   
-    var url1='https://group9agilewebapp.azurewebsites.net/api/ShowTour/'+goalInput;   
+       
+    
         
     form.onsubmit = (e) => {
             e.preventDefault();
+            var goalInput = document.getElementById("goal").value;
             var listGroup = document.getElementById("eventsList");
+            var url1='https://group9agilewebapp.azurewebsites.net/api/ShowTour/'+goalInput;   
             console.log(url1);
             fetch(url1)
             .then((response) => {
