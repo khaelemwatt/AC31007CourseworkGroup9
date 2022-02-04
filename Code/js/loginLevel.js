@@ -25,5 +25,5 @@ if(sessionStorage.getItem("username") != null){
 
 function logOut() {
     sessionStorage.clear();
-    location.reload();
-}
+    window.location.href = './home.html';
+}   
